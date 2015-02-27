@@ -1,0 +1,20 @@
+<root>
+    <item name='com.daimajia.androidanimations.library.fading_exits.FadeOutAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.daimajia.androidanimations.library.fading_exits.FadeOutDownAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.fading_exits.FadeOutLeftAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.fading_exits.FadeOutRightAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.fading_exits.FadeOutUpAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

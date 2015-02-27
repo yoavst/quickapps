@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="SpUsage">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="285.5dp"
+        android:layout_height="155dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/error_layout"
+        android:layout_width="285.5dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:background="@android:color/background_light"
+        tools:ignore="SpUsage">
+
+        <com.yoavst.quickapps.AutoResizeTextView
+            android:id="@+id/title_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/open_the_case"
+            android:textSize="19dp"/>
+
+        <com.malinskiy.materialicons.widget.IconTextView
+            android:id="@+id/image_error"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:textSize="80dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:text="{md-error}"
+            android:layout_below="@+id/title_error"/>
+
+        <com.yoavst.quickapps.AutoResizeTextView
+            android:id="@+id/extra_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/image_error"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="2"
+            android:gravity="center"
+            android:text="@string/register_us_please"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/refresh"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:cb_color="@color/accent_color"
+        app:cb_pressedRingWidth="8dip" />
+</RelativeLayout>

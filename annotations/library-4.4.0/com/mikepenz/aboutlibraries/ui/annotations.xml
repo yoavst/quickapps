@@ -1,0 +1,11 @@
+<root>
+    <item name='com.mikepenz.aboutlibraries.ui.LibsFragment android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.LibsActivity boolean onOptionsItemSelected(android.view.MenuItem) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.LibsFragment android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

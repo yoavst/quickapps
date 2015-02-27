@@ -1,0 +1,14 @@
+<root>
+    <item name='com.googlecode.mp4parser.h264.read.CAVLCReader CAVLCReader(java.io.InputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.read.CAVLCReader byte[] read(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.read.CAVLCReader java.lang.Object readCE(com.googlecode.mp4parser.h264.BTree, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.read.BitstreamReader BitstreamReader(java.io.InputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

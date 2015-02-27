@@ -1,0 +1,47 @@
+<root>
+    <item name='com.googlecode.mp4parser.boxes.piff.PiffSampleEncryptionBox byte[] getUserType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.PiffTrackEncryptionBox byte[] getUserType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.ProtectionSpecificHeader java.nio.ByteBuffer getData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfxdBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfxdBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfrfBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfxdBox byte[] getUserType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.UuidBasedProtectionSystemSpecificHeaderBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfrfBox byte[] getUserType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.UuidBasedProtectionSystemSpecificHeaderBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.ProtectionSpecificHeader void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.ProtectionSpecificHeader com.googlecode.mp4parser.boxes.piff.ProtectionSpecificHeader createFor(java.util.UUID, java.nio.ByteBuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.piff.TfrfBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

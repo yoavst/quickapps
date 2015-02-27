@@ -1,0 +1,338 @@
+<root>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdat(long, long, com.googlecode.mp4parser.authoring.Track, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStsc(com.googlecode.mp4parser.authoring.Track, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;, com.coremedia.iso.boxes.SampleTableBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createCencBoxes(com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, com.coremedia.iso.boxes.SampleTableBox, int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTfra(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.Container) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createSdtp(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.TrackBox createTrackBox(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTrun(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStts(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder long[] getSampleSizes(long, long, com.googlecode.mp4parser.authoring.Track, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder java.util.Date getDate()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStsc(com.googlecode.mp4parser.authoring.Track, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;, com.coremedia.iso.boxes.SampleTableBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder java.util.List&lt;com.googlecode.mp4parser.authoring.Track&gt; sortTracksInSequence(java.util.List&lt;com.googlecode.mp4parser.authoring.Track&gt;, int, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,long[]&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.DataInformationBox createDinf(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createCencBoxes(com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, com.coremedia.iso.boxes.SampleTableBox, int[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMinf(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.StaticFragmentIntersectionFinderImpl long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSaiz(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTfra(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.Container)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.TrackBox createTrackBox(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.TrackBox createTrackBox(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createMfhd(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.MovieFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTkhd(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.Mp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl long[] getCommonIndices(long[], long[], long, long[]...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentIntersectionFinder long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStts(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createCtts(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createCencBoxes(com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, com.coremedia.iso.boxes.SampleTableBox, int[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder long[] getSampleSizes(long, long, com.googlecode.mp4parser.authoring.Track, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMvhd(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSenc(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl long[] getCommonIndices(long[], long[], long, long[]...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createStsd(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createStbl(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Box createStbl(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMoof(long, long, com.googlecode.mp4parser.authoring.Track, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createFtyp(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTfhd(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTrun(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTraf(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.MovieFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl long[] getCommonIndices(long[], long[], long, long[]...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTkhd(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStco(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;, com.coremedia.iso.boxes.SampleTableBox) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStss(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTrex(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStsz(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl java.util.List&lt;long[]&gt; getSyncSamplesTimestamps(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createEdts(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.SyncSampleIntersectFinderImpl java.util.List&lt;long[]&gt; getSyncSamplesTimestamps(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMvex(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSenc(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdhd(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Box createStbl(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMvex(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.MovieBox createMovieBox(com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStsd(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStco(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;, com.coremedia.iso.boxes.SampleTableBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTfdt(long, com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Box createStbl(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMfra(com.googlecode.mp4parser.authoring.Movie, com.coremedia.iso.boxes.Container)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdia(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder java.util.List&lt;com.googlecode.mp4parser.authoring.Sample&gt; getSamples(long, long, com.googlecode.mp4parser.authoring.Track, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTfhd(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMfra(com.googlecode.mp4parser.authoring.Movie, com.coremedia.iso.boxes.Container) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMoof(long, long, com.googlecode.mp4parser.authoring.Track, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.ByteBufferHelper java.util.List&lt;java.nio.ByteBuffer&gt; mergeAdjacentBuffers(java.util.List&lt;java.nio.ByteBuffer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.TwoSecondIntersectionFinder long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createStsd(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTraf(long, long, com.googlecode.mp4parser.authoring.Track, int, com.coremedia.iso.boxes.fragment.MovieFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.FileTypeBox createFileTypeBox(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.TwoSecondIntersectionFinder long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTrak(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdia(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSaio(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdiaHdlr(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createStbl(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMvhd(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createTfdt(long, com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdhd(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMoov(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.Mp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder long getTimescale(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder java.util.List&lt;com.coremedia.iso.boxes.Box&gt; createMoofMdat(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Container build(com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTrex(com.googlecode.mp4parser.authoring.Movie, com.googlecode.mp4parser.authoring.Track) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder int createFragment(java.util.List&lt;com.coremedia.iso.boxes.Box&gt;, com.googlecode.mp4parser.authoring.Track, long[], int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.Box createEdts(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTrak(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder java.util.List&lt;com.coremedia.iso.boxes.Box&gt; createMoofMdat(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createSubs(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMdiaHdlr(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.ByteBufferHelper java.util.List&lt;java.nio.ByteBuffer&gt; mergeAdjacentBuffers(java.util.List&lt;java.nio.ByteBuffer&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSaiz(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createTfra(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.Container) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder void createStsd(com.googlecode.mp4parser.authoring.Track, com.coremedia.iso.boxes.SampleTableBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder void createSaio(long, long, com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, int, com.coremedia.iso.boxes.fragment.TrackFragmentBox) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentIntersectionFinder long[] sampleNumbers(com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMinf(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.TrackBox createTrackBox(com.googlecode.mp4parser.authoring.Track, com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.DefaultMp4Builder com.coremedia.iso.boxes.MovieBox createMovieBox(com.googlecode.mp4parser.authoring.Movie, java.util.Map&lt;com.googlecode.mp4parser.authoring.Track,int[]&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.builder.FragmentedMp4Builder com.coremedia.iso.boxes.Box createMoov(com.googlecode.mp4parser.authoring.Movie) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

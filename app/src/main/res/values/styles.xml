@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="darkTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicatorLight</item>
+    </style>
+
+    <style name="lightTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicatorLight</item>
+    </style>
+
+    <style name="QCircle.AppTheme" parent="@style/MaterialDrawerTheme.Light.TranslucentStatus" tools:ignore="ResourceCycle">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="toolbarStyle">@style/AppTheme.Toolbar</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicatorLight</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="CustomCirclePageIndicatorLight">
+        <item name="fillColor">#000</item>
+        <item name="strokeColor">#000</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">5dp</item>
+        <item name="centered">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

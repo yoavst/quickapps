@@ -1,0 +1,92 @@
+<root>
+    <item name='com.googlecode.mp4parser.util.ByteBufferByteChannel int write(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix com.googlecode.mp4parser.util.Matrix fromFileOrder(double, double, double, double, double, double, double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path java.util.List&lt;T&gt; getPaths(com.coremedia.iso.boxes.Container, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.ChannelHelper void readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.DateHelper java.util.Date convert(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path java.util.List&lt;T&gt; getPaths(com.coremedia.iso.boxes.Box, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix com.googlecode.mp4parser.util.Matrix fromByteBuffer(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.IntHashMap boolean containsValue(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix ROTATE_90'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path boolean isContained(com.coremedia.iso.boxes.Box, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path T getPath(com.coremedia.iso.boxes.Container, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.ChannelHelper int readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Logger com.googlecode.mp4parser.util.Logger getLogger(java.lang.Class) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.UUIDConverter java.util.UUID convert(byte[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix ROTATE_270'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.ChannelHelper void readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path T getPath(com.coremedia.iso.boxes.Box, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.IntHashMap boolean contains(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix ROTATE_0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Logger com.googlecode.mp4parser.util.Logger getLogger(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.UUIDConverter byte[] convert(java.util.UUID) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path T getPath(com.googlecode.mp4parser.AbstractContainerBox, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.UUIDConverter byte[] convert(java.util.UUID)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.DateHelper long convert(java.util.Date) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Path java.lang.String createPath(com.coremedia.iso.boxes.Box) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.ByteBufferByteChannel int read(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix com.googlecode.mp4parser.util.Matrix fromByteBuffer(java.nio.ByteBuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.LazyList java.util.Iterator&lt;E&gt; iterator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.util.Matrix ROTATE_180'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

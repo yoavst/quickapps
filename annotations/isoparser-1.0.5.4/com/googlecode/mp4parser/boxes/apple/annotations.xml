@@ -1,0 +1,131 @@
+<root>
+    <item name='com.googlecode.mp4parser.boxes.apple.GenericMediaHeaderTextAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.CleanApertureAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackLoadSettingsAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TimeCodeBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.CleanApertureAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleRecordingYearBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TimeCodeBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackEncodedPixelsDimensionsAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDataBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.QuicktimeTextSampleEntry void parse(com.googlecode.mp4parser.DataSource, java.nio.ByteBuffer, long, com.coremedia.iso.BoxParser) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.Utf8AppleDataBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.PixelAspectRationAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.PixelAspectRationAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDataBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.QuicktimeTextSampleEntry void getBox(java.nio.channels.WritableByteChannel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackLoadSettingsAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleTrackNumberBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.QuicktimeTextSampleEntry TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackEncodedPixelsDimensionsAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.GenericMediaHeaderAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TimeCodeBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDiskNumberBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.CleanApertureAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.GenericMediaHeaderTextAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.PixelAspectRationAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.BaseMediaInfoAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDataBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleVariableSignedIntegerBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackLoadSettingsAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDataBox java.nio.ByteBuffer parseDataLength4ccTypeCountryLanguageAndReturnRest(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.BaseMediaInfoAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.GenericMediaHeaderTextAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleCoverBox void parseData(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.AppleDataBox void writeDataLength4ccTypeCountryLanguage(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.QuicktimeTextSampleEntry void parse(com.googlecode.mp4parser.DataSource, java.nio.ByteBuffer, long, com.coremedia.iso.BoxParser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackProductionApertureDimensionsAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.BaseMediaInfoAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackEncodedPixelsDimensionsAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackProductionApertureDimensionsAtom void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackProductionApertureDimensionsAtom void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.apple.TrackApertureModeDimensionAtom TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

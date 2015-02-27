@@ -1,0 +1,14 @@
+<root>
+    <item name='com.mikepenz.aboutlibraries.util.Colors void writeToParcel(android.os.Parcel, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.util.Util android.content.pm.ApplicationInfo getApplicationInfo(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.util.Util android.content.pm.PackageInfo getPackageInfo(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.util.Colors CREATOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

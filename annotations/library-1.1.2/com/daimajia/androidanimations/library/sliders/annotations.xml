@@ -1,0 +1,26 @@
+<root>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideInRightAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideInUpAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideOutLeftAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideInLeftAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideOutDownAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideOutUpAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideOutRightAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.sliders.SlideInDownAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

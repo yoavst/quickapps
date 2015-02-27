@@ -1,0 +1,74 @@
+<root>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.AudioSpecificConfig java.nio.ByteBuffer serialize()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.AudioSpecificConfig void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BaseDescriptor void parse(int, java.nio.ByteBuffer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BaseDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.DecoderSpecificInfo void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ExtensionProfileLevelDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BitWriterBuffer BitWriterBuffer(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.DecoderConfigDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ESDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ObjectDescriptorFactory com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BaseDescriptor createFrom(int, java.nio.ByteBuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BitReaderBuffer BitReaderBuffer(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.SLConfigDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.UnknownDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.InitialObjectDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ExtensionDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ProfileLevelIndicationDescriptor void parseDetail(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.DecoderConfigDescriptor java.nio.ByteBuffer serialize()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.SLConfigDescriptor java.nio.ByteBuffer serialize()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ESDescriptor java.nio.ByteBuffer serialize()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors.ObjectDescriptorFactory com.googlecode.mp4parser.boxes.mp4.objectdescriptors.BaseDescriptor createFrom(int, java.nio.ByteBuffer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,8 @@
+<root>
+    <item name='com.mikepenz.aboutlibraries.detector.Detect java.util.List&lt;com.mikepenz.aboutlibraries.entity.Library&gt; detect(android.content.Context, java.util.List&lt;com.mikepenz.aboutlibraries.entity.Library&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.detector.Detect java.util.List&lt;com.mikepenz.aboutlibraries.entity.Library&gt; detect(android.content.Context, java.util.List&lt;com.mikepenz.aboutlibraries.entity.Library&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

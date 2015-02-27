@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_width="285.5dp"
+                tools:layout_height="155dp"
+                android:background="@android:color/background_light"
+                tools:ignore="SpUsage">
+
+    <TextView
+        android:id="@+id/time_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#83A16F"
+        android:textSize="@dimen/calendar_title"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/padding_start"
+        android:paddingEnd="@dimen/padding_end"
+        android:layout_alignParentTop="true"
+        tools:text="In 1 hour"
+        android:text="tesT"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="@dimen/calendar_title"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:maxLines="2"
+        android:paddingStart="@dimen/padding_start"
+        android:paddingEnd="@dimen/padding_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="LUNCH WITH MOM"
+        android:textAllCaps="true"
+        android:layout_below="@+id/time_left"
+        android:textColor="@android:color/black"/>
+
+    <com.yoavst.quickapps.AutoResizeTextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:paddingTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/padding_start"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:textColor="@android:color/black"
+        tools:text="Today, 14:30 - 17:00"
+        android:textSize="@dimen/calendar_date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:paddingTop="4dp"
+        android:textSize="@dimen/calendar_location"
+        android:layout_below="@+id/date"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginStart="@dimen/padding_start"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:textColor="@android:color/black"
+        tools:text="at Central Cafe, New York"/>
+
+</RelativeLayout>

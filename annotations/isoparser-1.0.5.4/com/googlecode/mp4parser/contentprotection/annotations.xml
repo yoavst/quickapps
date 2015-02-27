@@ -1,0 +1,32 @@
+<root>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.GenericHeader void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord java.util.List&lt;com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord&gt; createFor(java.nio.ByteBuffer, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord.DefaulPlayReadyRecord void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader java.nio.ByteBuffer getData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord.RMHeader void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.contentprotection.PlayReadyHeader.PlayReadyRecord.EmeddedLicenseStore void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

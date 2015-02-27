@@ -1,0 +1,137 @@
+<root>
+    <item name='com.daimajia.easing.BuildConfig BUILD_TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator, com.daimajia.easing.BaseEasingMethod.EasingListener...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CircEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill ExpoEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BounceEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CircEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BaseEasingMethod void addEasingListeners(com.daimajia.easing.BaseEasingMethod.EasingListener...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BaseEasingMethod java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BaseEasingMethod java.lang.Float evaluate(float, java.lang.Number, java.lang.Number) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BounceEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.PropertyValuesHolder glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.PropertyValuesHolder) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.PropertyValuesHolder glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.PropertyValuesHolder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CubicEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BackEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill ExpoEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuintEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CubicEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CubicEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BackEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BuildConfig VERSION_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator, com.daimajia.easing.BaseEasingMethod.EasingListener...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill SineEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BounceEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill SineEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuadEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuadEaseInOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill ElasticEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator, com.daimajia.easing.BaseEasingMethod.EasingListener...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuintEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.ValueAnimator glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.ValueAnimator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuadEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill CircEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BaseEasingMethod java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill ExpoEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill ElasticEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BuildConfig FLAVOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BaseEasingMethod java.lang.Float evaluate(float, java.lang.Number, java.lang.Number) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Glider com.nineoldandroids.animation.PropertyValuesHolder glide(com.daimajia.easing.Skill, float, com.nineoldandroids.animation.PropertyValuesHolder)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill BackEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill SineEaseOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.BuildConfig PACKAGE_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill Linear'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.easing.Skill QuintEaseIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

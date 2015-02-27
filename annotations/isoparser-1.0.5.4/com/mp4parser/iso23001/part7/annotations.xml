@@ -1,0 +1,17 @@
+<root>
+    <item name='com.mp4parser.iso23001.part7.ProtectionSystemSpecificHeaderBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23001.part7.TrackEncryptionBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23001.part7.ProtectionSystemSpecificHeaderBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23001.part7.ProtectionSystemSpecificHeaderBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23001.part7.CencSampleAuxiliaryDataFormat com.mp4parser.iso23001.part7.CencSampleAuxiliaryDataFormat.Pair createPair(int, long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

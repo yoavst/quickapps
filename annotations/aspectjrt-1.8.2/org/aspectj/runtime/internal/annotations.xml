@@ -1,0 +1,32 @@
+<root>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object booleanObject(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object byteObject(byte)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object shortObject(short)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object floatObject(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object intObject(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object charObject(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.AroundClosure org.aspectj.lang.ProceedingJoinPoint linkClosureAndJoinPoint(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object doubleObject(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.Conversions java.lang.Object longObject(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.AroundClosure org.aspectj.lang.ProceedingJoinPoint linkClosureAndJoinPoint()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

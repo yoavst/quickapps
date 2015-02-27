@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stopwatch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_width="285.5dp"
+    tools:layout_height="155dp"
+    android:layout_centerHorizontal="true"
+    tools:ignore="SpUsage">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/stopwatch_time"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/stopwatch_start_padding"
+        android:layout_marginRight="@dimen/stopwatch_start_padding"
+        android:textSize="@dimen/stopwatch_button"
+        android:textColor="@android:color/white"
+        android:background="@drawable/stopwatch_btn_start"
+        android:text="@string/start"/>
+
+    <LinearLayout
+        android:id="@+id/running_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/stopwatch_start_padding"
+        android:layout_marginRight="@dimen/stopwatch_start_padding"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/stopwatch_small_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/stopwatch_btn_stop"
+            android:text="@string/stop"/>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/stopwatch_small_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/stopwatch_btn_pause"
+            android:text="@string/pause"/>
+    </LinearLayout>
+</RelativeLayout>

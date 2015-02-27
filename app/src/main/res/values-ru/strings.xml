@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_us_please">Нам нужен доступ к уведомлениям</string>
+    <string name="open_the_case">Откройте крышку</string>
+    <string name="torch_is_on">Фонарик включен</string>
+    <string name="touch_to_turn_off">Коснитесь, чтобы отключить</string>
+    <string name="unknown">неизвестный</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="all_day">(весь день)</string>
+    <string name="now">Сейчас</string>
+    <string name="in">В</string>
+    <string name="minute_s">минута/минуты</string>
+    <string name="hour_s">час/часы</string>
+    <string name="day_s">день/дни</string>
+    <string name="week_s">неделя/недели</string>
+    <string name="month_s">месяц/месяцы</string>
+    <string name="more_then_year">Осталось более года</string>
+    <string name="notification_empty">Нет уведомлений</string>
+    <string name="notification_removed">Уведомления очищены</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_off">Wi-Fi выключен</string>
+    <string name="wifi_on">Wi-Fi включен</string>
+    <string name="wifi_connected">Подключено к Wi-Fi сети <b><i>%1$s</i></b></string>
+    <string name="wifi_network_available">Доступны открытые сети Wi-Fi</string>
+    <string name="wifi_turning_off">Выключение Wi-Fi</string>
+    <string name="wifi_turning_on">Включение Wi-Fi</string>
+    <string name="sound_sound">Звук</string>
+    <string name="sound_vibrate">Вибрация</string>
+    <string name="sound_silent">Без звука</string>
+    <string name="data_data">Данные</string>
+    <string name="data_off">Передача данных выключена</string>
+    <string name="data_on">Передача данных включена</string>
+    <string name="data_off_airplane">Режим самолета - передача данных отключена</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_off">Bluetooth выключен</string>
+    <string name="bluetooth_on">Bluetooth включен</string>
+    <string name="bluetooth_turning_off">Выключение Bluetooth</string>
+    <string name="bluetooth_turning_on">Включение Bluetooth</string>
+    <string name="hotSpot">Точка доступа</string>
+    <string name="hotSpot_off">Точка доступа отключена</string>
+    <string name="hotSpot_on">Точка доступа ключена</string>
+    <string name="cant_change_airplane_mode">Невозможно изменить режим самолета</string>
+    <string name="brightness">Яркость</string>
+    <string name="brightness_auto">Автоматическая яркость</string>
+    <string name="brightness_med">Средняя ясркость</string>
+    <string name="brightness_max">Высокая яркость</string>
+    <string name="battery">Батарея</string>
+    <string name="charging">заряжается</string>
+    <string name="news_cant_init">Невозможно загрузить модуль.</string>
+    <string name="news_cant_init_subtext">Пожалуйста, закройте приложение и повторите попытку.</string>
+    <string name="news_network_error">Ошибка сети</string>
+    <string name="news_network_error_subtext">Пожалуйста, проверьте Ваше подключение к Интернету и попробуйте снова</string>
+    <string name="loading">Загрузка&#8230;</string>
+    <string name="news_should_login">@string/login_to_feedly</string>
+    <string name="news_should_login_subtext">Пожалуйста, откройте чехол, чтобы войти</string>
+    <string name="login_to_feedly">Войти в Feedly</string>
+    <string name="news_no_content">Нет доступного контента</string>
+    <string name="news_no_content_subtext">Обновите, чтобы увидеть новое содержание</string>
+    <string name="no_connection">Нет соединения</string>
+    <string name="start_downloading">Начать загрузку</string>
+    <string name="start">Старт</string>
+    <string name="pause">Пауза</string>
+    <string name="stop">Стоп</string>
+    <string name="resume">Продолжить</string>
+    <string name="brightness_low">Низкая яркость</string>
+    <string name="stopwatch_run_on_back">Запустить в фоне</string>
+    <string name="stopwatch_run_on_back_message">Хотите запустить секундомер в фоновом режиме?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="error">Ошибка</string>
+    <string name="how_to_add">Как добавить</string>
+    <string name="how_to_add_step_1">1. Нажмите на кнопку, чтобы открыть настройки</string>
+    <string name="how_to_add_step_2">2. Нажмите "Выбрать приложения"</string>
+    <string name="how_to_add_step_3">3. Добавьте модули по своему вкусу</string>
+    <string name="how_to_add_tip">Подсказка: Quick Launcher - основной модуль, который дает Вам доступ ко всем остальным модулям!</string>
+    <string name="about">Quick Circle Apps - группа модулей для чехла Quick Circle для LG G3. Также приложение содержит модули для QSlide.</string>
+    <string name="about_2">Приложение использует LG Quick Circle SDK</string>
+    <string name="about_3">Автор: Yoav Sternberg</string>
+    <string name="about_4">Почта: yoav.goop@gmail.com</string>
+    <string name="about_5">Дополнительные благодарности: Marco Kirchner (@BigBoot) за модуль компаса и другое, Marko Vene (@mark232) за базовую поддержку Lollipop.</string>
+    <string name="about_mail_chooser">Выберите почтовый клиент</string>
+    <string name="about_intent_failed">Не найдено установленных почтовых клиентов</string>
+    <string name="source_description">Исходный код для Quick Circle Apps содержится в Github. Приложение использует Gradle для управления всеми зависимостями, как указано ниже.</string>
+    <string name="modules">Модули</string>
+    <string name="source">Источник</string>
+    <string name="about_title">О приложении</string>
+    <string name="settings">Настройки</string>
+    <string name="torch_launcher_shortcut">Ярлык лончера</string>
+    <string name="torch_launcher_shortcut_subtext">Показать значок фонарика в меню приложений</string>
+    <string name="torch_qslide_shortcut">Ярлык QSlide</string>
+    <string name="torch_qslide_shortcut_subtext">Показать значок фонарика в строке QSlide</string>
+    <string name="reboot_for_update">Перезагрузите или перезапустите SystemUI для применения изменений</string>
+    <string name="restart_launcher_for_update">Перезагрузите или перезапустите Ваш лончер для применения изменений</string>
+    <string name="torch_force_floating">Плавающий режим принудительно</string>
+    <string name="torch_force_floating_subtext">Принудительно запускать плавающий режим QSlide для модуля фонарика</string>
+    <string name="changed_successfully">Успешно изменено</string>
+    <string name="music_listener_title">Открыть настройки контроля уведомлений</string>
+    <string name="music_listener_subtitle">Модулю необходим доступ к уведомлениям</string>
+    <string name="repeating_title">Показать повторяющиеся события</string>
+    <string name="location_title">Показать место проведения события</string>
+    <string name="location_subtitle">Все, кто имеют доступ к Вашему телефону, будут видеть место события</string>
+    <string name="privacy_title">Показать содержимое уведомления</string>
+    <string name="privacy_subtitle">Содержание Вашего уведомления может быть секретным</string>
+    <string name="launcher_control_items">Порядок модулей</string>
+    <string name="launcher_control_items_subtitle">Порядок модулей в лончере</string>
+    <string name="launcher_load_external">Загрузка внешних модулей</string>
+    <string name="launcher_load_external_subtitle">Показывать внешние модули в лончере</string>
+    <string name="launcher_auto_add">Автодобавление модулей</string>
+    <string name="launcher_auto_add_subtitle">Автоматически добавлять новые модули</string>
+    <string name="toggles_order_items">Порядок переключателей</string>
+    <string name="toggles_order_items_subtitle">Порядок переключателей в модуле</string>
+    <string name="battery_title">Показывать процент заряда</string>
+    <string name="battery_subtitle">Показывать процент заряда как первый переключатель</string>
+    <string name="force_floating_subtext">При открытии чехла будет запущен калькулятор в плавающем окне</string>
+    <string name="show_millis_title">Показывать миллисекунды</string>
+    <string name="show_millis_subtitle">Показывать миллисекунды в таймере</string>
+    <string name="news_logout_feedly">Выход из Feedly</string>
+    <string name="yesterday">Вчера</string>
+    <string name="speed_dial">Быстрый набор</string>
+    <string name="jump_to_setting">Переход на страницу</string>
+    <string name="choose_number">Выбор номера</string>
+    <string name="empty_speed_dial">Пустая ячейка</string>
+    <string name="speed_dial_instructions">(Нажмите для изменения, удерживайте, чтобы увидеть значение)</string>
+    <string name="launcher_remove_lg">Показывать дубликаты приложений</string>
+    <string name="launcher_remove_lg_subtitle">Показывать приложения, отображающиеся в лончере LG</string>
+    <string name="hide_settings_from_quick_circle">Скрыть настройки из Quick Circle</string>
+    <string name="am_pm_title">12-часовой формат</string>
+    <string name="am_pm_subtitle">Использовать AM/PM вместо 24 часов</string>
+    <string name="ask_a_question">Задайте вопрос и нажмите</string>
+    <string name="thinking">Думаю…</string>
+    <string name="music_module_name_service_lollipop">Quick Music для Lollipop 5.0</string>
+    <string name="music_module_name_service">Quick Music для KitKat</string>
+    <string name="orientation">Проверка вертикального лончера</string>
+    <string name="game_over">Конец игры</string>
+    <string name="start_game">Запуск игры</string>
+    <string name="round">раунд %1$d</string>
+    <string name="your_score">Ваш счёт %1$d</string>
+    <string name="g2_mode">Режим G2</string>
+    <string name="g3_mode">Режим G3</string>
+    <string name="show_settings_from_quick_circle">Показывать настройки в Quick Circle</string>
+    <string name="auto_launch_title">Автозапуск при уведомлении</string>
+    <string name="auto_launch_subtitle">Модуль автоматически откроется при наличии чехла quick circle и получении уведомления</string>
+    <string name="start_record">Начать запись</string>
+    <string name="voice_recorded">Запись выполнена</string>
+    <string name="successfully_record_audio">Аудио успешно записано. Файл сохранён в папке VoiceRecorder на sd-карте.</string>
+    <string name="delete_record">Запись удалена</string>
+    <string name="error_no_permission_for_lock_the_screen">Откройте чехол для включения разрешений экрана блокировки для этого приложения!</string>
+    <string name="missing_permissions">Нет разрешений</string>
+    <string name="dont_show_again">Не показывать</string>
+    <string name="add_admin_extra_app_text">Блокировка двойным нажатием</string>
+    <string name="admin_permission">Вкл администратора для dt2s</string>
+    <string-array name="magic_ball">
+        <item>Это однозначно</item>
+        <item>Определённо так</item>
+        <item>Без сомнений</item>
+        <item>Точно так</item>
+        <item>Можете быть уверены</item>
+        <item>Насколько я вижу, да</item>
+        <item>Очень вероятно</item>
+        <item>Хорошая перспектива</item>
+        <item>Да</item>
+        <item>Знаки показывают, что да</item>
+        <item>Ответ неясен, попробуйте ещё</item>
+        <item>Спросите позже</item>
+        <item>Лучше Вам этого не говорить</item>
+        <item>Невозможно предсказать сейчас</item>
+        <item>Сконцентрируйтесь и спросите снова</item>
+        <item>Не рассчитывайте на это</item>
+        <item>Мой ответ - нет</item>
+        <item>Мои источники говорят нет</item>
+        <item>Перспектива не такая уж хорошая</item>
+        <item>Очень сомнительно</item>
+    </string-array>
+</resources>

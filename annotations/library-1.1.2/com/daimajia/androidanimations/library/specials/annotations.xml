@@ -1,0 +1,11 @@
+<root>
+    <item name='com.daimajia.androidanimations.library.specials.RollOutAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.specials.RollInAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.specials.HingeAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

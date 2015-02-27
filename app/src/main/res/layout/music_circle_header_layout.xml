@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/information_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_button_background_semi_transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="locale">
+
+        <ImageButton
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/volume_control"
+            android:paddingStart="51.5dp"
+            android:paddingEnd="51.5dp"
+            android:background="@drawable/ic_music_cover_vol"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/now_playing"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="locale">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/artist_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.75dp"
+                android:layout_marginBottom="6dp"
+                android:layoutDirection="locale"
+                android:paddingStart="73dp"
+                android:textStyle="bold"
+                android:paddingEnd="73dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                tools:text="Bon Jovi"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="locale"
+                android:ellipsize="marquee"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                tools:text="It's My Life"
+                android:textSize="20sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

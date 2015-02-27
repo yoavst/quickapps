@@ -1,0 +1,425 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yoavst.quickapps">
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.lge.lockscreensettings.permission.LOCK_SETTINGS_DATA" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/QCircle.AppTheme"
+        tools:replace="android:label, android:theme, android:icon">
+        <service android:name="com.lge.app.floating.FloatingWindowService" />
+        <uses-library
+            android:name="com.lge.app.floating"
+            android:required="false" />
+        <!-- Desktop part [START] -->
+        <activity
+            android:name=".desktop.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.desktop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".desktop.LaunchAdminActivity"
+            android:excludeFromRecents="true" />
+        <!-- Desktop part [END] -->
+        <!-- Torch part [START] -->
+        <activity
+            android:name=".torch.PhoneActivity"
+            android:icon="@drawable/torch_launcher"
+            android:label="@string/torch_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.torch"
+            android:theme="@style/darkTheme" />
+        <activity-alias
+            android:name=".torch.PhoneActivityLauncher"
+            android:icon="@drawable/torch_launcher"
+            android:label="@string/torch_module_name"
+            android:targetActivity=".torch.PhoneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:name=".torch.CTorchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/torch_icon"
+            android:label="@string/torch_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.torch"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".torch.WidgetProvider"
+            android:icon="@drawable/torch_launcher"
+            android:label="@string/torch_module_name"
+            android:taskAffinity="com.yoavst.quickapps.torch">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/torch_widget_provider" />
+        </receiver>
+        <receiver
+            android:name=".torch.TorchReceiver"
+            android:taskAffinity="com.yoavst.quickapps.torch">
+            <intent-filter>
+                <action android:name="com.yoavst.toggletorch" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".torch.NotificationReceiver"
+            android:taskAffinity="com.yoavst.quickapps.torch">
+            <intent-filter>
+                <action android:name="com.yoavst.notificationtorch" />
+            </intent-filter>
+        </receiver>
+
+        <activity-alias
+            android:name=".torch.PhoneActivity"
+            android:enabled="true"
+            android:icon="@drawable/torch_icon"
+            android:label="@string/torch_module_name"
+            android:targetActivity=".torch.PhoneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lge.intent.category.QSLIDE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="cleartask"
+                android:value="false" />
+            <meta-data
+                android:name="min version"
+                android:value="2.5" />
+        </activity-alias>
+        <!-- Torch part [END] -->
+        <!-- Music part [START] -->
+        <activity
+            android:name=".music.CMusicActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/music_icon"
+            android:label="@string/music_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.music"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".music.RemoteControlService"
+            android:enabled="@bool/is_pre_lollipop"
+            android:icon="@drawable/music_launcher"
+            android:label="@string/music_module_name_service"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:taskAffinity="com.yoavst.quickapps.music">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".music.RemoteControlServiceLollipop"
+            android:enabled="@bool/is_lollipop"
+            android:icon="@drawable/music_launcher"
+            android:label="@string/music_module_name_service_lollipop"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:taskAffinity="com.yoavst.quickapps.music">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE_LOLLIPOP" />
+            </intent-filter>
+        </service>
+        <!-- Music part [END] -->
+        <!-- Calendar part [START] -->
+        <activity
+            android:name=".calendar.CCalendarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/calendar_icon"
+            android:label="@string/calendar_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.calendar"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Calendar part [END] -->
+        <!-- Notifications part [START] -->
+        <activity
+            android:name=".notifications.CNotificationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/notifications_icon"
+            android:label="@string/notification_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.notifications"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".notifications.NotificationService"
+            android:icon="@drawable/notifications_launcher"
+            android:label="@string/notification_module_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:taskAffinity="com.yoavst.quickapps.notifications">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <!-- Notifications part [END] -->
+        <!-- Ball part [START] -->
+        <activity
+            android:name=".ball.CMagic8BallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ball_icon"
+            android:label="@string/ball_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.ball"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Ball part [END] -->
+        <!-- Compass part [START] -->
+        <activity
+            android:name=".compass.CCompassActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/compass_icon"
+            android:label="@string/compass_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.compass"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".compass.PhoneActivity"
+            android:icon="@drawable/compass_launcher"
+            android:label="@string/compass_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.compass"
+            android:theme="@style/darkTheme" />
+        <!-- Compass part [END] -->
+        <!-- Stopwatch part [START] -->
+        <activity
+            android:name=".clock.CStopwatchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/clock_icon"
+            android:label="@string/clock_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.clock"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".clock.PhoneActivity"
+            android:icon="@drawable/clock_icon"
+            android:label="@string/clock_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.clock"
+            android:theme="@style/darkTheme" />
+        <!-- Stopwatch part [END] -->
+        <!-- Calculator part [START] -->
+        <activity
+            android:name=".calculator.CCalculatorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/calculator_icon"
+            android:label="@string/calculator_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.calculator"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Calculator part [END] -->
+        <!-- Recorder part [START] -->
+        <activity
+            android:name=".recorder.CRecorderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/recorder_icon"
+            android:label="@string/recorder_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.recorder"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Recorder part [END] -->
+        <!-- Dialer part [START] -->
+        <activity
+            android:name=".dialer.CDialerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/dialer_icon"
+            android:label="@string/dialer_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.dialer"
+            android:theme="@style/lightTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Dialer part [END] -->
+        <!-- Simon part [start] -->
+        <activity
+            android:name=".simon.CSimonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/simon_icon"
+            android:label="@string/simon_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.simon"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Simon part [END] -->
+        <!-- Launcher part [START] -->
+        <activity
+            android:name=".launcher.CLauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/launcher_icon"
+            android:label="@string/launcher_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.launhcer"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Launcher part [END] -->
+        <!-- Toggles part [START] -->
+        <activity
+            android:name=".toggles.CTogglesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/toggles_icon"
+            android:label="@string/toggles_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.toggles"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <!-- Toggles part [END] -->
+        <!-- News part [START] -->
+        <activity
+            android:name=".news.CNewsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/news_icon"
+            android:label="@string/news_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.news"
+            android:theme="@style/darkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".news.LoginActivity" />
+        <!-- News part [END] -->
+        <receiver android:name=".CoverReceiver">
+            <intent-filter>
+                <action android:name="com.lge.android.intent.action.ACCESSORY_COVER_EVENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".AdminListener"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_permissions" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        </application>
+</manifest>

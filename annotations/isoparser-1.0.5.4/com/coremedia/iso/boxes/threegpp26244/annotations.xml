@@ -1,0 +1,11 @@
+<root>
+    <item name='com.coremedia.iso.boxes.threegpp26244.LocationInformationBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.threegpp26244.LocationInformationBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.threegpp26244.LocationInformationBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

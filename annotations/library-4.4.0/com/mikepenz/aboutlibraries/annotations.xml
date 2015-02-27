@@ -1,0 +1,101 @@
+<root>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; findInInternalLibrary(java.lang.String, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.License&gt; getLicenses()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; getLibraries()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.lang.String[] toStringArray(java.lang.reflect.Field[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.BuildConfig APPLICATION_ID'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.BuildConfig PACKAGE_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_APP_ABOUT_ICON'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.HashMap&lt;java.lang.String,java.lang.String&gt; getCustomVariables(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; getAutoDetectedLibraries()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.BuildConfig VERSION_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_LIBS_MODIFICATION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; getExternLibraries()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.lang.String insertVariables(java.lang.String, java.util.HashMap&lt;java.lang.String,java.lang.String&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_TITLE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; getInternLibraries()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.BuildConfig FLAVOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_LICENSE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_AUTODETECT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_LIBS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_ANIMATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_FIELDS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_COLORS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_EXCLUDE_LIBS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_VERSION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.BuildConfig BUILD_TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_APP_ABOUT_VERSION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; findLibrary(java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; findInExternalLibrary(java.lang.String, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_LICENSE_DIALOG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_APP_ABOUT_DESCRIPTION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_SORT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs BUNDLE_THEME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.Libs java.util.ArrayList&lt;com.mikepenz.aboutlibraries.entity.Library&gt; prepareLibraries(java.lang.String[], java.lang.String[], boolean, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,623 @@
+<root>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat.Builder newBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearRawInput()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection.Builder newBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType PAGER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat clearNationalPrefixFormattingRule()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.AsYouTypeFormatter getAsYouTypeFormatter(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.Iterable&lt;com.google.i18n.phonenumbers.PhoneNumberMatch&gt; findNumbers(java.lang.CharSequence, java.lang.String, com.google.i18n.phonenumbers.PhoneNumberUtil.Leniency, long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.Iterable&lt;com.google.i18n.phonenumbers.PhoneNumberMatch&gt; findNumbers(java.lang.CharSequence, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection addMetadata(com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat mergeFrom(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat setFormat(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberUtil.ShortNumberCost STANDARD_RATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearCountryCodeSource()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost STANDARD_RATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo boolean isValidShortNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void format(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat, java.lang.StringBuilder) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata void writeExternal(java.io.ObjectOutput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource FROM_NUMBER_WITH_IDD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void parse(java.lang.String, java.lang.String, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setCountryCode(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setNationalNumber(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc setExampleNumber(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setEmergency(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPremiumRate(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setSameMobileAndFixedLinePattern(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata void readExternal(java.io.ObjectInput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearPreferredDomesticCarrierCode()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPremiumRate(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat INTERNATIONAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatOutOfCountryCallingNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost PREMIUM_RATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType UNKNOWN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setEmergency(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setFixedLine(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc.Builder newBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType FIXED_LINE_OR_MOBILE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberUtil.ShortNumberCost TOLL_FREE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection addMetadata(com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource FROM_NUMBER_WITHOUT_PLUS_SIGN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType TOLL_FREE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void format(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat, java.lang.StringBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat void writeExternal(java.io.ObjectOutput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setLeadingDigits(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil boolean isPossibleNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setNumberOfLeadingZeros(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberMatch com.google.i18n.phonenumbers.Phonenumber.PhoneNumber number()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult IS_POSSIBLE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat void readExternal(java.io.ObjectInput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource FROM_DEFAULT_COUNTRY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType SHORT_NSN_MATCH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatOutOfCountryKeepingAlphaChars(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPager(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setRawInput(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata.Builder com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata build()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setUan(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPreferredInternationalPrefix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setNationalPrefix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setLeadingZeroPossible(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection void readExternal(java.io.ObjectInput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setVoip(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc void readExternal(java.io.ObjectInput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setFixedLine(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatNationalNumberWithCarrierCode(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberMatch java.lang.String rawString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil int getLengthOfGeographicalAreaCode(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType getNumberType(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPager(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setPreferredDomesticCarrierCode(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setMobile(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult TOO_LONG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc setPossibleNumberPattern(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil boolean truncateTooLongNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearCountryCode()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearExtension()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.NumberParseException.ErrorType TOO_LONG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.Leniency VALID'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType PREMIUM_RATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setExtension(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat setNationalPrefixOptionalWhenFormatting(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc boolean exactlySameAs(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType FIXED_LINE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setExtension(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setNationalPrefixTransformRule(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat mergeFrom(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setUan(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setMobile(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setGeneralDesc(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setVoip(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil REGION_CODE_FOR_NON_GEO_ENTITY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberUtil.ShortNumberCost PREMIUM_RATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setPreferredDomesticCarrierCode(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType NSN_MATCH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.NumberParseException.ErrorType NOT_A_NUMBER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat E164'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata.Builder newBuilder()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearNumberOfLeadingZeros()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType NOT_A_NUMBER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setSharedCost(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat addLeadingDigitsPattern(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType VOIP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setSharedCost(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setInternationalPrefix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setVoicemail(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat addLeadingDigitsPattern(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat setNationalPrefixFormattingRule(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc.Builder com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc build()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatNumberForMobileDialing(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatNationalNumberWithPreferredCarrierCode(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setGeneralDesc(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil int getLengthOfNationalDestinationCode(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc mergeFrom(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberUtil.ShortNumberCost UNKNOWN_COST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.Leniency EXACT_GROUPING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo com.google.i18n.phonenumbers.ShortNumberInfo getInstance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.NumberParseException.ErrorType TOO_SHORT_AFTER_IDD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.Phonenumber.PhoneNumber parse(java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.NumberParseException.ErrorType INVALID_COUNTRY_CODE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType EXACT_MATCH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setCountryCodeSource(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult isPossibleNumberWithReason(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata clearIntlNumberFormat()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType SHARED_COST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setCountryCodeSource(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo boolean isPossibleShortNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType MOBILE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.Leniency STRICT_GROUPING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat RFC3966'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.Phonenumber.PhoneNumber parseAndKeepRawInput(java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata addNumberFormat(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType getNumberType(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.Phonenumber.PhoneNumber parseAndKeepRawInput(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String getNationalSignificantNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata addIntlNumberFormat(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setMainCountryForCode(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult TOO_SHORT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPreferredExtnPrefix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setNoInternationalDialling(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.Phonenumber.PhoneNumber parse(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType NO_MATCH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc mergeFrom(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult isPossibleNumberWithReason(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setRawInput(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setTollFree(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setVoicemail(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String convertAlphaCharactersInNumber(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection clear()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType VOICEMAIL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setNationalPrefixForParsing(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil createInstance(com.google.i18n.phonenumbers.MetadataLoader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat setPattern(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setShortCode(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat NATIONAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setCarrierSpecific(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil createInstance(com.google.i18n.phonenumbers.MetadataLoader)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setCountryCode(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil boolean isAlphaNumber(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat com.google.i18n.phonenumbers.Phonemetadata.NumberFormat setDomesticCarrierCodeFormattingRule(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPersonalNumber(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType PERSONAL_NUMBER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setShortCode(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setCarrierSpecific(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setStandardRate(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void parseAndKeepRawInput(java.lang.String, java.lang.String, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setTollFree(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber.CountryCodeSource FROM_NUMBER_WITH_PLUS_SIGN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setNoInternationalDialling(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.ValidationResult INVALID_COUNTRY_CODE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc void writeExternal(java.io.ObjectOutput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost UNKNOWN_COST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String format(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil boolean isValidNumberForRegion(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber mergeFrom(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata addNumberFormat(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatByPattern(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat, java.util.List&lt;com.google.i18n.phonenumbers.Phonemetadata.NumberFormat&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata addIntlNumberFormat(com.google.i18n.phonenumbers.Phonemetadata.NumberFormat) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection.Builder com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection build()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost getExpectedCostForRegion(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost getExpectedCost(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String formatInOriginalFormat(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil boolean isValidNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setMobileNumberPortableRegion(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadataCollection void writeExternal(java.io.ObjectOutput) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo boolean isCarrierSpecific(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc setNationalNumberPattern(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.NumberFormat.Builder com.google.i18n.phonenumbers.Phonemetadata.NumberFormat build()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void parseAndKeepRawInput(java.lang.String, java.lang.String, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setId(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber mergeFrom(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType UAN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clear()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearNationalNumber()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost TOLL_FREE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String normalizeDigitsOnly(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setPersonalNumber(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber clearItalianLeadingZero()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil void parse(java.lang.String, java.lang.String, com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonenumber.PhoneNumber com.google.i18n.phonenumbers.Phonenumber.PhoneNumber setItalianLeadingZero(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil java.lang.String getRegionCodeForNumber(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata com.google.i18n.phonenumbers.Phonemetadata.PhoneMetadata setStandardRate(com.google.i18n.phonenumbers.Phonemetadata.PhoneNumberDesc)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType isNumberMatch(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.ShortNumberInfo com.google.i18n.phonenumbers.ShortNumberInfo.ShortNumberCost getExpectedCost(com.google.i18n.phonenumbers.Phonenumber.PhoneNumber) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.NumberParseException.ErrorType TOO_SHORT_NSN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.i18n.phonenumbers.PhoneNumberUtil.Leniency POSSIBLE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

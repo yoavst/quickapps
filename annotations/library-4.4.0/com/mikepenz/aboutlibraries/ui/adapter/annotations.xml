@@ -1,0 +1,17 @@
+<root>
+    <item name='com.mikepenz.aboutlibraries.ui.adapter.LibsRecyclerViewAdapter.ViewHolder ViewHolder(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.adapter.LibsRecyclerViewAdapter.HeaderViewHolder HeaderViewHolder(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.adapter.LibsRecyclerViewAdapter android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder(android.view.ViewGroup, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.adapter.LibsRecyclerViewAdapter android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder(android.view.ViewGroup, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mikepenz.aboutlibraries.ui.adapter.LibsRecyclerViewAdapter void setLibs(java.util.List&lt;com.mikepenz.aboutlibraries.entity.Library&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,32 @@
+<root>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationOffsetsBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationOffsetsBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationSizesBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationSizesBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.BitRateBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationOffsetsBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationSizesBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.BitRateBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.BitRateBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part12.SampleAuxiliaryInformationSizesBox void setSampleInfoSizes(short[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

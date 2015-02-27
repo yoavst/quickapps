@@ -1,0 +1,26 @@
+<root>
+    <item name='com.googlecode.mp4parser.h264.model.ScalingList com.googlecode.mp4parser.h264.model.ScalingList read(com.googlecode.mp4parser.h264.read.CAVLCReader, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.PictureParameterSet com.googlecode.mp4parser.h264.model.PictureParameterSet read(byte[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.AspectRatio com.googlecode.mp4parser.h264.model.AspectRatio fromValue(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.AspectRatio Extended_SAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.PictureParameterSet com.googlecode.mp4parser.h264.model.PictureParameterSet read(java.io.InputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.PictureParameterSet com.googlecode.mp4parser.h264.model.PictureParameterSet read(java.io.InputStream)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.SeqParameterSet com.googlecode.mp4parser.h264.model.SeqParameterSet read(java.io.InputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.h264.model.SeqParameterSet com.googlecode.mp4parser.h264.model.SeqParameterSet read(java.io.InputStream)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

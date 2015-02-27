@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_buttons_layout_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="65dp">
+
+    <LinearLayout
+        android:id="@+id/control_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.malinskiy.materialicons.widget.IconTextView
+            android:id="@+id/back"
+            android:text="{md-fast-rewind}"
+            android:textSize="60dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_button_background_semi_transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+
+        <com.malinskiy.materialicons.widget.IconTextView
+            android:id="@+id/pause_start"
+            android:text="{md-play-arrow}"
+            android:textSize="60dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_button_background_semi_transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+        <com.malinskiy.materialicons.widget.IconTextView
+            android:id="@+id/next"
+            android:text="{md-fast-forward}"
+            android:textSize="60dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_button_background_semi_transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/music_progress"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+</LinearLayout>

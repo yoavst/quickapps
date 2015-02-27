@@ -1,0 +1,80 @@
+<root>
+    <item name='com.lge.qcircle.template.BuildConfig VERSION_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleTemplate DEVICE_G3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.TemplateType CIRCLE_COMPLEX'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.BuildConfig PACKAGE_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setText(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setTitle(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.BuildConfig FLAVOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog void show(android.app.Activity, com.lge.qcircle.template.QCircleTemplate) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setMode(com.lge.qcircle.template.QCircleDialog.DialogMode)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setPositiveButtonListener(android.view.View.OnClickListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.DialogMode YesNo'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.TemplateType CIRCLE_EMPTY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setImage(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.TemplateType CIRCLE_HORIZONTAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleTemplate EXTRA_ACCESSORY_COVER_STATE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleTemplate TAG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog.Builder setNegativeButtonListener(android.view.View.OnClickListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.DialogMode Ok'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleTemplate ACTION_ACCESSORY_COVER_EVENT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.TemplateType CIRCLE_SIDEBAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleTemplate DEVICE_T6'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.DialogMode Error'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog.Builder com.lge.qcircle.template.QCircleDialog create()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.QCircleDialog void show(android.app.Activity, com.lge.qcircle.template.QCircleTemplate) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.BuildConfig BUILD_TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.lge.qcircle.template.TemplateType CIRCLE_VERTICAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

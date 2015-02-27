@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/compass_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_width="@dimen/circle_size"
+        tools:layout_height="@dimen/circle_size"
+        android:background="@drawable/compass_back"
+        android:layout_gravity="center_horizontal">
+
+        <android.widget.ImageView
+            android:id="@+id/needle"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/compass_needle"/>
+    </RelativeLayout>
+</RelativeLayout>

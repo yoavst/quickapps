@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="SpUsage"
+    tools:layout_height="155dp"
+    tools:layout_width="285.5dp">
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/notification_icon"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/notification_time"
+        android:textStyle="bold"
+        tools:text="14:33" />
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_time"
+        android:layout_toEndOf="@+id/notification_icon"
+        android:gravity="left"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/padding_end"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/notification_title"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry"
+        tools:text="USB debugging connected" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:layout_marginEnd="@dimen/padding_end"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/notification_icon"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/notification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/notification_text"
+            tools:text="Charging slowly with charger/USB. Connect to a standard charger to charge faster" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/notification_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/padding_end"
+        android:background="@drawable/notification_background"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:scaleType="fitXY" />
+
+    <com.malinskiy.materialicons.widget.IconTextView
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="{md-delete}"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/padding_end"
+        android:background="@drawable/notifications_btn_delete"
+        android:layout_below="@+id/notification_icon"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<root>
+    <item name='com.nineoldandroids.view.animation.AnimatorProxy com.nineoldandroids.view.animation.AnimatorProxy wrap(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.view.animation.AnimatorProxy com.nineoldandroids.view.animation.AnimatorProxy wrap(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

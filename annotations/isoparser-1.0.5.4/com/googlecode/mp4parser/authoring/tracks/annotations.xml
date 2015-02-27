@@ -1,0 +1,245 @@
+<root>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType P'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencDecryptingTrackImpl com.coremedia.iso.boxes.SampleDescriptionBox getSampleDescriptionBox()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl void profile_tier_level(int, com.googlecode.mp4parser.h264.read.CAVLCReader) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.Amf0Track java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AppendTrack long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.DTSTrackImpl DTSTrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.DivideTimeScaleTrack com.googlecode.mp4parser.authoring.TrackMetaData getTrackMetaData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl com.googlecode.mp4parser.authoring.Sample createSample(java.util.List&lt;java.nio.ByteBuffer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.TextTrackImpl long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SMPTETTTrackImpl java.lang.String getLanguage(org.w3c.dom.Document) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl com.googlecode.mp4parser.authoring.Sample createSample(java.util.List&lt;java.nio.ByteBuffer&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.EC3TrackImpl EC3TrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AppendTrack java.util.List&lt;com.googlecode.mp4parser.authoring.Sample&gt; getSamples()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.DTSTrackImpl DTSTrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader SliceHeader(java.io.InputStream, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.SeqParameterSet&gt;, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.PictureParameterSet&gt;, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl java.io.InputStream cleanBuffer(java.io.InputStream)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AACTrackImpl AACTrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.Amf0Track long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.ReplaceSampleTrack ReplaceSampleTrack(com.googlecode.mp4parser.authoring.Track, long, java.nio.ByteBuffer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.Amf0Track com.coremedia.iso.boxes.SampleDescriptionBox getSampleDescriptionBox()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.TextTrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader SliceHeader(java.io.InputStream, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.SeqParameterSet&gt;, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.PictureParameterSet&gt;, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl H264TrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.TextTrackImpl java.util.List&lt;com.googlecode.mp4parser.authoring.Sample&gt; getSamples()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl H264TrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl com.googlecode.mp4parser.authoring.Sample createSampleObject(java.util.List&lt;? extends java.nio.ByteBuffer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.PARSE_STATE com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.PARSE_STATE[] values()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.NalUnitHeader getNalUnitHeader(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType I'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl H264TrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String, long, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl byte[] toByteArray(java.io.InputStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MultiplyTimeScaleTrack com.googlecode.mp4parser.authoring.TrackMetaData getTrackMetaData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AC3TrackImpl AC3TrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SEIMessage SEIMessage(com.googlecode.mp4parser.authoring.tracks.H264TrackImpl, java.io.InputStream, com.googlecode.mp4parser.h264.model.SeqParameterSet) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType[] values()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType SP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MP3TrackImpl java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl long[] getSyncSamples()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.PARSE_STATE SLICE_OES_EOB'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AC3TrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.ChangeTimeScaleTrack ChangeTimeScaleTrack(com.googlecode.mp4parser.authoring.Track, long, long[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SilenceTrackImpl SilenceTrackImpl(com.googlecode.mp4parser.authoring.Track, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.PARSE_STATE AUD_SEI_SLICE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SMPTETTTrackImpl SMPTE_TT_NAMESPACE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AC3TrackImpl AC3TrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.Amf0Track java.util.List&lt;com.googlecode.mp4parser.authoring.Sample&gt; getSamples()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencDecryptingTrackImpl CencDecryptingTrackImpl(com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, javax.crypto.SecretKey) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.DivideTimeScaleTrack long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SMPTETTTrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AppendTrack AppendTrack(com.googlecode.mp4parser.authoring.Track...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader SliceHeader(java.io.InputStream, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.SeqParameterSet&gt;, java.util.Map&lt;java.lang.Integer,com.googlecode.mp4parser.h264.model.PictureParameterSet&gt;, boolean) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CroppedTrack CroppedTrack(com.googlecode.mp4parser.authoring.Track, long, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.ChangeTimeScaleTrack com.googlecode.mp4parser.authoring.TrackMetaData getTrackMetaData()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType SI'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AACTrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.PARSE_STATE SEI_SLICE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AppendTrack java.lang.String appendTracknames(com.googlecode.mp4parser.authoring.Track...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.DTSTrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.ReplaceSampleTrack ReplaceSampleTrack(com.googlecode.mp4parser.authoring.Track, long, java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SMPTETTTrackImpl SMPTETTTrackImpl(java.io.File...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencEncryptingTrackImpl CencEncryptingTrackImpl(com.googlecode.mp4parser.authoring.Track, java.util.UUID, javax.crypto.SecretKey, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencEncryptingTrackImpl java.util.List&lt;com.googlecode.mp4parser.authoring.Sample&gt; getSamples()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencDecryptingTrackImpl CencDecryptingTrackImpl(com.googlecode.mp4parser.authoring.tracks.CencEncryptedTrack, java.util.Map&lt;java.util.UUID,javax.crypto.SecretKey&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CencEncryptingTrackImpl CencEncryptingTrackImpl(com.googlecode.mp4parser.authoring.Track, java.util.UUID, java.util.Map&lt;java.util.UUID,javax.crypto.SecretKey&gt;, java.util.Map&lt;com.googlecode.mp4parser.boxes.mp4.samplegrouping.CencSampleEncryptionInformationGroupEntry,long[]&gt;, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl com.googlecode.mp4parser.authoring.tracks.H265TrackImpl.NalUnitHeader getNalUnitHeader(java.nio.ByteBuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MP3TrackImpl MP3TrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.AACTrackImpl AACTrackImpl(com.googlecode.mp4parser.DataSource, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CroppedTrack long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.EC3TrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H265TrackImpl int getFrameRate(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MultiplyTimeScaleTrack long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl byte[] toByteArray(java.io.InputStream)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.ByteBufferBackedInputStream ByteBufferBackedInputStream(com.googlecode.mp4parser.authoring.tracks.H264TrackImpl, java.nio.ByteBuffer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.SMPTETTTrackImpl long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.CleanInputStream int read(byte[], int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.ChangeTimeScaleTrack ChangeTimeScaleTrack(com.googlecode.mp4parser.authoring.Track, long, long[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl com.googlecode.mp4parser.authoring.Sample createSampleObject(java.util.List&lt;? extends java.nio.ByteBuffer&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MP3TrackImpl java.lang.String getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.MP3TrackImpl MP3TrackImpl(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.tracks.H264TrackImpl.SliceHeader.SliceType B'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,278 @@
+<root>
+    <item name='com.google.gson.internal.bind.TypeAdapters JSON_ELEMENT_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.DateTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters URI_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.CollectionTypeAdapterFactory com.google.gson.TypeAdapter&lt;T&gt; create(com.google.gson.Gson, com.google.gson.reflect.TypeToken&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters INTEGER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ArrayTypeAdapter FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters LOCALE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BIT_SET'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newFactory(java.lang.Class&lt;TT&gt;, java.lang.Class&lt;TT&gt;, com.google.gson.TypeAdapter&lt;? super TT&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters URL_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.SqlDateTypeAdapter void write(com.google.gson.stream.JsonWriter, java.sql.Date) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter endArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CALENDAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters SHORT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters NUMBER_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BOOLEAN_AS_STRING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BOOLEAN_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.SqlDateTypeAdapter java.sql.Date read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CLASS_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ReflectiveTypeAdapterFactory com.google.gson.TypeAdapter&lt;T&gt; create(com.google.gson.Gson, com.google.gson.reflect.TypeToken&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CHARACTER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.DateTypeAdapter void write(com.google.gson.stream.JsonWriter, java.util.Date) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter beginArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter void write(com.google.gson.stream.JsonWriter, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BIT_SET_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters ENUM_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TimeTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BIG_DECIMAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.DateTypeAdapter java.util.Date read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING_BUFFER_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CALENDAR_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter endObject()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters INTEGER_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters LOCALE_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters URL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.DateTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING_BUILDER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newFactory(java.lang.Class&lt;TT&gt;, com.google.gson.TypeAdapter&lt;TT&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ArrayTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TimeTypeAdapter FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters UUID'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BYTE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters SHORT_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ArrayTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter name(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TimeTypeAdapter void write(com.google.gson.stream.JsonWriter, java.sql.Time) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory com.google.gson.TypeAdapter&lt;T&gt; create(com.google.gson.Gson, com.google.gson.reflect.TypeToken&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TimeTypeAdapter java.sql.Time read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter T read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters JSON_ELEMENT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters URI'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ReflectiveTypeAdapterFactory boolean excludeField(java.lang.reflect.Field, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter value(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters LONG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter value(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters NUMBER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ObjectTypeAdapter FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TimeTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.SqlDateTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter value(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.SqlDateTypeAdapter FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.SqlDateTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters INET_ADDRESS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CHARACTER_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters INET_ADDRESS_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.DateTypeAdapter FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter value(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter value(java.lang.Number)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newTypeHierarchyFactory(java.lang.Class&lt;TT&gt;, com.google.gson.TypeAdapter&lt;TT&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newEnumTypeHierarchyFactory()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter beginObject()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters UUID_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter name(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters TIMESTAMP_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters CLASS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING_BUILDER_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken&lt;TT&gt;, com.google.gson.TypeAdapter&lt;TT&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BIG_INTEGER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BYTE_FACTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ObjectTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters STRING_BUFFER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters DOUBLE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.MapTypeAdapterFactory com.google.gson.TypeAdapter&lt;T&gt; create(com.google.gson.Gson, com.google.gson.reflect.TypeToken&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.ObjectTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.internal.bind.JsonTreeWriter com.google.gson.stream.JsonWriter nullValue()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters com.google.gson.TypeAdapterFactory newFactoryForMultipleTypes(java.lang.Class&lt;TT&gt;, java.lang.Class&lt;? extends TT&gt;, com.google.gson.TypeAdapter&lt;? super TT&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters BOOLEAN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.internal.bind.TypeAdapters FLOAT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

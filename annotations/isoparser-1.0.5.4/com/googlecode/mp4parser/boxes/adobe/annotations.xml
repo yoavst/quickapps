@@ -1,0 +1,17 @@
+<root>
+    <item name='com.googlecode.mp4parser.boxes.adobe.ActionMessageFormat0SampleEntryBox void parse(com.googlecode.mp4parser.DataSource, java.nio.ByteBuffer, long, com.coremedia.iso.BoxParser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.adobe.ActionMessageFormat0SampleEntryBox void parse(com.googlecode.mp4parser.DataSource, java.nio.ByteBuffer, long, com.coremedia.iso.BoxParser) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.adobe.ActionMessageFormat0SampleEntryBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.adobe.ActionMessageFormat0SampleEntryBox void getBox(java.nio.channels.WritableByteChannel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

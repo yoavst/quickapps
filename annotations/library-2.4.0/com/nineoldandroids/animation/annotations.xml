@@ -1,0 +1,302 @@
+<root>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofObject(com.nineoldandroids.util.Property, com.nineoldandroids.animation.TypeEvaluator&lt;V&gt;, V...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofFloat(com.nineoldandroids.util.Property&lt;?,java.lang.Float&gt;, float...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.FloatEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator ofObject(com.nineoldandroids.animation.TypeEvaluator, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofFloat(com.nineoldandroids.util.Property&lt;?,java.lang.Float&gt;, float...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(java.lang.String, com.nineoldandroids.animation.Keyframe...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofFloat(java.lang.Object, java.lang.String, float...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator ofPropertyValuesHolder(com.nineoldandroids.animation.PropertyValuesHolder...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Animator java.lang.Object clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator void setIntValues(int...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator void setFloatValues(float...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.Animator com.nineoldandroids.animation.Animator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener void onAnimationUpdate(com.nineoldandroids.animation.ValueAnimator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofInt(float, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(java.lang.String, com.nineoldandroids.animation.Keyframe...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ArgbEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator ofPropertyValuesHolder(com.nineoldandroids.animation.PropertyValuesHolder...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.Animator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofInt(com.nineoldandroids.util.Property&lt;?,java.lang.Integer&gt;, int...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.FloatEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofFloat(float, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.Animator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofPropertyValuesHolder(java.lang.Object, com.nineoldandroids.animation.PropertyValuesHolder...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet java.lang.Object clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.IntEvaluator java.lang.Integer evaluate(float, java.lang.Integer, java.lang.Integer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(com.nineoldandroids.util.Property, com.nineoldandroids.animation.Keyframe...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofObject(com.nineoldandroids.util.Property, com.nineoldandroids.animation.TypeEvaluator&lt;V&gt;, V...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofInt(T, com.nineoldandroids.util.Property&lt;T,java.lang.Integer&gt;, int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.FloatEvaluator java.lang.Float evaluate(float, java.lang.Number, java.lang.Number) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofObject(float, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofObject(java.lang.Object, java.lang.String, com.nineoldandroids.animation.TypeEvaluator, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofInt(com.nineoldandroids.util.Property&lt;?,java.lang.Integer&gt;, int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ValueAnimator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofInt(java.lang.String, int...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder void setObjectValues(java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorListenerAdapter void onAnimationEnd(com.nineoldandroids.animation.Animator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofFloat(T, com.nineoldandroids.util.Property&lt;T,java.lang.Float&gt;, float...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder void setIntValues(int...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe java.lang.Object clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofFloat(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ValueAnimator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.Animator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.Animator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofObject(java.lang.String, com.nineoldandroids.animation.TypeEvaluator, java.lang.Object...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorInflater com.nineoldandroids.animation.Animator loadAnimator(android.content.Context, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.TypeEvaluator T evaluate(float, T, T) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofFloat(java.lang.String, float...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.IntEvaluator java.lang.Integer evaluate(float, java.lang.Integer, java.lang.Integer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator java.lang.Object clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.FloatEvaluator java.lang.Float evaluate(float, java.lang.Number, java.lang.Number) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator ofInt(int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Animator.AnimatorListener void onAnimationEnd(com.nineoldandroids.animation.Animator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator void setIntValues(int...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet com.nineoldandroids.animation.Animator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet java.util.ArrayList&lt;com.nineoldandroids.animation.Animator&gt; getChildAnimations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet.Builder com.nineoldandroids.animation.AnimatorSet.Builder after(com.nineoldandroids.animation.Animator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet com.nineoldandroids.animation.AnimatorSet setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofFloat(java.lang.String, float...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofInt(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet.Builder com.nineoldandroids.animation.AnimatorSet.Builder before(com.nineoldandroids.animation.Animator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Animator com.nineoldandroids.animation.Animator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.IntEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet com.nineoldandroids.animation.AnimatorSet clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofObject(T, com.nineoldandroids.util.Property&lt;T,V&gt;, com.nineoldandroids.animation.TypeEvaluator&lt;V&gt;, V...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder void setKeyframes(com.nineoldandroids.animation.Keyframe...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.TypeEvaluator T evaluate(float, T, T) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.ObjectAnimator com.nineoldandroids.animation.ObjectAnimator ofInt(java.lang.Object, java.lang.String, int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator void setFloatValues(float...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofObject(java.lang.String, com.nineoldandroids.animation.TypeEvaluator, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet.Builder com.nineoldandroids.animation.AnimatorSet.Builder with(com.nineoldandroids.animation.Animator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator java.lang.Object clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet com.nineoldandroids.animation.Animator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofKeyframe(com.nineoldandroids.util.Property, com.nineoldandroids.animation.Keyframe...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder void setFloatValues(float...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator ofFloat(float...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator com.nineoldandroids.animation.ValueAnimator clone()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.IntEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.Keyframe com.nineoldandroids.animation.Keyframe ofObject(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ValueAnimator void setValues(com.nineoldandroids.animation.PropertyValuesHolder...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.AnimatorSet.Builder com.nineoldandroids.animation.AnimatorSet.Builder after(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.ArgbEvaluator java.lang.Object evaluate(float, java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.nineoldandroids.animation.PropertyValuesHolder com.nineoldandroids.animation.PropertyValuesHolder ofInt(java.lang.String, int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

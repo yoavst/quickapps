@@ -1,0 +1,533 @@
+<root>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setAlphabeticShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat.OnActionExpandListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder void addMenuPresenter(android.support.v7.internal.view.menu.MenuPresenter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setVisible(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter void addItemView(android.view.View, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.support.v4.internal.view.SupportMenuItem setActionView(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper void onRestoreInstanceState(android.os.Parcelable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItemView void initialize(android.support.v7.internal.view.menu.MenuItemImpl, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setActionProvider(android.view.ActionProvider)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItemView ActionMenuItemView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setHeaderTitleInt(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.support.v4.internal.view.SupportMenuItem setActionView(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.content.Context getContext()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuItemView ListMenuItemView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setEnabled(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter android.support.v7.internal.view.menu.MenuView getMenuView(android.view.ViewGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter boolean collapseItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ExpandedMenuView ExpandedMenuView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setChecked(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter boolean expandItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setTitleCondensed(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setActionView(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuWrapperFactory android.view.SubMenu wrapSupportSubMenu(android.content.Context, android.support.v4.internal.view.SupportSubMenu)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setNumericShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setActionView(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.MenuItem add(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setDefaultShowAsAction(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter android.view.View getItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.view.View, android.view.ViewGroup) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper boolean collapseItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setAlphabeticShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setEnabled(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.MenuItem add(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder void addMenuPresenter(android.support.v7.internal.view.menu.MenuPresenter, android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setActionView(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter void onRestoreInstanceState(android.os.Parcelable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter boolean shouldIncludeItem(int, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setTitleCondensed(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setVisible(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItemView ActionMenuItemView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.support.v7.internal.view.menu.ActionMenuItem setExclusiveCheckable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setTitle(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter boolean expandItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setAlphabeticShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter void bindItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.support.v7.internal.view.menu.MenuView.ItemView) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setNumericShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setShowAsActionFlags(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.MenuItem add(int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.MenuItem add(int, int, int, java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setActionView(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setCheckable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setShortcut(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.support.v4.internal.view.SupportMenuItem setShowAsActionFlags(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setNumericShortcut(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder void restorePresenterStates(android.os.Bundle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setOnMenuItemClickListener(android.view.MenuItem.OnMenuItemClickListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ExpandedMenuView ExpandedMenuView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter void saveHierarchyState(android.os.Bundle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter android.view.View getItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.view.View, android.view.ViewGroup) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter boolean filterLeftoverView(android.view.ViewGroup, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.SubMenu addSubMenu(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setIntent(android.content.Intent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper boolean onKey(android.view.View, int, android.view.KeyEvent) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuWrapperFactory android.view.Menu wrapSupportMenu(android.content.Context, android.support.v4.internal.view.SupportMenu)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setOnMenuItemClickListener(android.view.MenuItem.OnMenuItemClickListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setTitleCondensed(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter void onRestoreInstanceState(android.os.Parcelable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setTitle(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setHeaderIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setHeaderTitle(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuItemView void initialize(android.support.v7.internal.view.menu.MenuItemImpl, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setTitle(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter boolean collapseItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setCheckable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.SubMenu addSubMenu(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setShowAsActionFlags(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setIntent(android.content.Intent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setHeaderTitle(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setHeaderIconInt(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuDialogHelper boolean onKey(android.content.DialogInterface, int, android.view.KeyEvent) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter boolean collapseItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.SubMenu addSubMenu(int, int, int, java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter VIEWS_TAG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuDialogHelper void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItemView ActionMenuItemView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter.Callback void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuWrapperFactory android.view.MenuItem wrapSupportMenuItem(android.content.Context, android.support.v4.internal.view.SupportMenuItem)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuView.ItemView void initialize(android.support.v7.internal.view.menu.MenuItemImpl, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder SubMenuBuilder(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setChecked(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setHeaderView(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper boolean expandItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setHeaderTitleInt(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPresenter boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setEnabled(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setIntent(android.content.Intent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter boolean expandItemActionView(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.internal.view.menu.MenuItemImpl) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setHeaderIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder getRootMenu()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuItemView ListMenuItemView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setCheckable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setTitle(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder MenuBuilder(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.SubMenuBuilder android.view.SubMenu setIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setOnActionExpandListener(android.view.MenuItem.OnActionExpandListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat.OnActionExpandListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder boolean performShortcut(int, android.view.KeyEvent, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setHeaderIconInt(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setOnMenuItemClickListener(android.view.MenuItem.OnMenuItemClickListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.support.v7.internal.view.menu.MenuBuilder setHeaderViewInt(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ListMenuPresenter void restoreHierarchyState(android.os.Bundle) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder boolean isShortcutKey(int, android.view.KeyEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setShortcut(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setShortcut(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setTitle(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.support.v4.internal.view.SupportMenuItem setSupportActionProvider(android.support.v4.view.ActionProvider)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setChecked(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setCallback(java.lang.Runnable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.support.v4.internal.view.SupportMenuItem setShowAsActionFlags(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.BaseMenuPresenter android.view.View getItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.view.View, android.view.ViewGroup)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.menu.ActionMenuItem android.view.MenuItem setShowAsActionFlags(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemImpl android.view.MenuItem setIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuPopupHelper MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuBuilder android.view.SubMenu addSubMenu(int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.menu.MenuItemWrapperICS android.view.MenuItem setTitle(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,242 @@
+<root>
+    <item name='com.daimajia.androidanimations.library.Techniques BounceInLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Swing'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BuildConfig BUILD_TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Pulse'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator com.daimajia.androidanimations.library.BaseViewAnimator addAnimatorListener(com.nineoldandroids.animation.Animator.AnimatorListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator void prepare(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Hinge'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateOutUpLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FlipInX'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Wave'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Bounce'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques DropOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo.AnimationComposer com.daimajia.androidanimations.library.YoYo.AnimationComposer withListener(com.nineoldandroids.animation.Animator.AnimatorListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateInUpRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateInDownLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FlipOutX'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideInDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideOutUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeInDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateInDownRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeOutDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeInUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RollOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideInRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideOutDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator void animate(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques BounceIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques BounceInUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BuildConfig FLAVOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeInRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator void reset(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeOutUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques BounceInRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomInDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeInLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomInRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateOutDownLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo.AnimationComposer com.daimajia.androidanimations.library.YoYo.AnimationComposer duration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo.AnimationComposer com.daimajia.androidanimations.library.YoYo.YoYoString playOn(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomInLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomOutUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Wobble'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques BounceInDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RollIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomOutDown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator com.daimajia.androidanimations.library.BaseViewAnimator setStartDelay(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateOutUpRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BuildConfig VERSION_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo.AnimationComposer com.daimajia.androidanimations.library.YoYo.AnimationComposer interpolate(android.view.animation.Interpolator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator com.daimajia.androidanimations.library.BaseViewAnimator setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomOutLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Flash'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideInLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BaseViewAnimator com.daimajia.androidanimations.library.BaseViewAnimator setInterpolator(android.view.animation.Interpolator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomOutRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Tada'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Landing'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideOutLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques StandUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques TakingOff'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateOutDownRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeOutRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques ZoomInUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeIn'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques Shake'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RotateInUpLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques RubberBand'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo.AnimationComposer com.daimajia.androidanimations.library.YoYo.AnimationComposer delay(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.BuildConfig PACKAGE_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeOut'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FadeOutLeft'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques FlipOutY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideOutRight'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.YoYo com.daimajia.androidanimations.library.YoYo.AnimationComposer with(com.daimajia.androidanimations.library.Techniques)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.daimajia.androidanimations.library.Techniques SlideInUp'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

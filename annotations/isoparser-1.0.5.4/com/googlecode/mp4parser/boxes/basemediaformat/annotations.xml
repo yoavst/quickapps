@@ -1,0 +1,23 @@
+<root>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox AvcNalUnitStorageBox(com.mp4parser.iso14496.part15.AvcConfigurationBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox java.util.List&lt;java.lang.String&gt; getSequenceParameterSetsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox java.util.List&lt;java.lang.String&gt; getSequenceParameterSetExtsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.boxes.basemediaformat.AvcNalUnitStorageBox java.util.List&lt;java.lang.String&gt; getPictureParameterSetsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,50 @@
+<root>
+    <item name='com.googlecode.mp4parser.authoring.Sample java.nio.ByteBuffer asByteBuffer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.SampleImpl SampleImpl(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.CencMp4TrackImplImpl CencMp4TrackImplImpl(java.lang.String, com.coremedia.iso.boxes.TrackBox, com.coremedia.iso.IsoFile...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.CencMp4TrackImplImpl CencMp4TrackImplImpl(java.lang.String, com.coremedia.iso.boxes.TrackBox, com.coremedia.iso.IsoFile...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.SampleImpl java.nio.ByteBuffer asByteBuffer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.Mp4TrackImpl Mp4TrackImpl(java.lang.String, com.coremedia.iso.boxes.TrackBox, com.coremedia.iso.IsoFile...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.SampleImpl void writeTo(java.nio.channels.WritableByteChannel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.Sample void writeTo(java.nio.channels.WritableByteChannel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.Mp4TrackImpl Mp4TrackImpl(java.lang.String, com.coremedia.iso.boxes.TrackBox, com.coremedia.iso.IsoFile...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.Movie void addTrack(com.googlecode.mp4parser.authoring.Track) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.SampleImpl SampleImpl(java.nio.ByteBuffer[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.Track long[] getSampleDurations()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

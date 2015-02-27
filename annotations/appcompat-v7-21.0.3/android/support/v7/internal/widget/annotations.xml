@@ -1,0 +1,227 @@
+<root>
+    <item name='android.support.v7.internal.widget.ActivityChooserView ActivityChooserView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ScrollingTabContainerView void onItemClick(android.support.v7.internal.widget.AdapterViewCompat&lt;?&gt;, android.view.View, int, long) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.NativeActionModeAwareLayout.OnActionModeForChildListener android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode.Callback) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckedTextView TintCheckedTextView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.AppCompatPopupWindow AppCompatPopupWindow(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.CompatTextView CompatTextView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.DecorToolbar void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.ListViewCompat void setSelector(android.graphics.drawable.Drawable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintRadioButton TintRadioButton(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckBox TintCheckBox(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintSpinner TintSpinner(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout ActionBarOverlayLayout(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel.ActivityResolveInfo int compareTo(android.support.v7.internal.widget.ActivityChooserModel.ActivityResolveInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintTypedArray android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[], int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserView ActivityChooserView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.CompatTextView CompatTextView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckBox TintCheckBox(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ToolbarWidgetWrapper ToolbarWidgetWrapper(android.support.v7.widget.Toolbar, boolean, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintSpinner TintSpinner(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintRadioButton TintRadioButton(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintImageView TintImageView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintEditText TintEditText(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ToolbarWidgetWrapper void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.ViewStubCompat ViewStubCompat(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView ActionBarContextView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckedTextView TintCheckedTextView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout android.view.ViewGroup.LayoutParams generateLayoutParams(android.util.AttributeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView android.view.ViewGroup.LayoutParams generateLayoutParams(android.util.AttributeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout android.support.v7.internal.widget.ActionBarOverlayLayout.LayoutParams generateLayoutParams(android.util.AttributeSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintTypedArray android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ListViewCompat void positionSelectorLikeFocusCompat(int, android.view.View) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel.ActivityResolveInfo int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ListViewCompat void positionSelectorLikeTouchCompat(int, android.view.View, float, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContainer ActionBarContainer(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ScrollingTabContainerView.VisibilityAnimListener android.support.v7.internal.widget.ScrollingTabContainerView.VisibilityAnimListener withFinalVisibility(android.support.v4.view.ViewPropertyAnimatorCompat, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.AbsActionBarView.VisibilityAnimListener android.support.v7.internal.widget.AbsActionBarView.VisibilityAnimListener withFinalVisibility(android.support.v4.view.ViewPropertyAnimatorCompat, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel.ActivitySorter void sort(android.content.Intent, java.util.List&lt;android.support.v7.internal.widget.ActivityChooserModel.ActivityResolveInfo&gt;, java.util.List&lt;android.support.v7.internal.widget.ActivityChooserModel.HistoricalRecord&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.TintTypedArray android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout android.support.v7.internal.widget.ActionBarOverlayLayout.LayoutParams generateDefaultLayoutParams()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView ActionBarContextView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintRadioButton TintRadioButton(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout ActionBarOverlayLayout(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ListViewCompat void positionSelectorCompat(int, android.view.View) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintEditText TintEditText(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintImageView TintImageView(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.CompatTextView CompatTextView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckBox TintCheckBox(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintSpinner TintSpinner(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserView ActivityChooserView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel android.support.v7.internal.widget.ActivityChooserModel get(android.content.Context, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintTypedArray android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[], int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel.ActivitySorter void sort(android.content.Intent, java.util.List&lt;android.support.v7.internal.widget.ActivityChooserModel.ActivityResolveInfo&gt;, java.util.List&lt;android.support.v7.internal.widget.ActivityChooserModel.HistoricalRecord&gt;) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.AdapterViewCompat.OnItemClickListener void onItemClick(android.support.v7.internal.widget.AdapterViewCompat&lt;?&gt;, android.view.View, int, long) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.widget.TintCheckedTextView TintCheckedTextView(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView ActionBarContextView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout android.view.ViewGroup.LayoutParams generateDefaultLayoutParams()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView void initForMode(android.support.v7.view.ActionMode) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintEditText TintEditText(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarOverlayLayout android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintManager TintManager(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ToolbarWidgetWrapper ToolbarWidgetWrapper(android.support.v7.widget.Toolbar, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ScrollingTabContainerView mVisAnimListener'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ViewStubCompat ViewStubCompat(android.content.Context, android.util.AttributeSet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContextView android.view.ViewGroup.LayoutParams generateDefaultLayoutParams()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.TintImageView TintImageView(android.content.Context, android.util.AttributeSet, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActionBarContainer ActionBarContainer(android.content.Context) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.ActivityChooserModel DEFAULT_HISTORY_FILE_NAME'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.widget.FitWindowsViewGroup.OnFitSystemWindowsListener void onFitSystemWindows(android.graphics.Rect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

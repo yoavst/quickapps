@@ -1,0 +1,110 @@
+<root>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentBaseMediaDecodeTimeBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentBaseMediaDecodeTimeBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentHeaderBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentHeaderBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieExtendsBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentBox java.util.List&lt;java.lang.Long&gt; getSyncSamples(com.coremedia.iso.boxes.SampleDependencyTypeBox) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentHeaderBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentHeaderBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.SegmentTypeBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.SegmentTypeBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.SegmentTypeBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.SampleFlags void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackExtendsBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentRandomAccessBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentBox long[] getTrackNumbers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentRandomAccessOffsetBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.SampleFlags SampleFlags(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackExtendsBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentHeaderBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentHeaderBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentBox java.util.List&lt;java.lang.Long&gt; getSyncSamples(com.coremedia.iso.boxes.SampleDependencyTypeBox)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackRunBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentRandomAccessOffsetBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieExtendsHeaderBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieExtendsHeaderBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentRandomAccessBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentRandomAccessBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackExtendsBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieFragmentRandomAccessOffsetBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackRunBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackRunBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentBaseMediaDecodeTimeBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.TrackFragmentRandomAccessBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.boxes.fragment.MovieExtendsHeaderBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

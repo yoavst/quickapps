@@ -1,0 +1,164 @@
+<root>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.InitializerSignature makeInitializerSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.EnclosingStaticPart makeESJP(java.lang.String, org.aspectj.lang.Signature, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.CatchClauseSignature makeCatchClauseSig(java.lang.String, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeEncSJP(java.lang.reflect.Member)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.SourceLocation makeSourceLoc(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.AdviceSignature makeAdviceSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.CatchClauseSignature makeCatchClauseSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.UnlockSignature makeUnlockSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.FieldSignature makeFieldSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.FieldSignature makeFieldSig(int, java.lang.String, java.lang.Class, java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint makeJP(org.aspectj.lang.JoinPoint.StaticPart, java.lang.Object, java.lang.Object, java.lang.Object[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.MethodSignature makeMethodSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int) 6'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeEncSJP(java.lang.reflect.Member) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, org.aspectj.lang.Signature, org.aspectj.lang.reflect.SourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.UnlockSignature makeUnlockSig(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.MethodSignature makeMethodSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.CatchClauseSignature makeCatchClauseSig(java.lang.Class, java.lang.Class, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.EnclosingStaticPart makeESJP(java.lang.String, org.aspectj.lang.Signature, org.aspectj.lang.reflect.SourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.InitializerSignature makeInitializerSig(int, java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.InitializerSignature makeInitializerSig(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory Factory(java.lang.String, java.lang.Class) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.MethodSignature makeMethodSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.AdviceSignature makeAdviceSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.AdviceSignature makeAdviceSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) 6'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.FieldSignatureImpl java.lang.String createToString(org.aspectj.runtime.reflect.StringMaker) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint makeJP(org.aspectj.lang.JoinPoint.StaticPart, java.lang.Object, java.lang.Object, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.ConstructorSignature makeConstructorSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.UnlockSignature makeUnlockSig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.ConstructorSignature makeConstructorSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.MethodSignature makeMethodSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) 6'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.FieldSignature makeFieldSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.FieldSignature makeFieldSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.MethodSignature makeMethodSig(int, java.lang.String, java.lang.Class, java.lang.Class[], java.lang.String[], java.lang.Class[], java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.ConstructorSignature makeConstructorSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.LockSignature makeLockSig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.AdviceSignature makeAdviceSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, org.aspectj.lang.Signature, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.LockSignature makeLockSig(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint makeJP(org.aspectj.lang.JoinPoint.StaticPart, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.FieldSignature makeFieldSig(java.lang.String, java.lang.String, java.lang.String, java.lang.String) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.EnclosingStaticPart makeESJP(java.lang.String, org.aspectj.lang.Signature, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.CatchClauseSignature makeCatchClauseSig(java.lang.String, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.ConstructorSignature makeConstructorSig(int, java.lang.Class, java.lang.Class[], java.lang.String[], java.lang.Class[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.AdviceSignature makeAdviceSig(int, java.lang.String, java.lang.Class, java.lang.Class[], java.lang.String[], java.lang.Class[], java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.LockSignature makeLockSig(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.reflect.InitializerSignature makeInitializerSig(java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, org.aspectj.lang.Signature, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint makeJP(org.aspectj.lang.JoinPoint.StaticPart, java.lang.Object, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.reflect.Factory org.aspectj.lang.JoinPoint.StaticPart makeSJP(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

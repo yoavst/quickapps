@@ -1,0 +1,275 @@
+<root>
+    <item name='com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE_WITH_SPACES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonElement com.google.gson.JsonObject getAsJsonObject()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonObject java.util.Set&lt;java.util.Map.Entry&lt;java.lang.String,com.google.gson.JsonElement&gt;&gt; entrySet()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setExclusionStrategies(com.google.gson.ExclusionStrategy...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder disableHtmlEscaping()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder serializeSpecialFloatingPointValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder disableInnerClassSerialization()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder registerTypeAdapter(java.lang.reflect.Type, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson void toJson(java.lang.Object, java.lang.reflect.Type, java.lang.Appendable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonPrimitive JsonPrimitive(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson void toJson(java.lang.Object, java.lang.reflect.Type, com.google.gson.stream.JsonWriter) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setLongSerializationPolicy(com.google.gson.LongSerializationPolicy)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonStreamParser JsonStreamParser(java.io.Reader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonNull INSTANCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setFieldNamingStrategy(com.google.gson.FieldNamingStrategy)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonObject void addProperty(java.lang.String, java.lang.Character) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder addDeserializationExclusionStrategy(com.google.gson.ExclusionStrategy)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonParser com.google.gson.JsonElement parse(java.io.Reader)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapter com.google.gson.TypeAdapter&lt;T&gt; nullSafe()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder registerTypeHierarchyAdapter(java.lang.Class&lt;?&gt;, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson com.google.gson.TypeAdapter&lt;T&gt; getAdapter(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.Gson create()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapter void toJson(java.io.Writer, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson com.google.gson.TypeAdapter&lt;T&gt; getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.google.gson.reflect.TypeToken&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder registerTypeAdapterFactory(com.google.gson.TypeAdapterFactory)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonSerializer com.google.gson.JsonElement serialize(T, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder excludeFieldsWithModifiers(int...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonArray void addAll(com.google.gson.JsonArray) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson void toJson(com.google.gson.JsonElement, com.google.gson.stream.JsonWriter) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapter void write(com.google.gson.stream.JsonWriter, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.Gson com.google.gson.JsonElement toJsonTree(java.lang.Object, java.lang.reflect.Type) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setVersion(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonPrimitive JsonPrimitive(java.lang.Boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(java.io.Reader, java.lang.reflect.Type) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setExclusionStrategies(com.google.gson.ExclusionStrategy...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(com.google.gson.JsonElement, java.lang.Class&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonElement com.google.gson.JsonPrimitive getAsJsonPrimitive()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonObject void add(java.lang.String, com.google.gson.JsonElement) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonElement com.google.gson.JsonArray getAsJsonArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonObject void addProperty(java.lang.String, java.lang.Boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_DASHES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_UNDERSCORES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonDeserializer T deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.LongSerializationPolicy com.google.gson.JsonElement serialize(java.lang.Long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder enableComplexMapKeySerialization()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapter T read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.JsonSerializationContext com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setPrettyPrinting()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonPrimitive JsonPrimitive(java.lang.Character) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(java.io.Reader, java.lang.Class&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonParser com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.FieldAttributes FieldAttributes(java.lang.reflect.Field) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonObject void addProperty(java.lang.String, java.lang.Number) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonParser com.google.gson.JsonElement parse(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.LongSerializationPolicy com.google.gson.JsonElement serialize(java.lang.Long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.FieldNamingPolicy IDENTITY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.LongSerializationPolicy DEFAULT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson com.google.gson.TypeAdapter&lt;T&gt; getAdapter(com.google.gson.reflect.TypeToken&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonElement com.google.gson.JsonNull getAsJsonNull()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setDateFormat(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson java.lang.String toJson(java.lang.Object, java.lang.reflect.Type) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setDateFormat(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder addSerializationExclusionStrategy(com.google.gson.ExclusionStrategy)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(java.io.Reader, java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder excludeFieldsWithModifiers(int...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonParser com.google.gson.JsonElement parse(java.io.Reader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.FieldNamingStrategy java.lang.String translateName(java.lang.reflect.Field) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder excludeFieldsWithoutExposeAnnotation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.LongSerializationPolicy STRING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder generateNonExecutableJson()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapterFactory com.google.gson.TypeAdapter&lt;T&gt; create(com.google.gson.Gson, com.google.gson.reflect.TypeToken&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.google.gson.JsonObject void addProperty(java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson com.google.gson.TypeAdapter&lt;T&gt; getAdapter(java.lang.Class&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder setDateFormat(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.TypeAdapter T fromJson(java.io.Reader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson T fromJson(java.lang.String, java.lang.Class&lt;T&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.GsonBuilder com.google.gson.GsonBuilder serializeNulls()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.Gson void toJson(java.lang.Object, java.lang.reflect.Type, com.google.gson.stream.JsonWriter) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.google.gson.JsonPrimitive JsonPrimitive(java.lang.Number) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="darkTheme" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicatorLight</item>
+    </style>
+    <style name="lightTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicatorLight</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<root>
+    <item name='com.googlecode.mp4parser.authoring.container.mp4.MovieCreator com.googlecode.mp4parser.authoring.Movie build(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.container.mp4.MovieCreator com.googlecode.mp4parser.authoring.Movie build(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.container.mp4.MovieCreator com.googlecode.mp4parser.authoring.Movie build(com.googlecode.mp4parser.DataSource)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

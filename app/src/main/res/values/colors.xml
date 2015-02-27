@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">@color/md_indigo_500</color>
+    <color name="primary_color_dark">@color/md_indigo_700</color>
+    <color name="accent_color">@color/md_pink_A200</color>
+    <color name="torch_color_off">#747474</color>
+    <color name="torch_color_on">#33B5E5</color>
+    <color name="torch_background_color_off">#1D1D1D</color>
+    <color name="torch_background_color_on">@android:color/white</color>
+    <color name="clock_theme_color">@color/md_brown_500</color>
+    <color name="control_button_default_color">#536E79</color>
+    <color name="control_button_default_color_transparent">#50536E79</color>
+    <color name="material_drawer_primary">@color/primary_color</color>
+    <color name="material_drawer_primary_dark">@color/primary_color_dark</color>
+    <color name="material_drawer_accent">@color/accent_color</color>
+    <array name="icons_colors">
+        <item>@color/primary_color</item>
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_red_500</item>
+        <item>@color/md_orange_A400</item>
+        <item>@color/md_indigo_700</item>
+        <item>@color/primary_color</item>
+        <item>@color/md_brown_500</item>
+        <item>@color/md_grey_500</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_teal_900</item>
+        <item>@color/md_blue_700</item>
+        <item>@color/md_black_1000</item>
+        <item>@color/md_red_500</item>
+    </array>
+</resources>

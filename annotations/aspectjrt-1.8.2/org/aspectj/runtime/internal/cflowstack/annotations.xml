@@ -1,0 +1,26 @@
+<root>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactoryImpl org.aspectj.runtime.internal.cflowstack.ThreadStack getNewThreadStack()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactoryImpl11 org.aspectj.runtime.internal.cflowstack.ThreadCounter getNewThreadCounter()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactoryImpl11 org.aspectj.runtime.internal.cflowstack.ThreadStack getNewThreadStack()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactory org.aspectj.runtime.internal.cflowstack.ThreadCounter getNewThreadCounter()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactory org.aspectj.runtime.internal.cflowstack.ThreadStack getNewThreadStack()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.aspectj.runtime.internal.cflowstack.ThreadStackFactoryImpl org.aspectj.runtime.internal.cflowstack.ThreadCounter getNewThreadCounter()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

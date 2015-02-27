@@ -1,0 +1,131 @@
+<root>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.ActionModeImpl void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar boolean onMenuKeyEvent(android.view.KeyEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void addTab(android.support.v7.app.ActionBar.Tab, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setText(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setCustomView(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void addTab(android.support.v7.app.ActionBar.Tab, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar WindowDecorActionBar(android.app.Dialog) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar WindowDecorActionBar(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar WindowDecorActionBar(android.support.v7.app.ActionBarActivity, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void setCustomView(android.view.View, android.support.v7.app.ActionBar.LayoutParams) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar android.support.v7.app.ActionBar.Tab newTab()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.ActionModeImpl ActionModeImpl(android.support.v7.internal.app.WindowDecorActionBar, android.support.v7.view.ActionMode.Callback) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setContentDescription(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setContentDescription(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setCustomView(android.view.View)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setIcon(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void addTab(android.support.v7.app.ActionBar.Tab, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void addTab(android.support.v7.app.ActionBar.Tab, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setTag(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void removeTab(android.support.v7.app.ActionBar.Tab) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void setCustomView(android.view.View, android.support.v7.app.ActionBar.LayoutParams) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setTabListener(android.support.v7.app.ActionBar.TabListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void addTab(android.support.v7.app.ActionBar.Tab, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void addTab(android.support.v7.app.ActionBar.Tab) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window, android.support.v7.internal.app.WindowCallback) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.ActionModeImpl android.view.MenuInflater getMenuInflater()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setText(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar.TabImpl android.support.v7.app.ActionBar.Tab setIcon(android.graphics.drawable.Drawable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void addTab(android.support.v7.app.ActionBar.Tab) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window, android.support.v7.internal.app.WindowCallback) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.ToolbarActionBar void addTab(android.support.v7.app.ActionBar.Tab, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.app.WindowDecorActionBar void removeTab(android.support.v7.app.ActionBar.Tab) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

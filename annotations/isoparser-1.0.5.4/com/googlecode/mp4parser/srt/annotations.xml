@@ -1,0 +1,5 @@
+<root>
+    <item name='com.googlecode.mp4parser.srt.SrtParser com.googlecode.mp4parser.authoring.tracks.TextTrackImpl parse(java.io.InputStream)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

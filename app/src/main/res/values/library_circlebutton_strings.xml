@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string name="define_circlebutton"/>
+	<!-- Author section -->
+	<string name="library_circlebutton_author">Markus Hi</string>
+	<string name="library_circlebutton_authorWebsite">https://github.com/markushi</string>
+	<!-- Library section -->
+	<string name="library_circlebutton_libraryName">CircleButton</string>
+	<string name="library_circlebutton_libraryDescription">Circle button widget for Android</string>
+	<string name="library_circlebutton_libraryWebsite"/>
+	<string name="library_circlebutton_libraryVersion">1.1</string>
+	<!-- OpenSource section -->
+	<string name="library_circlebutton_isOpenSource">true</string>
+	<string name="library_circlebutton_repositoryLink">https://github.com/markushi/android-circlebutton</string>
+	<!-- ClassPath for autoDetect section -->
+	<string name="library_circlebutton_classPath">at.markushi.ui</string>
+	<!-- License section -->
+	<string name="library_circlebutton_licenseId">apache_2_0</string>
+	<!-- Custom variables section -->
+</resources>

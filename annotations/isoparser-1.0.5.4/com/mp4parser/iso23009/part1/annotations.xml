@@ -1,0 +1,11 @@
+<root>
+    <item name='com.mp4parser.iso23009.part1.EventMessageBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23009.part1.EventMessageBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso23009.part1.EventMessageBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

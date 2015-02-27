@@ -1,0 +1,110 @@
+<root>
+    <item name='com.mp4parser.iso14496.part15.HevcConfigurationBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.SyncSampleEntry void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalLayerSampleGroup java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcConfigurationBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.HevcConfigurationBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcDecoderConfigurationRecord AvcDecoderConfigurationRecord(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcConfigurationBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.SyncSampleEntry TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.StepwiseTemporalLayerEntry java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.StepwiseTemporalLayerEntry void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalSubLayerSampleGroup void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalSubLayerSampleGroup java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalSubLayerSampleGroup TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierInfoBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.HevcDecoderConfigurationRecord void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierBitRateBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcDecoderConfigurationRecord java.util.List&lt;java.lang.String&gt; getSequenceParameterSetExtsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalLayerSampleGroup void parse(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcDecoderConfigurationRecord java.util.List&lt;java.lang.String&gt; getSequenceParameterSetsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcDecoderConfigurationRecord void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcDecoderConfigurationRecord java.util.List&lt;java.lang.String&gt; getPictureParameterSetsAsStrings()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.SyncSampleEntry java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.PriotityRangeBox TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.HevcConfigurationBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierInfoBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.StepwiseTemporalLayerEntry TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.AvcConfigurationBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.HevcDecoderConfigurationRecord void write(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.PriotityRangeBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierInfoBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TemporalLayerSampleGroup TYPE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.PriotityRangeBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierBitRateBox void getContent(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mp4parser.iso14496.part15.TierBitRateBox void _parseDetails(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

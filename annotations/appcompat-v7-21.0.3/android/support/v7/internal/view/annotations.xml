@@ -1,0 +1,35 @@
+<root>
+    <item name='android.support.v7.internal.view.StandaloneActionMode void setCustomView(android.view.View) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='android.support.v7.internal.view.StandaloneActionMode android.view.MenuInflater getMenuInflater()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.StandaloneActionMode boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.ViewPropertyAnimatorCompatSet android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setDuration(long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.ViewPropertyAnimatorCompatSet android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setInterpolator(android.view.animation.Interpolator)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.SupportActionModeWrapper android.view.Menu getMenu()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.ViewPropertyAnimatorCompatSet android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setListener(android.support.v4.view.ViewPropertyAnimatorListener)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.StandaloneActionMode StandaloneActionMode(android.content.Context, android.support.v7.internal.widget.ActionBarContextView, android.support.v7.view.ActionMode.Callback, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.ActionBarPolicy android.support.v7.internal.view.ActionBarPolicy get(android.content.Context)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='android.support.v7.internal.view.ViewPropertyAnimatorCompatSet android.support.v7.internal.view.ViewPropertyAnimatorCompatSet play(android.support.v4.view.ViewPropertyAnimatorCompat)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

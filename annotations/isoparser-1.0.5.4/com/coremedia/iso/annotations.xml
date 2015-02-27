@@ -1,0 +1,146 @@
+<root>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt24(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt16(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader int readUInt16BE(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt8(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader java.lang.String readString(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeFixedPoint0230(java.nio.ByteBuffer, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt48(java.nio.ByteBuffer, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.BoxParser com.coremedia.iso.boxes.Box parseBox(com.googlecode.mp4parser.DataSource, com.coremedia.iso.boxes.Container) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader long readUInt64(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader java.lang.String readString(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt32(java.nio.ByteBuffer, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writePascalUtfString(java.nio.ByteBuffer, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoFile java.lang.String bytesToFourCC(byte[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeIso639(java.nio.ByteBuffer, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.Hex java.lang.String encodeHex(byte[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoFile byte[] fourCCtoBytes(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader java.lang.String read4cc(java.nio.ByteBuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoFile IsoFile(com.googlecode.mp4parser.DataSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeFixedPoint88(java.nio.ByteBuffer, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader double readFixedPoint1616(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader int readUInt16(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.BoxReplacer void replace(java.util.Map&lt;java.lang.String,com.coremedia.iso.boxes.Box&gt;, java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.Hex java.lang.String encodeHex(byte[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader double readFixedPoint0230(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.AbstractBoxParser com.coremedia.iso.boxes.Box parseBox(com.googlecode.mp4parser.DataSource, com.coremedia.iso.boxes.Container) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader long readUInt32BE(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader long readUInt48(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader int readUInt8(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeZeroTermUtf8String(java.nio.ByteBuffer, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt16BE(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader int readUInt24(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.Hex java.lang.String encodeHex(byte[], int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt32BE(java.nio.ByteBuffer, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.Hex byte[] decodeHex(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.Hex java.lang.String encodeHex(byte[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUtf8String(java.nio.ByteBuffer, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader long readUInt32(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader java.lang.String readIso639(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.PropertyBoxParserImpl PropertyBoxParserImpl(java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriterVariable void write(long, java.nio.ByteBuffer, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader java.lang.String read4cc(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReaderVariable long read(java.nio.ByteBuffer, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeIso639(java.nio.ByteBuffer, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoFile IsoFile(com.googlecode.mp4parser.DataSource, com.coremedia.iso.BoxParser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeUInt64(java.nio.ByteBuffer, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeReader float readFixedPoint88(java.nio.ByteBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.coremedia.iso.IsoTypeWriter void writeFixedPoint1616(java.nio.ByteBuffer, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

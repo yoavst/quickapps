@@ -1,0 +1,17 @@
+<root>
+    <item name='com.googlecode.mp4parser.authoring.samples.DefaultMp4SampleList com.googlecode.mp4parser.authoring.Sample get(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.samples.FragmentedMp4SampleList com.googlecode.mp4parser.authoring.Sample get(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.samples.FragmentedMp4SampleList java.lang.Object get(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.samples.DefaultMp4SampleList java.lang.Object get(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.googlecode.mp4parser.authoring.samples.DefaultMp4SampleList DefaultMp4SampleList(long, com.coremedia.iso.boxes.Container) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

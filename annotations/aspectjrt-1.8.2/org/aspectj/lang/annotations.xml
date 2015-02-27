@@ -1,0 +1,71 @@
+<root>
+    <item name='org.aspectj.lang.JoinPoint FIELD_GET'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects T aspectOf(java.lang.Class&lt;T&gt;, java.lang.Class&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint PREINITIALIZATION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects T aspectOf(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects14 java.lang.Object aspectOf(java.lang.Class) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects T aspectOf(java.lang.Class&lt;T&gt;, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint java.lang.Object[] getArgs()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint FIELD_SET'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint STATICINITIALIZATION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects14 java.lang.Object aspectOf(java.lang.Class, java.lang.Class) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint INITIALIZATION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint SYNCHRONIZATION_UNLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Signature java.lang.String getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint CONSTRUCTOR_EXECUTION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint ADVICE_EXECUTION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint EXCEPTION_HANDLER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint METHOD_EXECUTION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.Aspects14 java.lang.Object aspectOf(java.lang.Class, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint CONSTRUCTOR_CALL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint METHOD_CALL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.aspectj.lang.JoinPoint SYNCHRONIZATION_LOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
