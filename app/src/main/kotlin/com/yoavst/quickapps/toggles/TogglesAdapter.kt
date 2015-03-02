@@ -23,6 +23,7 @@ import com.yoavst.quickapps.toggles.fragments.BluetoothFragment
 import com.yoavst.quickapps.toggles.fragments.HotSpotFragment
 import com.yoavst.quickapps.toggles.fragments.WifiFragment
 import com.yoavst.util.typeToken
+import com.mobsandgeeks.ake.lollipopOrNewer
 
 /**
  * Created by Yoav.
@@ -34,7 +35,7 @@ public class TogglesAdapter(fm: FragmentManager, context: Context) : FragmentPag
             Gson().fromJson(prefs.togglesItems().getOr("[]"), listType)
         else
             initDefaultToggles(context)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (lollipopOrNewer()) {
             for (i in localItems.indices) {
                 if (localItems.get(i).id == 1) {
                     localItems.remove(i)

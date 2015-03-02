@@ -8,6 +8,7 @@ import java.util.ArrayList
 import java.util.Collections
 import com.yoavst.util.equalsContent
 import kotlin.platform.platformStatic
+import com.mobsandgeeks.ake.preLollipop
 
 /**
  * Created by Yoav.
@@ -90,7 +91,7 @@ public object NotificationsManager {
 
     private fun sort() {
         if (notifications!!.size() >= 2) {
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
+            if (preLollipop())
                 Collections.sort(notifications) {(lhs, rhs) -> if (lhs.isClearable()) (if (rhs.isClearable()) 0 else -1) else (if (rhs.isClearable()) 0 else -1) }
             else
                 Collections.sort(notifications) {(lhs, rhs) -> rhs.getNotification().priority - lhs.getNotification().priority }

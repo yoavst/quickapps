@@ -14,6 +14,7 @@ import android.content.Intent
 import android.content.ComponentName
 import com.yoavst.util.createExplicit
 import com.mobsandgeeks.ake.viewById
+import com.mobsandgeeks.ake.shortToast
 
 /**
  * Created by Yoav.
@@ -23,10 +24,14 @@ public class HowToFragment: Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val button: CircleButton = viewById(R.id.settings_btn);
-        button.setImageDrawable(IconDrawable(getActivity(), Iconify.IconValue.md_settings).sizeDp(32).color(Color.WHITE));
+        val button: CircleButton = viewById(R.id.settings_btn)
+        button.setImageDrawable(IconDrawable(getActivity(), Iconify.IconValue.md_settings).sizeDp(32).color(Color.WHITE))
         button.setOnClickListener {
-            startActivity(Intent("android.intent.action.MAIN").setComponent(ComponentName("com.android.settings", "com.android.settings.lge.QuickWindowCase")));
+            try {
+                startActivity(Intent("android.intent.action.MAIN").setComponent(ComponentName("com.android.settings", "com.android.settings.lge.QuickWindowCase")))
+            } catch (e: Exception) {
+                shortToast(R.string.activity_not_found)
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ import com.yoavst.quickapps.toggles.CTogglesActivity
 import com.yoavst.quickapps.toggles.ToggleFragment
 import kotlin.properties.Delegates
 import com.mobsandgeeks.ake.audioManager
+import com.mobsandgeeks.ake.preLollipop
 
 /**
  * Created by Yoav.
@@ -74,7 +75,7 @@ public class SoundFragment : ToggleFragment() {
     override fun onToggleButtonClicked() {
         when (audioManager.getRingerMode()) {
             AudioManager.RINGER_MODE_NORMAL -> audioManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE)
-            AudioManager.RINGER_MODE_VIBRATE -> if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
+            AudioManager.RINGER_MODE_VIBRATE -> if (preLollipop())
                 audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT)
             else
                 audioManager.setRingerMode(AudioManager.RINGER_MODE_NORMAL)

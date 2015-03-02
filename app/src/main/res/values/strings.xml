@@ -153,6 +153,7 @@
     <string name="g2_mode_explain">Enable it only if you are on the G2 with Quick Window!</string>
     <string name="local_number_contains_zero">Locals numbers start with 0</string>
     <string name="local_number_contains_zero_explain">Check if numbers start with zero digit, like 0123–456–7890</string>
+    <string name="activity_not_found">Settings Activity not found</string>
     <string name="contacts">Contacts</string>
     <string-array name="magic_ball">
         <item>It is certain</item>
