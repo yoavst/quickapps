@@ -155,6 +155,11 @@
     <string name="local_number_contains_zero_explain">Check if numbers start with zero digit, like 0123–456–7890</string>
     <string name="activity_not_found">Settings Activity not found</string>
     <string name="contacts">Contacts</string>
+    <string name="hide_ads">Hide full screen ad</string>
+    <string name="hide_ads_explain">I\'ve worked on this application for a lot of time, And I think I deserve to earn some money for this app.
+        Options - Annoying Ads on Quick Circle, Selling users\' data, or the current option - (a bit annoying, but you watch them 1 or 2 times only) ads on Settings.
+        If you really dislike them and/or think I don\'t deserve the money and/or you\'ve donated to me (Thanks!), Than you can remove the ads.</string>
+    <string name="hide_ads_explain_short">The app\'s revenues are only from ads</string>
     <string-array name="magic_ball">
         <item>It is certain</item>
         <item>It is decidedly so</item>

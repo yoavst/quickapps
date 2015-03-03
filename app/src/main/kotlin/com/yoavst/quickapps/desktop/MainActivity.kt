@@ -16,7 +16,6 @@ import com.malinskiy.materialicons.Iconify
 import com.mikepenz.materialdrawer.model.DividerDrawerItem
 import android.widget.AdapterView
 import android.support.v7.app.ActionBarDrawerToggle
-import android.os.Build
 import kotlin.properties.Delegates
 import butterknife.bindView
 import com.mobsandgeeks.ake.getColor
@@ -24,6 +23,8 @@ import com.mobsandgeeks.ake.hide
 import com.mobsandgeeks.ake.viewById
 import com.mobsandgeeks.ake.show
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
+import com.yoavst.quickapps.PrefManager
+import com.google.android.gms.ads.InterstitialAd
 
 /**
  * Created by Yoav.
@@ -46,7 +47,6 @@ public class MainActivity : ActionBarActivity() {
     fun initDrawer() {
         toolbar.setTitle("")
         setSupportActionBar(toolbar)
-        toolbar.setNavigationIcon(R.drawable.ic_drawer)
         val layout = Drawer()
                 .withActivity(this)
                 .withToolbar(toolbar)
@@ -59,7 +59,7 @@ public class MainActivity : ActionBarActivity() {
                 .withHeader(R.layout.header_drawer)
                 .withOnDrawerItemClickListener {(adapterView: AdapterView<*>, view: View, position: Int, id: Long, iDrawerItem: IDrawerItem?) ->
                     toolbar.setBackgroundColor(primaryColor)
-                        statusBar.setBackgroundColor(primaryColor)
+                    statusBar.setBackgroundColor(primaryColor)
                     when (position) {
                         1 -> pendingFragment = PendingFragment(getString(R.string.how_to_add), HowToFragment())
                         2 -> pendingFragment = PendingFragment("", ModulesFragment())
@@ -75,6 +75,7 @@ public class MainActivity : ActionBarActivity() {
             }
         }
         layout.setDrawerListener(listener)
+        toolbar.setNavigationIcon(R.drawable.ic_drawer)
         pendingFragment = PendingFragment(getString(R.string.how_to_add), HowToFragment())
         loadFragment()
     }
@@ -100,10 +101,22 @@ public class MainActivity : ActionBarActivity() {
                 adView.hide()
             }
         });
-        adView.loadAd(AdRequest.Builder()
+        val adRequest = AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addKeyword("Quick Circle, LG G3")
-                .build())
+                .build()
+        adView.loadAd(adRequest)
+        if (!PrefManager(this).hideAds().getOr(false)) {
+            val interstitial = InterstitialAd(this)
+            interstitial.setAdUnitId("ca-app-pub-3328409722635254/7430313728")
+            interstitial.loadAd(adRequest)
+            interstitial.setAdListener(object : AdListener() {
+                override fun onAdLoaded() {
+                    super.onAdLoaded()
+                    interstitial.show()
+                }
 
+            })
+        }
     }
 }

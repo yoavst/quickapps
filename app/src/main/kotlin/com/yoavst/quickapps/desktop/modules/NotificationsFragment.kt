@@ -26,7 +26,7 @@ public class NotificationsFragment: BaseModuleFragment() {
     }
 
     override fun init() {
-        viewById<View>(R.id.listener_row).setOnClickListener { v -> getActivity().startActivity(Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS")) };
+        getView()!!.findViewById(R.id.listener_row).setOnClickListener { v -> getActivity().startActivity(Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS")) };
     }
 
     override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {

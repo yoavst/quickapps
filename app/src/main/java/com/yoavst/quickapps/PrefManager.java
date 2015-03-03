@@ -69,6 +69,10 @@ public class PrefManager extends PrettySharedPreferences<PrefManager> {
 		return getBooleanEditor("dialerStartWithZero");
 	}
 
+	public BooleanEditor<PrefManager> hideAds() {
+		return getBooleanEditor("showAds");
+	}
+
 	public BooleanEditor<PrefManager> showLocation() {
 		return getBooleanEditor("showLocation");
 	}

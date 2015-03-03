@@ -39,8 +39,9 @@ public abstract class QCircleActivity : Activity() {
     override fun onStart() {
         super.onStart()
         val circle = optionalViewById<View>(R.id.circle)
-        if (circle != null && PrefManager(this).g2Mode().getOr(false))
-            circle.hide()
+        if (circle != null && PrefManager(this).g2Mode().getOr(false)) {
+            circle.setVisibility(View.GONE)
+        }
         try {
             template.registerIntentReceiver()
         } catch (ignored: Exception) {
