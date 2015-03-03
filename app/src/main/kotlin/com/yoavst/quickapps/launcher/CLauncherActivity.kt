@@ -312,16 +312,75 @@ public class CLauncherActivity : QCircleActivity(), View.OnClickListener {
             if (cursor != null && cursor.moveToFirst()) {
                 val localComponents = ArrayList<ComponentWrapper>()
                 if (cursor.getCount() != 0) {
-                    while (cursor.moveToNext()) {
+                    do {
                         localComponents.add(ComponentWrapper(ComponentName(cursor.getString(cursor.getColumnIndex("package")), cursor.getString(cursor.getColumnIndex("class"))),
                                 cursor.getInt(cursor.getColumnIndex("_id"))))
-                    }
+                    } while ((cursor.moveToNext()))
                 }
                 cursor.close()
                 components = localComponents.toArray(arrayOfNulls(localComponents.size()))
             } else {
                 components = array()
             }
+        }
+
+        public fun hasSettings(context: Context): Boolean {
+            updateComponents(context)
+            var settings = -1
+            components?.forEach { wrapper ->
+                if (wrapper.component.getPackageName().equals("com.lge.clock")) {
+                    settings = wrapper.id
+                }
+            }
+            return settings != -1
+        }
+
+        public fun removeSettings(context: Context): Boolean {
+            updateComponents(context)
+            val uri = Uri.parse("content://com.lge.lockscreensettings/quickwindow")
+            var settings = -1
+            components?.forEach { wrapper ->
+                if (wrapper.component.getPackageName().equals("com.lge.clock")) {
+                    settings = wrapper.id
+                }
+            }
+            if (settings != -1) {
+                val rows = context.getContentResolver().delete(ContentUris.withAppendedId(uri, settings.toLong()), null, null)
+                return rows > 0
+            } else
+                return false
+        }
+
+        public fun addSettings(context: Context): Boolean {
+            updateComponents(context)
+            val uri = Uri.parse("content://com.lge.lockscreensettings/quickwindow")
+            if (components != null && components!!.size() < 6) {
+                var settings = -1
+                val values = booleanArray(false, false, false, false, false, false)
+                components!!.forEach { wrapper ->
+                    if (wrapper.component.getPackageName().equals("com.lge.clock")) {
+                        settings = wrapper.id
+                    }
+                    values[wrapper.id - 1] = true
+                }
+                if (settings == -1) {
+                    var missingId = -1
+                    for (i in values.indices) {
+                        if (!values[i]) {
+                            missingId = i + 1
+                            break
+                        }
+                    }
+                    val newValues = ContentValues()
+                    newValues.put("_id", missingId)
+                    newValues.put("package", "com.lge.clock")
+                    newValues.put("class", "com.lge.clock.quickcover.QuickCoverSettingActivity")
+                    context.getContentResolver().insert(uri, newValues)
+                    return true
+                } else
+                    return false
+            } else
+                return false
         }
     }
 }

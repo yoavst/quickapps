@@ -33,6 +33,7 @@ public class MainActivity : ActionBarActivity() {
     private val toolbar: Toolbar by bindView(R.id.toolbar)
     val statusBar: View by bindView(R.id.status_bar)
     val primaryColor: Int by Delegates.lazy { getColor(R.color.primary_color) }
+    var isVisible = false
     private var pendingFragment: PendingFragment? = null
 
     class PendingFragment(public val title: String, public val fragment: Fragment)
@@ -42,6 +43,16 @@ public class MainActivity : ActionBarActivity() {
         setContentView(R.layout.desktop_activity_main)
         initDrawer()
         initAds()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        isVisible = false
+    }
+
+    override fun onResume() {
+        super.onResume()
+        isVisible = true
     }
 
     fun initDrawer() {
@@ -113,7 +124,8 @@ public class MainActivity : ActionBarActivity() {
             interstitial.setAdListener(object : AdListener() {
                 override fun onAdLoaded() {
                     super.onAdLoaded()
-                    interstitial.show()
+                    if (isVisible)
+                        interstitial.show()
                 }
 
             })
