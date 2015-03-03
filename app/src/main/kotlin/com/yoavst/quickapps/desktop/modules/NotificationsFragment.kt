@@ -13,14 +13,15 @@ import com.mobsandgeeks.ake.showShortToast
  * Created by Yoav.
  */
 public class NotificationsFragment: BaseModuleFragment() {
-    override val CompoundButtonIds: IntArray = intArray(R.id.privacy_checkbox,R.id.am_pm_checkbox)
-    override val rowsIds: IntArray = intArray(R.id.privacy_row, R.id.am_pm_row)
+    override val CompoundButtonIds: IntArray = intArray(R.id.privacy_checkbox,R.id.am_pm_checkbox, R.id.auto_launch_checkbox)
+    override val rowsIds: IntArray = intArray(R.id.privacy_row, R.id.am_pm_row, R.id.auto_launch_row)
     override val layoutId: Int = R.layout.desktop_module_notifications
 
     override fun shouldCheck(id: Int): Boolean {
         return when (id) {
             R.id.privacy_checkbox ->  prefs.notificationShowContent().getOr(true)
             R.id.am_pm_checkbox -> prefs.amPmInNotifications().getOr(false)
+            R.id.auto_launch_checkbox -> prefs.startActivityOnNotification().getOr(false)
             else -> false
         }
     }
@@ -33,6 +34,7 @@ public class NotificationsFragment: BaseModuleFragment() {
         when (buttonView?.getId()) {
             R.id.privacy_checkbox -> prefs.notificationShowContent().put(isChecked).apply()
             R.id.am_pm_checkbox -> prefs.amPmInNotifications().put(isChecked).apply()
+            R.id.auto_launch_checkbox -> prefs.startActivityOnNotification().put(isChecked).apply()
         }
         showShortToast(R.string.changed_successfully)
     }

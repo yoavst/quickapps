@@ -31,7 +31,7 @@ import com.mobsandgeeks.ake.lollipopOrNewer
 public class TogglesAdapter(fm: FragmentManager, context: Context) : FragmentPagerAdapter(fm) {
     val items: ArrayList<ToggleItem> by Delegates.lazy {
         val prefs = PrefManager(context)
-        val localItems = if (prefs.togglesItems().getOr("-1") == "-1")
+        val localItems = if (prefs.togglesItems().getOr("-1") != "-1")
             Gson().fromJson(prefs.togglesItems().getOr("[]"), listType)
         else
             initDefaultToggles(context)
@@ -49,7 +49,7 @@ public class TogglesAdapter(fm: FragmentManager, context: Context) : FragmentPag
 
 
     override fun getItem(i: Int): Fragment {
-        if (showBattery and (i == 0))
+        if ((i == 0) and showBattery)
             return BatteryFragment()
         else
             return getOriginalItem(items.get(if (showBattery) i - 1 else i).id + 1)

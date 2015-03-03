@@ -23,7 +23,6 @@ import com.google.gson.Gson
 import com.yoavst.quickapps.launcher.ItemsListAdapter
 
 
-// FIXME when finishing launcher module
 public class LauncherFragment : BaseModuleFragment() {
     override val CompoundButtonIds: IntArray = intArray(R.id.load_externalg_checkbox, R.id.auto_load_checkbox, R.id.remove_lg_checkbox, R.id.orientation_switch)
     override val rowsIds: IntArray = intArray(R.id.modules_load_external_row, R.id.modules_auto_load_row, R.id.modules_remove_lg_row, R.id.modules_orientation_row)

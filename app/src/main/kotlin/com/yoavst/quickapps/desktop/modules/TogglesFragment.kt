@@ -31,7 +31,7 @@ import com.yoavst.quickapps.MyLinearLayoutManager
  */
 public class TogglesFragment : BaseModuleFragment() {
     override val CompoundButtonIds: IntArray = intArray(R.id.battery_checkbox)
-    override val rowsIds: IntArray = intArray(R.id.battery_checkbox)
+    override val rowsIds: IntArray = intArray(R.id.battery_row)
     override val layoutId: Int = R.layout.desktop_module_toggles
     var items: ArrayList<ToggleItem> by Delegates.notNull()
 
