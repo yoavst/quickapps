@@ -55,7 +55,7 @@ public class AboutFragment : Fragment() {
             getActivity().startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/donatetome.php?u=5053440")))
         }
         message.setOnClickListener {
-            val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "yoav.goop@gmail.com", null))
+            val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "yoav.sternberg@gmail.com", null))
             emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.app_name))
             try {
                 getActivity().startActivity(Intent.createChooser(emailIntent, getActivity().getString(R.string.about_mail_chooser)))

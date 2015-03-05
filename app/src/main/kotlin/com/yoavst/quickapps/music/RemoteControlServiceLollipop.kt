@@ -101,7 +101,7 @@ public class RemoteControlServiceLollipop : AbstractRemoteControlService(), Medi
             listener?.onPlaybackStateChanged(state)
         }
 
-        override fun onMetadataChanged(metadata: MediaMetadata) {
+        override fun onMetadataChanged(metadata: MediaMetadata?) {
             super.onMetadataChanged(metadata)
             listener?.onMetadataChanged(metadata)
         }

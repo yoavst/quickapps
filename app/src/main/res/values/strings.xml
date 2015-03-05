@@ -76,7 +76,7 @@
     <string name="about">Quick Circle Apps is a group of modules for LG G3 Quick Circle case. The app also contains some QSlide modules.</string>
     <string name="about_2">The app uses LG Quick Circle SDK</string>
     <string name="about_3">Author: Yoav Sternberg</string>
-    <string name="about_4">Contact: yoav.goop@gmail.com</string>
+    <string name="about_4">Contact: yoav.sternberg@gmail.com</string>
     <string name="about_5">Extra credits: Marco Kirchner (@BigBoot) for compass module and more, Marko Vene (@mark232) for Lollipop base support.</string>
     <string name="about_mail_chooser">Choose mail client</string>
     <string name="about_intent_failed">No mail clients installed</string>
