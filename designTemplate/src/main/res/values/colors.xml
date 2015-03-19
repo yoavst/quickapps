@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_button_color_normal">#E1E1E1</color>
+    <color name="back_button_color_pressed">#BDBDBD</color>
+    <color name="back_button_color_dark_normal">#607D8B</color>
+    <color name="back_button_color_dark_pressed">#78909C</color>
+    <color name="back_button_color_semi_transparent_normal">#30000000</color>
+    <color name="back_button_color_semi_transparent_pressed">#60000000</color>
+    <color name="dialog_title_background_color_regular">#669B9F</color>
+    <color name="dialog_title_background_color_error">#DC4439</color>
+</resources>

@@ -28,5 +28,6 @@
         <item>@color/md_blue_700</item>
         <item>@color/md_black_1000</item>
         <item>@color/md_red_500</item>
+        <item>@color/md_red_500</item>
     </array>
 </resources>

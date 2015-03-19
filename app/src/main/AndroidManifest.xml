@@ -406,6 +406,23 @@
         </activity>
         <activity android:name=".news.LoginActivity" />
         <!-- News part [END] -->
+        <!-- Barcode part [START] -->
+        <activity
+            android:name=".barcode.CBarcodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/barcode_module_name"
+            android:icon="@drawable/barcode_icon"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.barcode"
+            android:theme="@style/lightTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".barcode.ResultBarcodeActivity" android:theme="@style/AppTheme.MyDialog" android:excludeFromRecents="true"/>
+        <!-- Barcode part [END] -->
         <receiver android:name=".CoverReceiver">
             <intent-filter>
                 <action android:name="com.lge.android.intent.action.ACCESSORY_COVER_EVENT" />

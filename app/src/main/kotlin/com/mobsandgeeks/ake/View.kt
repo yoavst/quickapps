@@ -8,8 +8,8 @@ import android.app.Activity
 import android.app.Fragment
 
 public inline fun View.findView<T : View>(id: Int): T? = findViewById(id) as? T
-public inline fun View.show(): Unit = if (!this.isShown()) this.setVisibility(View.VISIBLE)
-public inline fun View.hide(): Unit = if (this.isShown()) this.setVisibility(View.GONE)
+public inline fun View.show(): Unit = this.setVisibility(View.VISIBLE)
+public inline fun View.hide(): Unit = this.setVisibility(View.GONE)
 public inline fun View.toggleVisibility(): Unit = if (this.isShown()) this.hide() else this.show()
 
 public inline fun OnTouchListener(inlineOptions(InlineOption.ONLY_LOCAL_RETURN) action: (View?, MotionEvent?) -> Boolean): OnTouchListener {

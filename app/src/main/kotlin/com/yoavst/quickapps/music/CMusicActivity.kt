@@ -72,7 +72,7 @@ public class CMusicActivity : QCircleActivity() {
         playPauseButton.setOnTouchListener(::touchCallback)
         progressBar = layoutForButtons.findViewById(R.id.music_progress) as ProgressBar
         val params = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, getResources().getDimensionPixelSize(R.dimen.control_buttons_height))
-        params.addRule(RelativeLayout.ABOVE, QCircleBackButton.getId())
+        params.addRule(RelativeLayout.ABOVE, R.id.backButton)
         layoutForButtons.setLayoutParams(params)
         contentParent.addView(layoutForButtons)
         val main = template.getLayoutById(TemplateTag.CONTENT)

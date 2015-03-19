@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark" >
+
+    <RelativeLayout
+        android:id="@+id/circlelayout"
+        android:layout_width="@dimen/circle_size"
+        android:layout_height="@dimen/square_size"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/background_light" >
+
+        <!-- child #1: Title -->
+        <!-- child #2: content -->
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false" >
+
+                <RelativeLayout
+                    android:id="@+id/side1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark" />
+
+                <RelativeLayout
+                    android:id="@+id/side2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/divider" />
+        </RelativeLayout>
+        <!-- child #3: Button -->
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/circle"
+        android:layout_width="@dimen/square_size"
+        android:layout_height="@dimen/square_size"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circlebackground" />
+
+</FrameLayout>

@@ -160,6 +160,22 @@
         Options - Annoying Ads on Quick Circle, Selling users\' data, or the current option - (a bit annoying, but you watch them 1 or 2 times only) ads on Settings.
         If you really dislike them and/or think I don\'t deserve the money and/or you\'ve donated to me (Thanks!), Than you can remove the ads.</string>
     <string name="hide_ads_explain_short">The app\'s revenues are only from ads</string>
+    <string name="scanned_successfully">Scan completed</string>
+    <string name="empty_barcode">Sorry! this barcode is empty</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="open_url">Open URL</string>
+    <string name="dial">Dial</string>
+    <string name="add_to_contacts">Add to contacts</string>
+    <string name="connect_wifi">Connect to Wi-Fi</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_mms">Send MMS</string>
+    <string name="open_in_map">Open in map</string>
+    <string name="get_directions">Get directions</string>
+    <string name="send_mail">Send mail</string>
+    <string name="add_to_calendar">Add to calendar</string>
     <string-array name="magic_ball">
         <item>It is certain</item>
         <item>It is decidedly so</item>

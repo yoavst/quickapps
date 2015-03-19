@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="square_size">260dp</dimen>
+    <dimen name="circle_size">259dp</dimen>
+    <dimen name="msgbox_height_top">40dp</dimen>
+    <dimen name="msgbox_width_top">180dp</dimen>
+    <dimen name="msgbox_width">230dp</dimen>
+    <dimen name="msgbox_height">85dp</dimen>
+    <dimen name="picbox_height">109dp</dimen>
+    <dimen name="font_size">13sp</dimen>
+    <dimen name="half_size">130dp</dimen>
+    <dimen name="numfont_size">40sp</dimen>
+    <dimen name="y">2dp</dimen>
+    <dimen name="x">68dp</dimen>
+    <dimen name="msgbox_margin">40dp</dimen>
+    <dimen name="numbox_padding">25dp</dimen>
+    <dimen name="zero">0dp</dimen>
+</resources>

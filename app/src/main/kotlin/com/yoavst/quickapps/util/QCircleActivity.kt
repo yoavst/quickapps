@@ -116,7 +116,10 @@ public abstract class QCircleActivity : Activity() {
     fun requirePermissionForLockTheScreen() {
         if (preferences.showDoubleTapDialog().getOr(true)) {
             shouldShowDeviceAdminDialog = true
-            val builder = QCircleDialog.Builder().setMode(QCircleDialog.DialogMode.YesNo).setTitle(getString(R.string.missing_permissions)).setText(getString(R.string.error_no_permission_for_lock_the_screen))
+            val builder = QCircleDialog.Builder()
+                    .setMode(QCircleDialog.DialogMode.YesNo)
+                    .setTitle(getString(R.string.missing_permissions))
+                    .setText(getString(R.string.error_no_permission_for_lock_the_screen))
             builder.setPositiveButtonListener(object : View.OnClickListener {
                 override fun onClick(v: View) {
                     shouldShowDeviceAdminDialog = false
@@ -129,12 +132,6 @@ public abstract class QCircleActivity : Activity() {
                 }
             }).setNegativeButtonText(getString(R.string.dont_show_again))
             builder.create().show(this, template)
-            val negative = (findViewById(R.id.negative) as Button)
-            val params = (negative.getParent() as View).getLayoutParams()
-            params.height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80F, getResources().getDisplayMetrics()).toInt()
-            (negative.getParent() as View).setLayoutParams(params)
-            negative.setGravity(Gravity.START or Gravity.CENTER_VERTICAL)
-            (findViewById(R.id.positive) as Button).setGravity(Gravity.CENTER)
         }
     }
 

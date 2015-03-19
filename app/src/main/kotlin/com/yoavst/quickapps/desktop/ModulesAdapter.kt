@@ -19,6 +19,7 @@ import com.yoavst.quickapps.desktop.modules.CalculatorFragment
 import com.yoavst.quickapps.desktop.modules.NewsFragment
 import com.yoavst.quickapps.desktop.modules.TogglesFragment
 import com.yoavst.quickapps.desktop.modules.LauncherFragment
+import com.yoavst.quickapps.desktop.modules.BarcodeFragment
 
 public class ModulesAdapter(fm: FragmentManager, context: Context) : FragmentPagerAdapter(fm) {
     private val TITLES: Array<String> by Delegates.lazy { context.getApplicationContext().getResources().getStringArray(R.array.modules) }
@@ -41,8 +42,9 @@ public class ModulesAdapter(fm: FragmentManager, context: Context) : FragmentPag
             9 -> fragment = CompassFragment()
             10 -> fragment = NewsFragment()
             11 -> fragment = DialerFragment()
-           12 -> fragment = EightBallFragment()
+            12 -> fragment = EightBallFragment()
             13 -> fragment = RecorderFragment()
+            14 -> fragment = BarcodeFragment()
             else -> fragment = GeneralSettingsFragment()
         }
         return fragment

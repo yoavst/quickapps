@@ -29,4 +29,9 @@
         <item name="centered">true</item>
         <item name="android:background">@android:color/transparent</item>
     </style>
+
+    <style name="AppTheme.MyDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
 </resources>

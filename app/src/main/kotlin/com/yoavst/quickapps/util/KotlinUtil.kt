@@ -1,12 +1,9 @@
 package com.yoavst.util
 
-import kotlin.properties.ReadOnlyProperty
 import android.view.View
 import android.app.Fragment
 import android.content.Context
-import android.widget.Toast
 import android.app.Activity
-import android.util.Log
 import java.lang.reflect.Type
 import com.google.gson.reflect.TypeToken
 import android.text.SpannableString
@@ -21,6 +18,7 @@ import android.content.ComponentName
 import com.mobsandgeeks.ake.shortToast
 import android.view.Gravity
 import android.service.notification.StatusBarNotification
+import android.widget.Button
 
 
 public inline fun <reified T> typeToken(): Type = object : TypeToken<T>() {}.getType()
@@ -70,6 +68,14 @@ public fun Intent.createExplicit(context: Context): Intent {
         return this
 }
 
+public fun Button.init(text: Int, callback: (View) -> Unit) {
+init(getContext().getString(text), callback)
+}
+
+public fun Button.init(text: String, callback: (View) -> Unit) {
+    setText(text)
+    setOnClickListener(callback)
+}
 
 public fun StatusBarNotification?.equalsContent(any: Any?): Boolean {
     if (this == null)
