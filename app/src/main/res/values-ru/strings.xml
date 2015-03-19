@@ -77,7 +77,7 @@
     <string name="about">Quick Circle Apps - группа модулей для чехла Quick Circle для LG G3. Также приложение содержит модули для QSlide.</string>
     <string name="about_2">Приложение использует LG Quick Circle SDK</string>
     <string name="about_3">Автор: Yoav Sternberg</string>
-    <string name="about_4">Почта: yoav.goop@gmail.com</string>
+    <string name="about_4">Почта: yoav.sternberg@gmail.com</string>
     <string name="about_5">Дополнительные благодарности: Marco Kirchner (@BigBoot) за модуль компаса и другое, Marko Vene (@mark232) за базовую поддержку Lollipop.</string>
     <string name="about_mail_chooser">Выберите почтовый клиент</string>
     <string name="about_intent_failed">Не найдено установленных почтовых клиентов</string>
@@ -86,7 +86,7 @@
     <string name="source">Источник</string>
     <string name="about_title">О приложении</string>
     <string name="settings">Настройки</string>
-    <string name="torch_launcher_shortcut">Ярлык лончера</string>
+    <string name="torch_launcher_shortcut">Ярлык в лончере</string>
     <string name="torch_launcher_shortcut_subtext">Показать значок фонарика в меню приложений</string>
     <string name="torch_qslide_shortcut">Ярлык QSlide</string>
     <string name="torch_qslide_shortcut_subtext">Показать значок фонарика в строке QSlide</string>
@@ -149,7 +149,18 @@
     <string name="missing_permissions">Нет разрешений</string>
     <string name="dont_show_again">Не показывать</string>
     <string name="add_admin_extra_app_text">Блокировка двойным нажатием</string>
-    <string name="admin_permission">Вкл администратора для dt2s</string>
+    <string name="admin_permission">Вкл администратора устройства</string>
+    <string name="admin_permission_explain">Необходимо, если Вы хотите блокировать устройство двойным нажатием</string>
+    <string name="g2_mode_explain">Включайте только, если у Вас G2 с Quick Window!</string>
+    <string name="local_number_contains_zero">Местные цифры начинаются с 0</string>
+    <string name="local_number_contains_zero_explain">Убедитесь, что цифры начинаются с нуля, например 0123–456–7890</string>
+    <string name="activity_not_found">Активность настроек не найдена</string>
+    <string name="contacts">Контакты</string>
+    <string name="hide_ads">Скрыть рекламу на полном экране</string>
+    <string name="hide_ads_explain">Я работал над этим приложением много времени, и думаю, что заслуживаю немного денег за него.
+        Варианты - раздражающая реклама в Quick Circle, продажа данных пользователей, или текущая опция - (немного раздражает, но Вы видите её только 1 или 2 раза) реклама в настройках.
+        Если же Вам действительно это не нравится/или Вы думаете, что я не заслуживаю денег и/или Вы внесли для меня пожертвование (спасибо!), тогда Вы можете убрать рекламу.</string>
+    <string name="hide_ads_explain_short">Приложение получает доход только от рекламы</string>
     <string-array name="magic_ball">
         <item>Это однозначно</item>
         <item>Определённо так</item>
