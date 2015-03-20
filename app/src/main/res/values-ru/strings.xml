@@ -161,6 +161,22 @@
         Варианты - раздражающая реклама в Quick Circle, продажа данных пользователей, или текущая опция - (немного раздражает, но Вы видите её только 1 или 2 раза) реклама в настройках.
         Если же Вам действительно это не нравится/или Вы думаете, что я не заслуживаю денег и/или Вы внесли для меня пожертвование (спасибо!), тогда Вы можете убрать рекламу.</string>
     <string name="hide_ads_explain_short">Приложение получает доход только от рекламы</string>
+    <string name="scanned_successfully">Сканирование выполнено</string>
+    <string name="empty_barcode">Извините! Штрихкод пуст</string>
+    <string name="copied">Скопировано в буфер</string>
+    <string name="search">Поиск</string>
+    <string name="share">Поделиться</string>
+    <string name="copy_to_clipboard">Копировать в буфер</string>
+    <string name="open_url">Открыть URL</string>
+    <string name="dial">Набрать номер</string>
+    <string name="add_to_contacts">Добавить в контакты</string>
+    <string name="connect_wifi">Подключиться к Wi-Fi</string>
+    <string name="send_sms">Отправить СМС</string>
+    <string name="send_mms">Отправить ММС</string>
+    <string name="open_in_map">Открыть на карте</string>
+    <string name="get_directions">Получить направления</string>
+    <string name="send_mail">Отправить почту</string>
+    <string name="add_to_calendar">Добавить в календарь</string>
     <string-array name="magic_ball">
         <item>Это однозначно</item>
         <item>Определённо так</item>
