@@ -17,23 +17,23 @@ import com.lge.qcircle.utils.QCircleFeature;
  *
  * @author jeongeun.jeon
  */
-public final class QCircleTitle extends QCircleTemplateElement{
+public final class QCircleTitle extends QCircleTemplateElement {
 
-    private final String TAG = "QCircleTitle";
+	private final String TAG = "QCircleTitle";
 
 	private LinearLayout mRootView = null;
 	private TextView mTitleView = null;
 
-    //sujin.cho
-    private RelativeLayout.LayoutParams mParams = null;
-    private final float fixedTitleRatio = 0.23f; // Title height ratio
-    private static int mFullSize = 0; // circle diameter
+	//sujin.cho
+	private RelativeLayout.LayoutParams mParams = null;
+	private final float fixedTitleRatio = 0.23f; // Title height ratio
+	private static int mFullSize = 0; // circle diameter
 
-    private boolean useDefaultHeight = true;
+	private boolean useDefaultHeight = true;
 
 	/**
 	 * creates a title bar with a text.
-	 * <p>
+	 * <p/>
 	 * It makes a {@link android.widget.TextView} with the given text.
 	 *
 	 * @param title   title text for the title. <br>
@@ -46,12 +46,9 @@ public final class QCircleTitle extends QCircleTemplateElement{
 		this(context, title, Color.BLACK, Color.TRANSPARENT);
 	}
 
-
-
-
-    /**
+	/**
 	 * creates a title bar with a text.
-	 * <p>
+	 * <p/>
 	 * It makes a {@link android.widget.TextView} with the given text.
 	 *
 	 * @param title           title text for the title. <br>
@@ -64,6 +61,25 @@ public final class QCircleTitle extends QCircleTemplateElement{
 	 */
 	public QCircleTitle(Context context, String title, int titleTextColor, int backgroundColor) {
 		this(context, createTextView(context, title, titleTextColor), backgroundColor);
+	}
+
+	/**
+	 * creates a title bar with a text.
+	 * <p/>
+	 * It makes a {@link android.widget.TextView} with the given text.
+	 *
+	 * @param title           title text for the title. <br>
+	 *                        If it is null, no title text will be shown but the title bar will occupy some
+	 *                        space.
+	 * @param context         {@code Activity} which has a circle view.<br>
+	 *                        If it is null, you might get errors when you use method of this class.
+	 * @param titleTextColor  The color of the title
+	 * @param backgroundColor The background color of the title
+	 * @param textSize        The text size
+	 */
+	public QCircleTitle(Context context, String title, int titleTextColor, int backgroundColor, float textSize) {
+		this(context, title, titleTextColor, backgroundColor);
+		setTextSize(textSize);
 	}
 
 	/**
@@ -90,7 +106,7 @@ public final class QCircleTitle extends QCircleTemplateElement{
 	public QCircleTitle(Context context, View title, int backgroundColor) {
 		if (context != null) {
 			mContext = context;
-            getTemplateDiameter(context);
+			getTemplateDiameter(context);
 			mRootView = createRootView(context, backgroundColor);
 			if (title != null) {
 				if (title instanceof TextView) mTitleView = (TextView) title;
@@ -164,31 +180,31 @@ public final class QCircleTitle extends QCircleTemplateElement{
 		}
 	}
 
-    /**
-     * Changes a background color of title view.
-     * @param color  The background color.  If 0, no background. Currently must be black, with any desired alpha level.
-     * @author sujin.cho
-     */
-    public void setBackgroundColor(int color)
-    {
-        if(mRootView != null)
-            mRootView.setBackgroundColor(color);
-    }
+	/**
+	 * Changes a background color of title view.
+	 *
+	 * @param color The background color.  If 0, no background. Currently must be black, with any desired alpha level.
+	 * @author sujin.cho
+	 */
+	public void setBackgroundColor(int color) {
+		if (mRootView != null)
+			mRootView.setBackgroundColor(color);
+	}
 
-    /**
-     * Changes a text color
-     * @param color The font color.  If 0, no background. Currently must be black, with any desired alpha level.
-     * @author sujin.cho
-     */
-    public void setTextColor(int color)
-    {
-        if(mTitleView != null)
-            mTitleView.setTextColor(color);
-    }
+	/**
+	 * Changes a text color
+	 *
+	 * @param color The font color.  If 0, no background. Currently must be black, with any desired alpha level.
+	 * @author sujin.cho
+	 */
+	public void setTextColor(int color) {
+		if (mTitleView != null)
+			mTitleView.setTextColor(color);
+	}
 
 	/**
 	 * Creates a root layout with a transparent background.
-	 * <p>
+	 * <p/>
 	 * The root layout will include all of contents for a title bar.
 	 *
 	 * @param context Activity which has this title bar
@@ -200,7 +216,7 @@ public final class QCircleTitle extends QCircleTemplateElement{
 
 	/**
 	 * Creates a root layout.
-	 * <p>
+	 * <p/>
 	 * The root layout will include all of contents for a title bar.
 	 *
 	 * @param context         Activity which has this title bar
@@ -248,81 +264,70 @@ public final class QCircleTitle extends QCircleTemplateElement{
 		return text;
 	}
 
-    /**
-     * Adds a title view to parent
-     * <p>
-     * This method is called in QCircleTemplate. First, the methods sets layout parameters for the title.
-     * Next, the method adds the title to parent. Once the title is added, UIs in the parent needs to be adjusted for the new component.
-     *
-     * @param parent QCircle Layout which
-     *
-     * @author sujin.cho
-     */
-    @Override
-    protected void addTo(RelativeLayout parent, RelativeLayout content) {
+	/**
+	 * Adds a title view to parent
+	 * <p/>
+	 * This method is called in QCircleTemplate. First, the methods sets layout parameters for the title.
+	 * Next, the method adds the title to parent. Once the title is added, UIs in the parent needs to be adjusted for the new component.
+	 *
+	 * @param parent QCircle Layout which
+	 * @author sujin.cho
+	 */
+	@Override
+	protected void addTo(RelativeLayout parent, RelativeLayout content) {
+		if ((mRootView != null) && (parent != null)) {
+			if (useDefaultHeight) {
+				setLayoutParams(fixedTitleRatio);
+			}
+			parent.addView(mRootView);
+			adjustLayout(content);
+		}
+	}
 
-        if((mRootView != null) && (parent != null)) {
+	private void adjustLayout(RelativeLayout content) {
+		if (content != null) {
+			RelativeLayout.LayoutParams contentParams = new RelativeLayout.LayoutParams(
+					content.getLayoutParams().width, content.getLayoutParams().height);
+			contentParams.addRule(RelativeLayout.BELOW, mRootView.getId());
+			content.setLayoutParams(contentParams);
+		}
+	}
 
-            if(useDefaultHeight) {
-                setLayoutParams(fixedTitleRatio);
-            }
-            parent.addView(mRootView);
-            adjustLayout(content);
-        }
-    }
+	private void setLayoutParams(float heightRatio) {
+		int titleAreaHeight = (int) (mFullSize * heightRatio);
+		mParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, titleAreaHeight);
+		mParams.addRule(RelativeLayout.ALIGN_PARENT_TOP, 1);
+		mRootView.setLayoutParams(mParams);
+	}
 
-    private void adjustLayout(RelativeLayout content)
-    {
-        if(content != null) {
-            RelativeLayout.LayoutParams contentParams = new RelativeLayout.LayoutParams(
-                    content.getLayoutParams().width, content.getLayoutParams().height);
-            contentParams.addRule(RelativeLayout.BELOW, mRootView.getId());
-            content.setLayoutParams(contentParams);
-        }
-    }
+	/**
+	 * Changes a height of title view.
+	 *
+	 * @param heightRatio ratio of the portion of title area respect to the circle diameter.
+	 * @author sujin..cho
+	 */
+	public void setTitleHeight(float heightRatio) {
+		useDefaultHeight = false;
+		setLayoutParams(heightRatio);
+	}
 
-
-    private void setLayoutParams(float heightRatio)
-    {
-        int titleAreaHeight = (int)(mFullSize * heightRatio);
-        mParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, titleAreaHeight);
-        mParams.addRule(RelativeLayout.ALIGN_PARENT_TOP, 1);
-        mRootView.setLayoutParams(mParams);
-    }
-
-
-    /**
-    * Changes a height of title view.
-    * @param heightRatio ratio of the portion of title area respect to the circle diameter.
-    * @author sujin..cho
-    */
-    public void setTitleHeight(float heightRatio)
-    {
-        useDefaultHeight = false;
-        setLayoutParams(heightRatio);
-    }
-
-
-    /**
-     * Locates the circle on the correct position. The correct position depends on phone model.
-     * <p>
-     * @author sujin.cho
-     */
-    private void getTemplateDiameter(Context context)
-    {
-        if(context != null) {
-            if (!QCircleFeature.isQuickCircleAvailable(context)) {
-                Log.i(TAG, "Quick Circle case is not available");
-                return;
-            }
-            // circle size
-            int id = context.getResources().getIdentifier(
-                    "config_circle_diameter", "dimen", "com.lge.internal");
-            mFullSize = context.getResources().getDimensionPixelSize(id);
-        }
-        else
-        {
-
-        }
-    }
+	/**
+	 * Locates the circle on the correct position. The correct position depends on phone model.
+	 * <p/>
+	 *
+	 * @author sujin.cho
+	 */
+	private void getTemplateDiameter(Context context) {
+		if (context != null) {
+			if (!QCircleFeature.isQuickCircleAvailable(context)) {
+				Log.i(TAG, "Quick Circle case is not available");
+				return;
+			}
+			// circle size
+			int id = context.getResources().getIdentifier(
+					"config_circle_diameter", "dimen", "com.lge.internal");
+			mFullSize = context.getResources().getDimensionPixelSize(id);
+		} else {
+		}
+	}
 }
