@@ -1,9 +1,10 @@
 package com.lge.qcircle.template;
 
 /**
- * Created by sujin.cho on 2015-03-11.
+ * The {@code QCircleTemplateElement} class is an abstract class for LG Quick Circle UI components.
+ * If you create a custom UI component for the QCircleTemplate, you will create a class extends {@code QCircleTemplateElement}.
+ * @author sujin.cho
  */
-
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.content.Context;
@@ -12,9 +13,12 @@ public abstract class QCircleTemplateElement {
 
     protected Context mContext = null;
 
+
+
     public QCircleTemplateElement(){
 
     }
+
 
     /**
      * creates a template element.
@@ -25,10 +29,11 @@ public abstract class QCircleTemplateElement {
         mContext = context;
     }
 
+
     /**
      * gets the view of the element
      *
-     * @return element view
+     * @return element view. This view is a root view of the QCircleTemplateElement.
      */
     public abstract View getView();
 
@@ -39,7 +44,12 @@ public abstract class QCircleTemplateElement {
      */
     public abstract int getId();
 
-    protected abstract void setElement(RelativeLayout parent);
-
-
+    /**
+     * Adds this to the parent. The parent layout is a circle layout and the content layout is a content area.
+     * The view of element is added to circle layout. Layout parameters of The content layout are adjusted.
+     * @param parent
+     * @param content
+     * @see com.lge.qcircle.template.QCircleTemplate
+     */
+    protected abstract void addTo(RelativeLayout parent, RelativeLayout content);
 }

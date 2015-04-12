@@ -21,7 +21,7 @@
         android:layout_height="100dp"/>
 
     <RelativeLayout
-        android:id="@+id/error_layout"
+        android:id="@+id/errorLayout"
         android:layout_width="285.5dp"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
@@ -30,7 +30,7 @@
         tools:ignore="SpUsage">
 
         <com.yoavst.quickapps.AutoResizeTextView
-            android:id="@+id/title_error"
+            android:id="@+id/titleError"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
@@ -41,7 +41,7 @@
             android:textSize="19dp"/>
 
         <com.malinskiy.materialicons.widget.IconTextView
-            android:id="@+id/image_error"
+            android:id="@+id/imageError"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:textSize="80dp"
@@ -49,15 +49,15 @@
             android:layout_centerHorizontal="true"
             android:textColor="@android:color/black"
             android:text="{md-error}"
-            android:layout_below="@+id/title_error"/>
+            android:layout_below="@+id/titleError"/>
 
         <com.yoavst.quickapps.AutoResizeTextView
-            android:id="@+id/extra_error"
+            android:id="@+id/extraError"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textColor="@android:color/black"
-            android:layout_below="@+id/image_error"
+            android:layout_below="@+id/imageError"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:maxLines="2"

@@ -1,18 +1,17 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply from: 'https://gist.githubusercontent.com/stefanhoth/37f86c8e41d648cbd2c8/raw/49ca13d028885cae89f7da949f11069365aefeec/idea-gradle-sources.gradle'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "22.0.0"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.yoavst.quickapps"
         minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 21
-        versionCode 66
-        versionName "4.1"
+        versionCode 67
+        versionName "4.2"
         resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
         resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
     }
@@ -22,12 +21,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-        debug.java.srcDirs += 'src/debug/kotlin'
-        release.java.srcDirs += 'src/release/kotlin'
     }
 
     lintOptions {
@@ -41,7 +34,8 @@ dependencies {
     // Kotlin imports
     compile "org.jetbrains.kotlin:kotlin-android-sdk-annotations:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
+    compile 'com.github.yoavst:androidKotlin:1.0.5'
+
     // Google imports
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:support-v13:22.0.0'
@@ -76,5 +70,16 @@ dependencies {
     }
     compile('com.mikepenz.materialdrawer:library:2.0.3@aar') {
         transitive = true
+    }
+}
+
+buildscript {
+    ext.kotlin_version = '0.11.91.1'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
     }
 }

@@ -1,8 +1,10 @@
 package com.lge.qcircle.template;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.graphics.Color;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,24 +13,30 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.RelativeLayout;
 
+import com.lge.qcircle.utils.QCircleFeature;
+
 /**
  * The {@code QCircleBackButton} class represents back buttons of QuickCircle.
  *
  * @author jeongeun.jeon
  */
 public final class QCircleBackButton extends QCircleTemplateElement{
-	private final String TAG = "QCircleBackButton";
+
+    private final String TAG = "QCircleBackButton";
 	private OnClickListener mListener;
 	private ImageView mBtnContent = null;
 	private int		mButtonHeight = 0;
-	private Context mContext = null;
 	private boolean isDark = false;
-	
+
+
+
 	private static float PADDING_RATIO = 0.35f;
     //sujin.cho
     private final float fixedButtonRatio = 0.23f;
-    RelativeLayout.LayoutParams params = null;
+    private RelativeLayout.LayoutParams mParams = null;
 
+    // layout values
+    private static int mFullSize = 0; // circle diameter
 
 
     /**
@@ -39,7 +47,8 @@ public final class QCircleBackButton extends QCircleTemplateElement{
      */
     public QCircleBackButton(Context context) {
         mContext = context;
-        mButtonHeight = (int)(fixedButtonRatio * QCircleTemplate.getDiameter());
+        getTemplateDiameter(context);
+        mButtonHeight = (int)(fixedButtonRatio * mFullSize);
         if (!setButton())
             Log.d(TAG, "Cannot create a button. Context is null.");
     }
@@ -48,11 +57,37 @@ public final class QCircleBackButton extends QCircleTemplateElement{
 	 * creates a back button.
 	 *
 	 * @param context {@code Activity} which has a circle view.<br>
+	 * @param listener Listener on click
 	 * <b>If it is null, you might get errors when you use method of this class.</b>
 	 */
-	public QCircleBackButton(Context context, int height) {
-		this(context, height, null);
+	public QCircleBackButton(Context context, OnClickListener listener) {
+		mContext = context;
+		mListener = listener;
+		getTemplateDiameter(context);
+		mButtonHeight = (int)(fixedButtonRatio * mFullSize);
+		if (!setButton())
+			Log.d(TAG, "Cannot create a button. Context is null.");
 	}
+
+
+
+	/**
+	 * creates a back button.
+	 *
+	 * @param context {@code Activity} which has a circle view.<br>
+	 * <b>If it is null, you might get errors when you use method of this class.</b>
+	 */
+    /*
+	public QCircleBackButton(Context context, float heightRatio) {
+
+        mContext = context;
+        getTemplateDiameter(context);
+        mButtonHeight = (int)(heightRatio * mFullSize);
+        if (!setButton())
+            Log.d(TAG, "Cannot create a button. Context is null.");
+        //this(context, height, null);
+	}
+*/
 
 	/**
 	 * creates a back button.
@@ -80,10 +115,9 @@ public final class QCircleBackButton extends QCircleTemplateElement{
 		if (mContext != null) {
 			mBtnContent = new ImageView(mContext);
 			mBtnContent.setPadding(0,(int)(mButtonHeight*PADDING_RATIO), 0, (int)(mButtonHeight*PADDING_RATIO));
-			
 			// set attributes
 			mBtnContent.setId(R.id.backButton);
-			setTheme();
+            initTheme();
 			mBtnContent.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -106,24 +140,46 @@ public final class QCircleBackButton extends QCircleTemplateElement{
      * sets theme of the back button.
      * @author Yoav Sternberg
      */
-	private void setTheme() {
+	private void initTheme() {
 		mBtnContent.setImageResource(isDark ? R.drawable.backover_dark : R.drawable.backover);
 		mBtnContent.setBackgroundResource(isDark ? R.drawable.back_button_background_dark : R.drawable.back_button_background);
 	}
 
     /**
-     * uses dark theme for the back button.<P>
+     * Uses dark theme for the back button.<P>
      *
      * @param isDark  flag which indicates whether dark theme is used or not.
      * @author Yoav Sternberg
+     * @deprecated
      */
 	public void isDark(boolean isDark) {
 		this.isDark = isDark;
-		setTheme();
+        initTheme();
 	}
 
+    /**
+     * Sets a theme for the back button. This provides three types of themes.
+     *
+     * @param type
+     */
+    public void setTheme(ButtonTheme type)
+    {
+        if(mBtnContent != null) {
+            if (type == ButtonTheme.DARK) {
+                mBtnContent.setImageResource(R.drawable.backover_dark);
+                mBtnContent.setBackgroundResource(R.drawable.back_button_background_dark);
+            } else if (type == ButtonTheme.LIGHT) {
+                mBtnContent.setImageResource(R.drawable.backover);
+                mBtnContent.setBackgroundResource(R.drawable.back_button_background);
+            } else if (type == ButtonTheme.TRANSPARENT) {
+                mBtnContent.setBackgroundColor(Color.TRANSPARENT);
+            }
+        }
+    }
+
+
 	/**
-	 * gets the view of the button.
+	 * Gets the view of the button.
 	 *
 	 * @return button view
 	 */
@@ -132,7 +188,7 @@ public final class QCircleBackButton extends QCircleTemplateElement{
 	}
 
 	/**
-	 * gets the ID of the button view.
+	 * Gets the ID of the button view.
 	 *
 	 * @return ID of the button view
 	 */
@@ -141,7 +197,7 @@ public final class QCircleBackButton extends QCircleTemplateElement{
 	}
 
 	/**
-	 * sets the background of the button transparent.
+	 * Sets the background of the button transparent.
 	 */
 	public void setBackgroundTransparent() {
 		if (mBtnContent != null)
@@ -149,25 +205,59 @@ public final class QCircleBackButton extends QCircleTemplateElement{
 	}
 
     /**
+     * Adds this to the template.
+     * @param parent
      * @author sujin.cho
      */
     @Override
-    public void setElement(RelativeLayout parent) {
-        // TODO Auto-generated method stub
-        setLayoutParams();
-        parent.addView(mBtnContent);
+    protected void addTo(RelativeLayout parent, RelativeLayout content) {
+        if ((mBtnContent != null) && (parent != null)) {
+            setLayoutParams();
+            parent.addView(mBtnContent);
+            adjustLayout(content);
+        }
     }
 
+    private void adjustLayout(RelativeLayout content)
+    {
+        RelativeLayout.LayoutParams contentParams = (RelativeLayout.LayoutParams) content.getLayoutParams();
+        contentParams.addRule(RelativeLayout.ABOVE, mBtnContent.getId());
+        content.setLayoutParams(contentParams);
+    }
+
+    /**
+     * sets layout parameters of the back button.
+     *
+     */
     private void setLayoutParams()
     {
-        //int buttonAreaHeight = (int) (mFullSize * fixedButtonRatio);
-        int buttonAreaHeight = (int)(1046 * 0.23);
-
+        int buttonAreaHeight = (int)(mFullSize * fixedButtonRatio);
         // add a button into the bottom of the circle layout
-        params = new RelativeLayout.LayoutParams(1046,buttonAreaHeight);
-        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 1);
-        mBtnContent.setLayoutParams(params);
-        //mCircleLayout.addView(buttonView.getView(), params);
+        mParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT,buttonAreaHeight);
+        mParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 1);
+        mBtnContent.setLayoutParams(mParams);
     }
 
+    /**
+     * locates the circle on the correct position. The correct position depends on phone model.
+     * <p>
+     * @author sujin.cho
+     */
+    private void getTemplateDiameter(Context context)
+    {
+        if(context != null) {
+            if (!QCircleFeature.isQuickCircleAvailable(context)) {
+                Log.i(TAG, "Quick Circle case is not available");
+                return;
+            }
+            // circle size
+            int id = context.getResources().getIdentifier(
+                    "config_circle_diameter", "dimen", "com.lge.internal");
+            mFullSize = context.getResources().getDimensionPixelSize(id);
+        }
+        else
+        {
+
+        }
+    }
 }

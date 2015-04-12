@@ -35,5 +35,6 @@ public final class TemplateTag {
 	 * If you use an template which has two side bars, it means the second sidebar.
 	 */
 	public static final int CONTENT_SIDE_2 = R.id.side2;
-	
+
+
 }

@@ -9,7 +9,7 @@
                 tools:ignore="SpUsage">
 
     <TextView
-        android:id="@+id/news_time"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
@@ -22,12 +22,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/news_time"
+        android:layout_below="@+id/time"
         android:layout_toEndOf="@+id/padding"
         android:layout_marginTop="9dp"
-        android:layout_above="@+id/news_source">
+        android:layout_above="@+id/source">
     <TextView
-        android:id="@+id/news_title"
+        android:id="@+id/title"
         android:textSize="@dimen/news_title"
         android:textStyle="bold"
         android:gravity="start"
@@ -39,7 +39,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/news_source"
+        android:id="@+id/source"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -47,6 +47,7 @@
         android:textColor="@android:color/black"
         android:layout_toEndOf="@+id/padding"
         android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp"
         tools:text="The Verge -  All Posts"
         android:gravity="center"/>
 

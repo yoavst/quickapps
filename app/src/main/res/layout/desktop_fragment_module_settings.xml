@@ -111,7 +111,7 @@
 
                 <TextView
                     tools:text="@string/hide_settings_from_quick_circle"
-                    android:id="@+id/settings_text"
+                    android:id="@+id/settingsText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium" />

@@ -22,21 +22,20 @@ public class QCircleDialog {
 	Activity activity;
 	QCircleTemplate activityTemplate;
 	// Dialog properties
-	CharSequence title;
+	String title;
 	CharSequence text;
-	CharSequence positiveButtonText;
-	CharSequence negativeButtonText;
+	String positiveButtonText;
+	String negativeButtonText;
 	Drawable image;
 	View.OnClickListener positiveButtonListener;
 	View.OnClickListener negativeButtonListener;
 	DialogMode mode;
 	View templateLayout;
-	int layoutId;
 
 	/**
 	 * private constructor.
 	 *
-	 * @param builder a builder
+	 * @param builder
 	 */
 	private QCircleDialog(Builder builder) {
 		this.title = builder.title;
@@ -47,7 +46,6 @@ public class QCircleDialog {
 		this.positiveButtonListener = builder.positiveButtonListener;
 		this.negativeButtonListener = builder.negativeButtonListener;
 		this.mode = builder.mode;
-		this.layoutId = builder.customLayoutId == null ? (mode == DialogMode.YesNo ? R.layout.qcircle_dialog_layout_yes_no : R.layout.qcircle_dialog_layout) : builder.customLayoutId;
 	}
 
 	/**
@@ -56,15 +54,17 @@ public class QCircleDialog {
 	 * @author Yoav Sternberg
 	 */
 	public static class Builder {
-		private CharSequence title = null;
+		private String title = null;
 		private CharSequence text;
-		private CharSequence positiveButtonText;
-		private CharSequence negativeButtonText;
+		private String positiveButtonText;
+		private String negativeButtonText;
 		private Drawable image = null;
 		private View.OnClickListener positiveButtonListener;
 		private View.OnClickListener negativeButtonListener = null;
 		private DialogMode mode = DialogMode.Ok;
-		private Integer customLayoutId = null;
+
+		//sujin.cho
+		private QCircleTitle mTitle = null;
 
 		/**
 		 * sets title of the Dialog.<P>
@@ -72,7 +72,7 @@ public class QCircleDialog {
 		 * @param title text of the title. It will be displayed on the top of the dialog.
 		 * @return a Builder with title text
 		 */
-		public Builder setTitle(CharSequence title) {
+		public Builder setTitle(String title) {
 			this.title = title;
 			return this;
 		}
@@ -133,23 +133,11 @@ public class QCircleDialog {
 		}
 
 		/**
-		 * Sets a custom layout to the dialog.
-		 *
-		 * @param layout Custom layout id. pass null for default layout.
-		 * @return a Builder with the custom layout.
-		 */
-		public Builder setCustomLayout(Integer layout) {
-			this.customLayoutId = layout;
-			return this;
-		}
-
-		/**
 		 * sets a text for positive button.
 		 *
 		 * @param positiveButtonText text for positive button
-		 * @return a Builder with text for positive button
 		 */
-		public Builder setPositiveButtonText(CharSequence positiveButtonText) {
+		public Builder setPositiveButtonText(String positiveButtonText) {
 			this.positiveButtonText = positiveButtonText;
 			return this;
 		}
@@ -158,9 +146,8 @@ public class QCircleDialog {
 		 * sets a text for negative button.
 		 *
 		 * @param negativeButtonText text for negative button
-		 * @return a Builder with text for positive button
 		 */
-		public Builder setNegativeButtonText(CharSequence negativeButtonText) {
+		public Builder setNegativeButtonText(String negativeButtonText) {
 			this.negativeButtonText = negativeButtonText;
 			return this;
 		}
@@ -187,11 +174,12 @@ public class QCircleDialog {
 		this.activityTemplate = activityTemplate;
 		RelativeLayout layout = (RelativeLayout) activityTemplate.getLayoutById(TemplateTag.CONTENT).getParent();
 		final QCircleTemplate template = new QCircleTemplate(activity);
-		template.setTitle(title == null ? "" : title, Color.WHITE, activity.getResources().getColor(
-				mode == DialogMode.Error ? R.color.dialog_title_background_color_error : R.color.dialog_title_background_color_regular));
-		template.setTitleTextSize(17);
+		QCircleTitle qCircleTitle = new QCircleTitle(activity, title == null ? "" : title, Color.WHITE,
+				activity.getResources().getColor(mode == DialogMode.Error ? R.color.dialog_title_background_color_error : R.color.dialog_title_background_color_regular));
+		qCircleTitle.setTextSize(17f);
+		template.addElement(qCircleTitle);
 		RelativeLayout dialogLayout = (RelativeLayout) activity.getLayoutInflater()
-				.inflate(layoutId, layout, false);
+				.inflate(mode == DialogMode.YesNo ? R.layout.qcircle_dialog_layout_yes_no : R.layout.qcircle_dialog_layout, layout, false);
 		if (text != null) {
 			((TextView) dialogLayout.findViewById(R.id.text)).setText(text);
 		}
@@ -246,15 +234,6 @@ public class QCircleDialog {
 	}
 
 	/**
-	 * Get the layout of the template
-	 * <b>Note: </b> The layout is available only when the dialog is visible. Otherwise it will return null;
-	 * @return The template layout or null if not visible
-	 */
-	public View getView() {
-		return templateLayout;
-	}
-
-	/**
 	 * hides the dialog.
 	 */
 	public void hide() {
@@ -278,10 +257,6 @@ public class QCircleDialog {
 		/**
 		 * An error dialog. Shows only back button, which finish the activity.
 		 */
-		Error,
-		/**
-		 * For custom dialog. Use it if your layout doesn't not include R.id.positive and/or R.id.negative
-		 */
-		Custom
+		Error
 	}
 }
