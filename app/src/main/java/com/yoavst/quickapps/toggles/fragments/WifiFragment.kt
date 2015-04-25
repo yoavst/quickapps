@@ -19,6 +19,7 @@ import com.yoavst.quickapps.toggles.ToggleFragment
 import kotlin.properties.Delegates
 import com.yoavst.kotlin.stringResource
 import com.yoavst.kotlin.systemService
+import com.yoavst.kotlin.wifiManager
 import com.yoavst.util.r
 
 /**
@@ -32,7 +33,7 @@ public class WifiFragment : ToggleFragment() {
     val WIFI_CONNECTED by stringResource(R.string.wifi_connected)
     val WIFI_TURN_OFF by stringResource(R.string.wifi_turning_off)
     val WIFI_TURN_ON by stringResource(R.string.wifi_turning_on)
-    val wifiManager: WifiManager by systemService()
+    val wifiManager: WifiManager by Delegates.lazy { getActivity().wifiManager() }
     val systemUiResources: Resources by Delegates.lazy { (getActivity() as CTogglesActivity).getSystemUiResource() }
     var mWifiReceiver: BroadcastReceiver? = null
 

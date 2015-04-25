@@ -8,6 +8,7 @@ import android.content.res.Resources
 import android.media.AudioManager
 import android.os.Build
 import android.provider.Settings
+import com.yoavst.kotlin.audioManager
 import com.yoavst.kotlin.beforeLollipop
 
 import com.yoavst.quickapps.R
@@ -24,7 +25,7 @@ public class SoundFragment : ToggleFragment() {
     val SOUND by stringResource(R.string.sound_sound)
     val SILENT by stringResource(R.string.sound_silent)
     val VIBRATE by stringResource(R.string.sound_vibrate)
-    val audioManager: AudioManager by systemService()
+    val audioManager: AudioManager by Delegates.lazy { getActivity().audioManager() }
     var mRingerReceiver: BroadcastReceiver? = null
     val systemUiResources: Resources by Delegates.lazy { (getActivity() as CTogglesActivity).getSystemUiResource() }
 

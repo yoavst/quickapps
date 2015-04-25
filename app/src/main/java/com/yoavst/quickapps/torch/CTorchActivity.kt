@@ -10,7 +10,7 @@ import com.lge.qcircle.template.TemplateTag
 import com.lge.qcircle.template.TemplateType
 import com.yoavst.kotlin.colorResource
 import com.yoavst.kotlin.intent
-import com.yoavst.kotlin.systemService
+import com.yoavst.kotlin.notificationManager
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.util.QCircleActivity
 import com.yoavst.util.qCircleToast
@@ -21,7 +21,7 @@ import kotlin.properties.Delegates
  */
 public class CTorchActivity : QCircleActivity() {
     override val template: QCircleTemplate by Delegates.lazy { QCircleTemplate(this, TemplateType.CIRCLE_EMPTY) }
-    private val notificationManager: NotificationManager by systemService()
+    private val notificationManager: NotificationManager by Delegates.lazy { notificationManager() }
     private val colorBackgroundOn by colorResource(R.color.torch_background_color_on)
     private val colorBackgroundOff by colorResource(R.color.torch_background_color_off)
     private val colorTorchOn by colorResource(R.color.torch_color_on)
@@ -67,6 +67,7 @@ public class CTorchActivity : QCircleActivity() {
         template.setBackButtonTheme(true)
         template.setBackgroundColor(getResources().getColor(R.color.torch_background_color_off), true)
     }
+
     public fun toggleTorch() {
         if (CameraManager.toggleTorch()) {
             showTorchOn()

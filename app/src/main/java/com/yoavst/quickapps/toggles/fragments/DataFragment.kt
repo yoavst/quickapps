@@ -7,6 +7,7 @@ import android.content.IntentFilter
 import android.content.res.Resources
 import android.net.ConnectivityManager
 import android.provider.Settings
+import com.yoavst.kotlin.connectivityManager
 
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.toggles.Connectivity
@@ -28,7 +29,7 @@ public class DataFragment : ToggleFragment() {
     val DATA_OFF_AIRPLANE by stringResource(R.string.data_off_airplane)
     val DATA_ON by stringResource(R.string.data_on)
     val systemUiResources: Resources by Delegates.lazy { (getActivity() as CTogglesActivity).getSystemUiResource() }
-    val connectivityManager: ConnectivityManager by systemService()
+    val connectivityManager: ConnectivityManager by Delegates.lazy { getActivity().connectivityManager() }
     var mDataReceiver: BroadcastReceiver? = null
 
     override fun init() {

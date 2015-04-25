@@ -11,13 +11,14 @@ import com.lge.app.floating.FloatableActivity
 import com.lge.app.floating.FloatingWindow
 import com.yoavst.kotlin.colorResource
 import com.yoavst.kotlin.hide
-import com.yoavst.kotlin.systemService
+import com.yoavst.kotlin.notificationManager
 import com.yoavst.kotlin.viewById
 import com.yoavst.quickapps.PrefManager
 import com.yoavst.quickapps.R
+import kotlin.properties.Delegates
 
 public class PhoneActivity : FloatableActivity() {
-    private val notificationManager: NotificationManager by systemService()
+    private val notificationManager: NotificationManager by Delegates.lazy { notificationManager() }
     private val colorBackgroundOn by colorResource(R.color.torch_background_color_on)
     private val colorBackgroundOff by colorResource(R.color.torch_background_color_off)
     private val colorTorchOn by colorResource(R.color.torch_color_on)
