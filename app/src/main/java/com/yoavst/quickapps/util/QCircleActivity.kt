@@ -18,13 +18,15 @@ import com.yoavst.quickapps.R
 import com.lge.qcircle.template.TemplateTag
 import android.util.Log
 import android.content.Context
+import android.os.Bundle
 import com.lge.qcircle.template.QCircleDialog
 import android.util.TypedValue
 import android.view.Gravity
+import com.lge.qcircle.utils.QCircleFeature
 import com.yoavst.kotlin.devicePolicyManager
 import com.yoavst.kotlin.optionalViewById
 import kotlin.properties.Delegates
-
+import com.yoavst.kotlin.Bundle
 /**
  * Created by Yoav.
  */
@@ -34,6 +36,15 @@ public abstract class QCircleActivity : Activity() {
     protected val preferences: PrefManager by Delegates.lazy { PrefManager(this) }
     public val gestureDetector: GestureDetector by Delegates.lazy { GestureDetector(this, SimpleOnGestureListenerWithDoubleTapHandler()) }
     var shouldShowDeviceAdminDialog = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        QCircleFeature.setAlternativeValues(Bundle {
+            putInt("config_circle_diameter", 1046)
+            putInt("config_circle_window_y_pos", 0)
+            putInt("config_circle_window_height", 1101)
+        })
+    }
 
     override fun onStart() {
         super.onStart()

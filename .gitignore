@@ -80,4 +80,7 @@ proguard/
 # Key files
 *.jks
 
+# Kotlin annotations
+annotations
+
 

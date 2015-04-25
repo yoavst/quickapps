@@ -41,7 +41,7 @@ public final class QCircleBackButton extends QCircleTemplateElement {
 	 */
 	public QCircleBackButton(Context context) {
 		mContext = context;
-		getTemplateDiameter(context);
+		mFullSize = QCircleFeature.getTemplateDiameter(context);
 		mButtonHeight = (int) (fixedButtonRatio * mFullSize);
 		if (!setButton())
 			Log.d(TAG, "Cannot create a button. Context is null.");
@@ -261,25 +261,5 @@ public final class QCircleBackButton extends QCircleTemplateElement {
 		mParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, buttonAreaHeight);
 		mParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 1);
 		mBtnContent.setLayoutParams(mParams);
-	}
-
-	/**
-	 * locates the circle on the correct position. The correct position depends on phone model.
-	 * <p/>
-	 *
-	 * @author sujin.cho
-	 */
-	private void getTemplateDiameter(Context context) {
-		if (context != null) {
-			if (!QCircleFeature.isQuickCircleAvailable(context)) {
-				Log.i(TAG, "Quick Circle case is not available");
-				return;
-			}
-			// circle size
-			int id = context.getResources().getIdentifier(
-					"config_circle_diameter", "dimen", "com.lge.internal");
-			mFullSize = context.getResources().getDimensionPixelSize(id);
-		} else {
-		}
 	}
 }

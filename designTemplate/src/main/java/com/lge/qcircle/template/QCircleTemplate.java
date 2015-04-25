@@ -625,17 +625,11 @@ public class QCircleTemplate {
 			return false;
 		}
 		// circle size
-		int id = mContext.getResources().getIdentifier(
-				"config_circle_diameter", "dimen", "com.lge.internal");
-		mFullSize = mContext.getResources().getDimensionPixelSize(id);
+		mFullSize = QCircleFeature.getTemplateDiameter(mContext);
 		// y position (in G3, y position = y offset)
-		id = mContext.getResources().getIdentifier(
-				"config_circle_window_y_pos", "dimen", "com.lge.internal");
-		mYpos = mContext.getResources().getDimensionPixelSize(id);
+		mYpos = QCircleFeature.getYPosition(mContext);
 		// adjust Y offset for the model
-		id = mContext.getResources().getIdentifier(
-				"config_circle_window_height", "dimen", "com.lge.internal");
-		int height = mContext.getResources().getDimensionPixelSize(id);
+		int height = QCircleFeature.getWindowHeight(mContext);
 		mTopOffset = mYpos + ((height - mFullSize) / 2);
 		return true;
 	}

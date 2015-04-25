@@ -106,7 +106,7 @@ public final class QCircleTitle extends QCircleTemplateElement {
 	public QCircleTitle(Context context, View title, int backgroundColor) {
 		if (context != null) {
 			mContext = context;
-			getTemplateDiameter(context);
+			mFullSize = QCircleFeature.getTemplateDiameter(context);
 			mRootView = createRootView(context, backgroundColor);
 			if (title != null) {
 				if (title instanceof TextView) mTitleView = (TextView) title;
@@ -309,25 +309,5 @@ public final class QCircleTitle extends QCircleTemplateElement {
 	public void setTitleHeight(float heightRatio) {
 		useDefaultHeight = false;
 		setLayoutParams(heightRatio);
-	}
-
-	/**
-	 * Locates the circle on the correct position. The correct position depends on phone model.
-	 * <p/>
-	 *
-	 * @author sujin.cho
-	 */
-	private void getTemplateDiameter(Context context) {
-		if (context != null) {
-			if (!QCircleFeature.isQuickCircleAvailable(context)) {
-				Log.i(TAG, "Quick Circle case is not available");
-				return;
-			}
-			// circle size
-			int id = context.getResources().getIdentifier(
-					"config_circle_diameter", "dimen", "com.lge.internal");
-			mFullSize = context.getResources().getDimensionPixelSize(id);
-		} else {
-		}
 	}
 }
