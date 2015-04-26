@@ -40,7 +40,7 @@ public abstract class QCircleActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         QCircleFeature.setAlternativeValues(Bundle {
-            putInt("config_circle_diameter", 1046)
+            putInt("config_circle_diameter", 1101)
             putInt("config_circle_window_y_pos", 0)
             putInt("config_circle_window_height", 1046)
         })

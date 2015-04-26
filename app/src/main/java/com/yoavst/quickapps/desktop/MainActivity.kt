@@ -60,7 +60,7 @@ public class MainActivity : ActionBarActivity() {
                 .withToolbar(toolbar)
                 .addDrawerItems(
                         PrimaryDrawerItem().withName(R.string.how_to_add).withIcon(IconDrawable(this, Iconify.IconValue.md_help)),
-                        PrimaryDrawerItem().withName(R.string.modules).withIcon(IconDrawable(this, Iconify.IconValue.md_settings)),
+                        PrimaryDrawerItem().withName(R.string.settings).withIcon(IconDrawable(this, Iconify.IconValue.md_settings)),
                         DividerDrawerItem(),
                         PrimaryDrawerItem().withName(R.string.source).withIcon(IconDrawable(this, Iconify.IconValue.md_adb)),
                         PrimaryDrawerItem().withName(R.string.about_title).withIcon(IconDrawable(this, Iconify.IconValue.md_account_circle)))

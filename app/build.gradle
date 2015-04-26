@@ -10,8 +10,8 @@ android {
         minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 21
-        versionCode 68
-        versionName "4.2.1"
+        versionCode 69
+        versionName "4.3"
         resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
         resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
     }
