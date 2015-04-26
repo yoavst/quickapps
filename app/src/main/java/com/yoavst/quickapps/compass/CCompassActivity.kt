@@ -11,8 +11,10 @@ import android.widget.RelativeLayout
 import android.widget.ImageView
 import android.content.Intent
 import com.lge.qcircle.template.QCircleBackButton
+import com.lge.qcircle.utils.QCircleFeature
 import com.yoavst.kotlin.drawableRes
 import com.yoavst.kotlin.intent
+import com.yoavst.util.isLGRom
 
 /**
  * Created by Yoav.
@@ -45,7 +47,9 @@ public class CCompassActivity: QCircleActivity() {
         compass.unregisterService()
     }
 
-    protected override fun getIntentToShow(): Intent {
-        return intent<PhoneActivity>().putExtra("com.lge.app.floating.launchAsFloating", true)
+    protected override fun getIntentToShow(): Intent? {
+        return if (!isLGRom(this)) null else {
+            intent<PhoneActivity>().putExtra("com.lge.app.floating.launchAsFloating", true)
+        }
     }
 }

@@ -16,9 +16,9 @@ public class TorchReceiver : BroadcastReceiver() {
         CameraManager.init(context)
         if (mNotificationManager == null)
             mNotificationManager = context.notificationManager()
-        PhoneActivity.createNotification(context)
+        Torch.createNotification(context)
         if (CameraManager.toggleTorch()) {
-            mNotificationManager!!.notify(NotificationReceiver.NOTIFICATION_ID, PhoneActivity.notification)
+            mNotificationManager!!.notify(NotificationReceiver.NOTIFICATION_ID, Torch.notification)
         } else {
             mNotificationManager!!.cancel(NotificationReceiver.NOTIFICATION_ID)
             CameraManager.destroy()

@@ -1,5 +1,6 @@
 package com.yoavst.quickapps.torch
 
+import android.app.Activity
 import android.app.Notification
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -17,7 +18,7 @@ import com.yoavst.quickapps.PrefManager
 import com.yoavst.quickapps.R
 import kotlin.properties.Delegates
 
-public class PhoneActivity : FloatableActivity() {
+public class PhoneActivityNotFloating : Activity() {
     private val notificationManager: NotificationManager by Delegates.lazy { notificationManager() }
     private val colorBackgroundOn by colorResource(R.color.torch_background_color_on)
     private val colorBackgroundOff by colorResource(R.color.torch_background_color_off)
@@ -30,29 +31,7 @@ public class PhoneActivity : FloatableActivity() {
         setContentView(R.layout.torch_layout)
         icon = viewById<TextView>(R.id.icon)
         icon?.setOnClickListener { toggleTorch() }
-
         Torch.createNotification(this)
-        if (PrefManager(this).torchForceFloating().getOr(false) && !isInFloatingMode())
-            switchToFloatingMode()
-
-    }
-
-    override fun onAttachedToFloatingWindow(w: FloatingWindow) {
-        super.onAttachedToFloatingWindow(w)
-        icon = viewById<TextView>(R.id.icon)
-        icon?.setOnClickListener { toggleTorch() }
-        if (PrefManager(this).torchForceFloating().getOr(false))
-            w.findViewWithTag(FloatingWindow.Tag.FULLSCREEN_BUTTON).hide()
-    }
-
-    override fun onDetachedFromFloatingWindow(w: FloatingWindow, isReturningToFullScreen: Boolean): Boolean {
-        if (!isReturningToFullScreen) {
-            if (CameraManager.isTorchOn())
-                notificationManager.notify(NotificationReceiver.NOTIFICATION_ID, Torch.notification)
-            else
-                CameraManager.destroy()
-        }
-        return super.onDetachedFromFloatingWindow(w, isReturningToFullScreen)
     }
 
     fun toggleTorch() {

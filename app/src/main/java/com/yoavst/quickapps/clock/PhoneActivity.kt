@@ -74,7 +74,7 @@ public class PhoneActivity : FloatableActivity() {
         return false
     }
 
-    class object {
+    companion object {
         public val ACTION_FLOATING_CLOSE: String = "floating_close"
         private val TIME_FORMATTING = "<big>{0}:{1}:{2}</big><small>.{3}</small>"
         private val TIME_FORMATTING_NO_MILLIS = "<big>{0}:{1}:{2}</big>"

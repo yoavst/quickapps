@@ -89,3 +89,8 @@ public fun StatusBarNotification?.equalsContent(any: Any?): Boolean {
         return false
     }
 }
+
+public fun isLGRom(context: Context): Boolean {
+    val id = context.getResources().getIdentifier("config_circle_window_y_pos", "dimen", "com.lge.internal")
+    return id != 0
+}

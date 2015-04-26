@@ -13,6 +13,7 @@ import com.yoavst.kotlin.intent
 import com.yoavst.kotlin.notificationManager
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.util.QCircleActivity
+import com.yoavst.util.isLGRom
 import com.yoavst.util.qCircleToast
 import kotlin.properties.Delegates
 
@@ -55,14 +56,14 @@ public class CTorchActivity : QCircleActivity() {
     }
 
     private fun showTorchOn() {
-        icon!!.setText(PhoneActivity.TORCH_ON)
+        icon!!.setText(Torch.TORCH_ON)
         icon!!.setTextColor(colorTorchOn)
         template.setBackButtonTheme(false)
         template.setBackgroundColor(getResources().getColor(R.color.torch_background_color_on), true)
     }
 
     private fun showTorchOff() {
-        icon!!.setText(PhoneActivity.TORCH_OFF)
+        icon!!.setText(Torch.TORCH_OFF)
         icon!!.setTextColor(colorTorchOff)
         template.setBackButtonTheme(true)
         template.setBackgroundColor(getResources().getColor(R.color.torch_background_color_off), true)
@@ -81,5 +82,5 @@ public class CTorchActivity : QCircleActivity() {
         return true
     }
 
-    override fun getIntentToShow(): Intent = intent<PhoneActivity>()
+    override fun getIntentToShow(): Intent = if (!isLGRom(this)) intent<PhoneActivityNotFloating>() else intent<PhoneActivity>()
 }

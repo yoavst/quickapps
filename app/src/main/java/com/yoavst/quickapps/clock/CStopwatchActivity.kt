@@ -8,6 +8,7 @@ import com.lge.qcircle.template.*
 import com.yoavst.kotlin.intent
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.util.QCircleActivity
+import com.yoavst.util.isLGRom
 import kotlin.properties.Delegates
 
 /**
@@ -34,7 +35,9 @@ public class CStopwatchActivity : QCircleActivity() {
         StopwatchManager.runOnBackground()
     }
 
-    protected override fun getIntentToShow(): Intent {
-        return intent<PhoneActivity>().putExtra("com.lge.app.floating.launchAsFloating", true)
+    protected override fun getIntentToShow(): Intent? {
+        return if (!isLGRom(this)) null else {
+            intent<PhoneActivity>().putExtra("com.lge.app.floating.launchAsFloating", true)
+        }
     }
 }

@@ -68,6 +68,15 @@
         <!-- Desktop part [END] -->
         <!-- Torch part [START] -->
         <activity
+            android:name=".torch.PhoneActivityNotFloating"
+            android:icon="@drawable/torch_launcher"
+            android:label="@string/torch_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.yoavst.quickapps.torch"
+            android:theme="@style/darkTheme" />
+
+        <activity
             android:name=".torch.PhoneActivity"
             android:icon="@drawable/torch_launcher"
             android:label="@string/torch_module_name"
@@ -75,11 +84,12 @@
             android:screenOrientation="portrait"
             android:taskAffinity="com.yoavst.quickapps.torch"
             android:theme="@style/darkTheme" />
+
         <activity-alias
             android:name=".torch.PhoneActivityLauncher"
             android:icon="@drawable/torch_launcher"
             android:label="@string/torch_module_name"
-            android:targetActivity=".torch.PhoneActivity">
+            android:targetActivity=".torch.PhoneActivityNotFloating">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
