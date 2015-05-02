@@ -1,5 +1,7 @@
 # Quick Circle Apps
 
+[![Join the chat at https://gitter.im/yoavst/quickapps](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yoavst/quickapps?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Quick Circle Apps** is an Android application made by Yoav Sternberg.
 The application provide modules for the G3 Quick Circle Case.
 
