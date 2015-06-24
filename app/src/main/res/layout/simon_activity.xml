@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:layout_width="260dp"
+             tools:layout_height="260dp"
+             tools:foreground="@drawable/circlebackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/green"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="2"
+                android:background="@color/md_green_700" />
+
+            <View
+                android:id="@+id/red"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="0"
+                android:background="@color/md_red_700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/yellow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="3"
+                android:background="@color/md_yellow_700" />
+
+            <View
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:background="@color/md_blue_700" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.yoavst.quickapps.simon.SemiCircleView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="80dp" />
+
+        <com.yoavst.quickapps.simon.OppositeSemiCircleView
+            android:id="@+id/restart"
+            android:layout_width="40dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="3dp"
+            android:src="@drawable/backover_dark"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_play"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        tools:text="Round 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+</FrameLayout>

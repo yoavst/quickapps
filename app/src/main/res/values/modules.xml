@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Quick Apps</string>
+    <string name="torch_module_name" translatable="false">Quick Torch</string>
+    <string name="music_module_name" translatable="false">Quick Music</string>
+    <string name="calendar_module_name" translatable="false">Quick calendar</string>
+    <string name="calendar_events" translatable="false">Quick Agenda</string>
+    <string name="notification_module_name" translatable="false">Quick Notifications</string>
+    <string name="launcher_module_name" translatable="false">Quick Launcher</string>
+    <string name="toggles_module_name" translatable="false">Quick Toggles</string>
+    <string name="compass_module_name" translatable="false">Quick Compass</string>
+    <string name="news_module_name" translatable="false">Quick News</string>
+    <string name="clock_module_name" translatable="false">Quick Time</string>
+    <string name="calculator_module_name" translatable="false">Quick Calculator</string>
+    <string name="dialer_module_name" translatable="false">Quick Dialer</string>
+    <string name="ball_module_name" translatable="false">Quick 8 Ball</string>
+    <string name="simon_module_name" translatable="false">Quick Simon</string>
+    <string name="recorder_module_name" translatable="false">Quick Recorder</string>
+    <string name="barcode_module_name" translatable="false">Quick Scanner</string>
+    <string name="dice_module_name" translatable="false">Quick Dice</string>
+</resources>

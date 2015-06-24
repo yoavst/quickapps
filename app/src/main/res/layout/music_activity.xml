@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="@color/md_indigo_A200"
+                tools:layout_height="@dimen/circle_size"
+                tools:layout_width="@dimen/circle_size">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/controllersLayout"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackground"
+            android:paddingEnd="6dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_back"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                tools:text="Imagine Dragon"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:text="@string/not_playing"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Radioactive"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/volume"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackground"
+            android:paddingStart="6dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_volume"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/controllersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/playViewLayout"
+        android:background="@android:color/white"/>
+
+    <FrameLayout
+        android:id="@+id/skipNextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/playViewLayout"
+        android:layout_toEndOf="@+id/playViewLayout"
+        android:background="?selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/skipNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_skip_next"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/playViewLayout"
+        android:layout_width="56dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <com.yoavst.quickapps.music.PlayPauseView
+            android:id="@+id/playView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            tools:ignore="UnusedAttribute"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/skipPrevLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/playViewLayout"
+        android:layout_toStartOf="@+id/playViewLayout"
+        android:background="?selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/skipPrev"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_skip_prev"/>
+    </FrameLayout>
+</RelativeLayout>

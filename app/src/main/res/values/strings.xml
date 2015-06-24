@@ -1,0 +1,68 @@
+<resources>
+    <!-- Torch -->
+    <string name="torch_is_on">Torch is On</string>
+    <string name="touch_to_turn_off">Touch to turn off</string>
+
+    <!-- Permissions -->
+    <string name="error_no_permission_for_lock_the_screen">Open the case for enable lock screen permission for this app!</string>
+    <string name="missing_permissions">No permission</string>
+    <string name="dont_show_again">Don\'t show</string>
+    <string name="add_admin_extra_app_text">Lock the device on double tap</string>
+    <string name="admin_permission">Set as device administrator</string>
+    <string name="admin_permission_explain">Required if you want to lock the device with double tap</string>
+
+    <!-- Music -->
+    <string name="music_module_name_service_lollipop">Quick Music for Lollipop 5.0</string>
+    <string name="music_module_name_service">Quick Music for KitKat</string>
+    <string name="register_us_please">We need access to notifications</string>
+    <string name="open_the_case">Open the case now</string>
+    <string name="not_playing">Not playing</string>
+
+    <!-- Magic 8 ball -->
+    <string name="ask_a_question">Ask a question and touch me</string>
+    <string name="thinking">Thinking…</string>
+    <string-array name="magic_ball">
+        <item>It is certain</item>
+        <item>It is decidedly so</item>
+        <item>Without a doubt</item>
+        <item>Yes definitely</item>
+        <item>You may rely on it</item>
+        <item>As I see it, yes</item>
+        <item>Most likely</item>
+        <item>Outlook good</item>
+        <item>Yes</item>
+        <item>Signs point to yes</item>
+        <item>Reply hazy try again</item>
+        <item>Ask again later</item>
+        <item>Better not tell you now</item>
+        <item>Cannot predict now</item>
+        <item>Concentrate and ask again</item>
+        <item>Don\'t count on it</item>
+        <item>My reply is no</item>
+        <item>My sources say no</item>
+        <item>Outlook not so good</item>
+        <item>Very doubtful</item>
+    </string-array>
+
+    <!-- Dice -->
+    <string name="dice">Dice</string>
+
+    <!-- Simon -->
+    <string name="game_over">Game Over</string>
+    <string name="start_game">Starting game</string>
+    <string name="round">round %1$d</string>
+    <string name="your_score">Your score is %1$d</string>
+
+    <!-- Stopwatch -->
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="resume">Resume</string>
+    <string name="stopwatch_run_on_back">Run on background</string>
+    <string name="stopwatch_run_on_back_message">Do you want the stopwatch to run on background?</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="timer">Timer</string>
+
+    <!-- General -->
+    <string name="unknown">Unknown</string>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:layout_height="195dp"
+             tools:layout_width="260dp">
+
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/addHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_add"/>
+
+                <TextView
+                    android:id="@+id/hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"
+                    tools:text="00"/>
+
+                <ImageView
+                    android:id="@+id/subHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:src="@drawable/ic_remove"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/addMinute"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_add"/>
+
+                <TextView
+                    android:id="@+id/minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"
+                    tools:text="00"/>
+
+                <ImageView
+                    android:id="@+id/subMinute"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_remove"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/addSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_add"/>
+
+                <TextView
+                    android:id="@+id/seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"
+                    tools:text="00"/>
+
+                <ImageView
+                    android:id="@+id/subSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_remove"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/stopwatch_start_padding"
+            android:layout_marginRight="@dimen/stopwatch_start_padding"
+            android:background="@drawable/stopwatch_btn_start"
+            android:text="@string/start"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/runningLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/stopwatch_time"
+            tools:text="13:24:22"/>
+
+        <LinearLayout
+            android:id="@+id/running"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="@dimen/stopwatch_start_padding"
+            android:layout_marginRight="@dimen/stopwatch_start_padding"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stopwatch_btn_stop"
+                android:text="@string/stop"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/stopwatch_small_button"/>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/stopwatch_btn_pause"
+                android:text="@string/pause"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/stopwatch_small_button"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

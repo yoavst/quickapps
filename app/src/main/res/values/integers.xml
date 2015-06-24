@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="loading_anim_time">750</integer>
+
+    <integer name="torch_animation_time">500</integer>
+</resources>

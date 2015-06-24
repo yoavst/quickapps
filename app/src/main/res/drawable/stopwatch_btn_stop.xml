@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/md_red_A400"/>
+            <corners android:radius="30dip"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/stopwatch_btn_stop_normal"/>
+</selector>

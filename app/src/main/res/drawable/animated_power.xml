@@ -1,0 +1,9 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/ic_power" >
+    <target
+        android:name="circleGroup"
+        android:animation="@anim/circle_expand" />
+    <target
+        android:name="circlePath"
+        android:animation="@anim/circle_path" />
+</animated-vector>
