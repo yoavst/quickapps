@@ -9,6 +9,7 @@ import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.lge.app.floating.FloatableActivity
 import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.stopwatchShowMillis
@@ -18,6 +19,8 @@ import java.util.concurrent.TimeUnit
 import kotlin.properties.Delegates
 
 public class TimerFragment : Fragment() {
+    var container: ViewGroup? = null
+    var layout: View by Delegates.notNull()
     var secondNumber = 0
     var minutesNumber = 0
     var hoursNumber = 0
@@ -25,9 +28,10 @@ public class TimerFragment : Fragment() {
     var handler: Handler = Handler()
     val RESUME by stringResource(R.string.resume)
     val PAUSE by stringResource(R.string.pause)
+    var ringtone: Ringtone? = null
     var callback: () -> Unit = {
         handler.post {
-            var millis = TimerManager.getMillis()
+            var millis = Timer.timeLeft
             if (millis < 0) millis = 0
             val num = (millis % 1000 / 10).toInt()
             if (showMillis) {
@@ -47,18 +51,21 @@ public class TimerFragment : Fragment() {
                 if (alarmUri == null) {
                     alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE)
                 }
-                val ringtone = RingtoneManager.getRingtone(getActivity(), alarmUri)
-                ringtone.play()
-                //FIXME show finish view
-                Handler().postDelayed(3000) { ringtone.stop()}
-
+                if (ringtone == null) {
+                    ringtone = RingtoneManager.getRingtone(getActivity(), alarmUri)
+                    ringtone!!.play()
+                }
+                runningLayout.hide()
+                doneLayout.show()
             }
 
         }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.clock_timer_fragment, container, false)
+        this.container = container
+        this.layout = inflater.inflate(R.layout.clock_timer_fragment, container, false)
+        return layout
     }
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
@@ -66,6 +73,7 @@ public class TimerFragment : Fragment() {
         updateHours()
         updateMinutes()
         updateSeconds()
+        Timer.handler = Handler()
         //region callback timer
         subSecond.setOnClickListener {
             if (secondNumber == 0) secondNumber = 59
@@ -134,22 +142,16 @@ public class TimerFragment : Fragment() {
         //endregion
         //region callback running
         pause.setOnClickListener {
-            if (TimerManager.isRunning())
-                TimerManager.PauseTimer()
+            if (Timer.isRunning())
+                Timer.pauseTimer()
             else
-                TimerManager.ResumeTimer()
+                Timer.resumeTimer()
             setLookForPauseOrResume()
         }
         stop.setOnClickListener {
-            TimerManager.stopTimer()
+            Timer.stop()
             handler.postDelayed(100) {
                 runningLayout.hide()
-                secondNumber = 0
-                minutesNumber = 0
-                hoursNumber = 0
-                updateHours()
-                updateMinutes()
-                updateSeconds()
                 settingLayout.show()
                 pause.setText(PAUSE)
                 setText(Html.fromHtml(DEFAULT_TIMER))
@@ -158,10 +160,16 @@ public class TimerFragment : Fragment() {
         if (time.getText().toString().isEmpty()) setText(Html.fromHtml(if (showMillis) DEFAULT_TIMER else DEFAULT_TIMER_NO_MILLIS))
         start.setOnClickListener { startTimer() }
         //endregion
-        if (TimerManager.hasOldData()) {
+        done.setOnClickListener {
+            ringtone?.stop()
+            ringtone = null
+            doneLayout.hide()
+            settingLayout.show()
+        }
+        if (Timer.hasOldData()) {
             Handler().postDelayed({
                 callback()
-                TimerManager.runOnUi(callback)
+                Timer.runOnUi(getActivity(), callback)
                 settingLayout.hide()
                 runningLayout.show()
                 setLookForPauseOrResume()
@@ -173,8 +181,14 @@ public class TimerFragment : Fragment() {
         val seconds = secondNumber + (minutesNumber * 60) + (hoursNumber * 3600)
         if (seconds != 0) {
             settingLayout.hide()
+            secondNumber = 0
+            minutesNumber = 0
+            hoursNumber = 0
+            updateHours()
+            updateMinutes()
+            updateSeconds()
             runningLayout.show()
-            TimerManager.startTimer(TimeUnit.SECONDS.toMillis(seconds.toLong()), 10, callback)
+            Timer.start(TimeUnit.SECONDS.toMillis(seconds.toLong()), callback)
         }
     }
 
@@ -195,10 +209,24 @@ public class TimerFragment : Fragment() {
     }
 
     fun setLookForPauseOrResume() {
-        if (TimerManager.isRunning())
+        if (Timer.isRunning())
             pause.setText(PAUSE)
         else
             pause.setText(RESUME)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        try {
+            Class.forName("com.lge.app.floating.FloatableActivity")
+            if (getActivity() is FloatableActivity) {
+                container?.addView(layout)
+                super.onViewCreated(getView(), null)
+            }
+        } catch(e: ClassNotFoundException) {
+            //my class isn't there!
+        }
+        ringtone?.stop()
     }
 
     companion object {
@@ -209,12 +237,12 @@ public class TimerFragment : Fragment() {
 
         public fun getFromMilli(millis: Long, timeUnit: TimeUnit): Int {
             when (timeUnit) {
-                TimeUnit.SECONDS -> // Number of seconds % 60
+                TimeUnit.SECONDS ->
                     return (millis / 1000).toInt() % 60
-                TimeUnit.MINUTES -> // Number of minutes % 60
+                TimeUnit.MINUTES ->
                     return (millis / 60000).toInt() % 60
-                TimeUnit.HOURS -> // Number of hours (can be more then 24)
-                    return (millis / 1440000).toInt()
+                TimeUnit.HOURS ->
+                    return (millis / 3600000).toInt()
             }
             return 0
         }

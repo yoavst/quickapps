@@ -32,6 +32,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="com.lge.lockscreensettings.permission.LOCK_SETTINGS_DATA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -229,6 +230,30 @@
                 <action android:name="com.lge.quickcover" />
             </intent-filter>
         </activity>
+
+        <service
+            android:exported="false"
+            android:name=".clock.TimerIntentService">
+            <intent-filter>
+                <action android:name="com.yoavst.timerService"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".tools.EmptyReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.yoavst.empty"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".clock.PhoneActivity"
+            android:icon="@drawable/qcircle_icon_clock"
+            android:label="@string/clock_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme" />
 
         <!-- Admin -->
         <receiver

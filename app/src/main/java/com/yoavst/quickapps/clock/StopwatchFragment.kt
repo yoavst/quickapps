@@ -4,24 +4,24 @@ import android.app.Fragment
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.lge.app.floating.FloatableActivity
 import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.stopwatchShowMillis
 import kotlinx.android.synthetic.clock_stopwatch_fragment.*
 import java.text.MessageFormat
 import java.util.concurrent.TimeUnit
-import java.util.concurrent.locks.Lock
-import java.util.concurrent.locks.ReentrantLock
 import kotlin.properties.Delegates
 
 /**
  * Created by Yoav.
  */
 public open class StopwatchFragment : Fragment() {
+    var container: ViewGroup? = null
+    var layout: View by Delegates.notNull()
     var handler: Handler = Handler()
     val RESUME by stringResource(R.string.resume)
     val PAUSE by stringResource(R.string.pause)
@@ -46,40 +46,42 @@ public open class StopwatchFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.clock_stopwatch_fragment, container, false)
+        this.container = container
+        this.layout = inflater.inflate(R.layout.clock_stopwatch_fragment, container, false)
+        return layout
     }
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            start.setOnClickListener {
+        start.setOnClickListener {
+            setLookRunning()
+            StopwatchManager.startTimer(10, callback)
+        }
+        pause.setOnClickListener {
+            if (StopwatchManager.isRunning())
+                StopwatchManager.pauseTimer()
+            else
+                StopwatchManager.resumeTimer()
+            setLookForPauseOrResume()
+        }
+        stop.setOnClickListener {
+            StopwatchManager.stopTimer()
+            handler.postDelayed(100) {
+                running.hide()
+                start.show()
+                setText(Html.fromHtml(DEFAULT_STOPWATCH))
+            }
+        }
+        if (time.getText().toString().isEmpty()) setText(Html.fromHtml(if (showMillis) DEFAULT_STOPWATCH else DEFAULT_STOPWATCH_NO_MILLIS))
+        handler = Handler()
+        if (StopwatchManager.hasOldData()) {
+            Handler().postDelayed({
+                callback()
+                StopwatchManager.runOnUi(callback)
                 setLookRunning()
-                StopwatchManager.startTimer(10, callback)
-            }
-            pause.setOnClickListener {
-                if (StopwatchManager.isRunning())
-                    StopwatchManager.PauseTimer()
-                else
-                    StopwatchManager.ResumeTimer()
                 setLookForPauseOrResume()
-            }
-            stop.setOnClickListener {
-                StopwatchManager.stopTimer()
-                handler.postDelayed(100) {
-                    running.hide()
-                    start.show()
-                    setText(Html.fromHtml(DEFAULT_STOPWATCH))
-                }
-            }
-            if (time.getText().toString().isEmpty()) setText(Html.fromHtml(if (showMillis) DEFAULT_STOPWATCH else DEFAULT_STOPWATCH_NO_MILLIS))
-            handler = Handler()
-            if (StopwatchManager.hasOldData()) {
-                Handler().postDelayed({
-                    callback()
-                    StopwatchManager.runOnUi(callback)
-                    setLookRunning()
-                    setLookForPauseOrResume()
-                }, 100)
-            }
+            }, 100)
+        }
     }
 
     fun setLookRunning() {
@@ -99,6 +101,19 @@ public open class StopwatchFragment : Fragment() {
         time.setText(text)
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        try {
+            Class.forName("com.lge.app.floating.FloatableActivity")
+            if (getActivity() is FloatableActivity) {
+                container?.addView(layout)
+                super.onViewCreated(getView(), null)
+            }
+        } catch(e: ClassNotFoundException) {
+            //my class isn't there!
+        }
+    }
+
     companion object {
         private val TIME_FORMATTING = "<big>{0}:{1}:{2}</big><small>.{3}</small>"
         private val TIME_FORMATTING_NO_MILLIS = "<big>{0}:{1}:{2}</big>"
@@ -112,7 +127,7 @@ public open class StopwatchFragment : Fragment() {
                 TimeUnit.MINUTES -> // Number of minutes % 60
                     return (millis / 60000).toInt() % 60
                 TimeUnit.HOURS -> // Number of hours (can be more then 24)
-                    return (millis / 1440000).toInt()
+                    return (millis / 360000).toInt()
             }
             return 0
         }

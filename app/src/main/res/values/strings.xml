@@ -59,10 +59,13 @@
     <string name="stop">Stop</string>
     <string name="resume">Resume</string>
     <string name="stopwatch_run_on_back">Run on background</string>
-    <string name="stopwatch_run_on_back_message">Do you want the stopwatch to run on background?</string>
+    <string name="stopwatch_run_on_back_message">Do you want the stopwatch and/or timer to run on background?</string>
     <string name="stopwatch">Stopwatch</string>
     <string name="timer">Timer</string>
+    <string name="timer_finished">Timer has finished.</string>
 
     <!-- General -->
     <string name="unknown">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

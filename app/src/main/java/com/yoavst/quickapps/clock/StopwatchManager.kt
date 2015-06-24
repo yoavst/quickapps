@@ -8,15 +8,7 @@ import java.util.TimerTask
  */
 public object StopwatchManager {
     public abstract class Stopwatch : TimerTask() {
-        private  var isRunning = true
-
-        synchronized public fun isRunning(running: Boolean) {
-            this.isRunning = running
-        }
-
-        synchronized public fun isRunning(): Boolean {
-            return isRunning
-        }
+        public synchronized var isRunning: Boolean = true
 
         override fun run() {
             if (isRunning) runCode()
@@ -56,7 +48,7 @@ public object StopwatchManager {
     public fun runOnBackground() {
         runnable = null
         // If the stopwatch is paused, it will just save its data, and will not run.
-        if (!(stopwatch == null || stopwatch!!.isRunning())) {
+        if (!(stopwatch == null || stopwatch!!.isRunning)) {
             stopwatch!!.cancel()
             stopwatch = null
         }
@@ -66,7 +58,7 @@ public object StopwatchManager {
         runnable = callback
         if (hasOldData() && stopwatch == null) {
             initStopwatch()
-            stopwatch!!.isRunning(false)
+            stopwatch!!.isRunning = false
             startTimer()
             runnable?.invoke()
         }
@@ -80,12 +72,12 @@ public object StopwatchManager {
         period = 0
     }
 
-    public fun PauseTimer() {
-        stopwatch?.isRunning(false)
+    public fun pauseTimer() {
+        stopwatch?.isRunning = false
     }
 
-    public fun ResumeTimer() {
-       stopwatch?.isRunning(true)
+    public fun resumeTimer() {
+        stopwatch?.isRunning = true
     }
 
     public fun getMillis(): Long {
@@ -93,7 +85,7 @@ public object StopwatchManager {
     }
 
     public fun isRunning(): Boolean {
-        return stopwatch != null && stopwatch!!.isRunning()
+        return stopwatch != null && stopwatch!!.isRunning
     }
 
     public fun hasOldData(): Boolean {

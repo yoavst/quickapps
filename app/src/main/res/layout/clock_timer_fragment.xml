@@ -16,7 +16,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -28,7 +27,7 @@
                 <ImageView
                     android:id="@+id/addHour"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_add"/>
 
@@ -44,7 +43,7 @@
                 <ImageView
                     android:id="@+id/subHour"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
 
                     android:src="@drawable/ic_remove"/>
@@ -59,7 +58,7 @@
                 <ImageView
                     android:id="@+id/addMinute"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_add"/>
 
@@ -75,7 +74,7 @@
                 <ImageView
                     android:id="@+id/subMinute"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_remove"/>
             </LinearLayout>
@@ -89,7 +88,7 @@
                 <ImageView
                     android:id="@+id/addSecond"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_add"/>
 
@@ -105,7 +104,7 @@
                 <ImageView
                     android:id="@+id/subSecond"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_remove"/>
             </LinearLayout>
@@ -114,7 +113,7 @@
         <Button
             android:id="@+id/start"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="@dimen/stopwatch_start_padding"
             android:layout_marginRight="@dimen/stopwatch_start_padding"
             android:background="@drawable/stopwatch_btn_start"
@@ -139,6 +138,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@android:color/black"
             android:textSize="@dimen/stopwatch_time"
+            tools:ignore="SpUsage"
             tools:text="13:24:22"/>
 
         <LinearLayout
@@ -176,4 +176,31 @@
                 android:textSize="@dimen/stopwatch_small_button"/>
         </LinearLayout>
     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/doneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/stopwatch_start_padding"
+            android:layout_marginRight="@dimen/stopwatch_start_padding"
+            android:text="@string/timer_finished"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/done"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_done"/>
+    </LinearLayout>
 </FrameLayout>
