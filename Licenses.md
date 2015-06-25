@@ -20,3 +20,7 @@ Credits
 * Clock icon by [Tahsin Tahil](https://www.iconfinder.com/tahsintahil).The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
 
 ![icon](https://cdn0.iconfinder.com/data/icons/shift-free/32/Clock-128.png)
+
+* Compass icon by [Boyan Kostov](http://boyankostov.com/). The license is "Free for commercial use"
+
+![icon](https://cdn4.iconfinder.com/data/icons/flatified/128/681129-compass.png)

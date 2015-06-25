@@ -262,6 +262,29 @@
             android:excludeFromRecents="true"
             android:theme="@style/LightTheme" />
 
+        <!-- Compass -->
+        <activity
+            android:name=".compass.CCompassActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/qcircle_icon_compass"
+            android:label="@string/compass_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".compass.PhoneActivity"
+            android:icon="@drawable/qcircle_icon_compass"
+            android:label="@string/compass_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme" />
+
         <!-- Admin -->
         <receiver
             android:name=".AdminListener"
