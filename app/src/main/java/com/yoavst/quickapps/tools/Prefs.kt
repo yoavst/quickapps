@@ -30,6 +30,8 @@ public var Context.highScoreInSimon: Int by IntPref("highScoreInSimon", 0)
 
 public var Context.stopwatchShowMillis: Boolean by BooleanPref("stopwatchShowMillis", true)
 
+public var Context.showBatteryToggle: Boolean by BooleanPref("showBatteryToggle", true)
+
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
 }

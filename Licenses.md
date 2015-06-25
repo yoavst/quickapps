@@ -29,3 +29,8 @@ Credits
 **Note: Background color was changed**
 
 ![icon](https://cdn4.iconfinder.com/data/icons/technology-devices-1/500/microphone-128.png)
+
+* Torch icon - by [Pixel Buddha](https://www.iconfinder.com/PixelBuddha). The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
+**Note: Background color was changed**
+
+![icon](https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/wrench-128.png)

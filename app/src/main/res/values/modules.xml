@@ -18,4 +18,13 @@
     <string name="recorder_module_name" translatable="false">Quick Recorder</string>
     <string name="barcode_module_name" translatable="false">Quick Scanner</string>
     <string name="dice_module_name" translatable="false">Quick Dice</string>
+
+    <string-array name="toggles">
+        <item>@string/wifi</item>
+        <item>@string/data_data</item>
+        <item>@string/brightness</item>
+        <item>@string/sound_sound</item>
+        <item>@string/bluetooth</item>
+        <item>@string/hotSpot</item>
+    </string-array>
 </resources>

@@ -70,6 +70,37 @@
     <string name="successfully_record_audio">Successfully recorded audio. The file is saved on VoiceRecorder folder on sdcard.</string>
     <string name="delete_record">Record was deleted</string>
 
+    <!-- Toggles -->
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_off">Wi-Fi is turned off</string>
+    <string name="wifi_on">Wi-Fi is turned on</string>
+    <string name="wifi_connected">Connected to a Wi-Fi network <b><i>%1$s</i></b></string>
+    <string name="wifi_network_available">Open Wi-Fi networks available</string>
+    <string name="wifi_turning_off">Turning Wi-Fi off</string>
+    <string name="wifi_turning_on">Turning Wi-Fi on</string>
+    <string name="sound_sound">Sound</string>
+    <string name="sound_vibrate">Vibrate</string>
+    <string name="sound_silent">Silent</string>
+    <string name="data_data">Data</string>
+    <string name="data_off">Data connection is turned off</string>
+    <string name="data_on">Data connection is turned on</string>
+    <string name="data_off_airplane">Airplane mode - Data connection off</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_off">Bluetooth is turned off</string>
+    <string name="bluetooth_on">Bluetooth is turned on</string>
+    <string name="bluetooth_turning_off">Turning Bluetooth off</string>
+    <string name="bluetooth_turning_on">Turning Bluetooth on</string>
+    <string name="hotSpot">Hotspot</string>
+    <string name="hotSpot_off">Hotspot is disabled</string>
+    <string name="hotSpot_on">Hotspot mode is enabled</string>
+    <string name="cant_change_airplane_mode">Can\'t change airplane mode</string>
+    <string name="brightness">Brightness</string>
+    <string name="brightness_auto">Auto brightness</string>
+    <string name="brightness_med">Medium brightness</string>
+    <string name="brightness_max">High brightness</string>
+    <string name="battery">Battery</string>
+    <string name="charging">charging</string>
+
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>
