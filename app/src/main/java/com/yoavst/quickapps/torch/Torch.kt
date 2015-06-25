@@ -11,7 +11,7 @@ import com.yoavst.quickapps.R
  */
 public object Torch {
     public var notification: Notification? = null
-
+    public val killAllInstances: String = "com.yoavst.torch.killAll"
     public fun invoke(context: Context) {
         if (notification == null) {
             val intent = Intent("com.yoavst.notificationtorch")

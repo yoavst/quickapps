@@ -1,17 +1,19 @@
 package com.yoavst.quickapps.torch
 
-import android.animation.Animator
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
-import android.os.Handler
-import android.view.View
-import android.view.ViewAnimationUtils
 import android.widget.RelativeLayout
 import com.lge.qcircle.template.ButtonTheme
 import com.lge.qcircle.template.QCircleBackButton
-import com.yoavst.kotlin.*
+import com.yoavst.kotlin.async
+import com.yoavst.kotlin.broadcastReceiver
+import com.yoavst.kotlin.intent
+import com.yoavst.kotlin.notificationManager
 import com.yoavst.quickapps.R
-import com.yoavst.quickapps.tools.*
+import com.yoavst.quickapps.tools.QCircleActivity
+import com.yoavst.quickapps.tools.isLGRom
+import com.yoavst.quickapps.tools.qCircleToast
 import kotlinx.android.synthetic.torch_activity.offIcon
 import kotlinx.android.synthetic.torch_activity.offIconAnimation
 import kotlinx.android.synthetic.torch_activity.offLayout
@@ -36,17 +38,20 @@ public class CTorchActivity : QCircleActivity() {
         template.addElement(backButton)
         setContentView(template.getView())
         val container = getMainLayout().getParent().getParent() as RelativeLayout
-       container.addView(getLayoutInflater().inflate(R.layout.torch_activity, container, false),0)
+        container.addView(getLayoutInflater().inflate(R.layout.torch_activity, container, false), 1)
         delegation.init()
+        sendBroadcast(Intent(Torch.killAllInstances))
+        offLayout.setOnClickListener { delegation.toggleTorch() }
+        onLayout.setOnClickListener { delegation.toggleTorch() }
     }
 
-    /**
-     * Toggles the torch on tap confirmed.
-     */
-    override fun onSingleTapConfirmed(): Boolean {
-        delegation.toggleTorch()
-        return true
-    }
+//    /**
+//     * Toggles the torch on tap confirmed.
+//     */
+//    override fun onSingleTapConfirmed(): Boolean {
+//        delegation.toggleTorch()
+//        return true
+//    }
 
     public override fun onResume() {
         super.onResume()
@@ -71,7 +76,7 @@ public class CTorchActivity : QCircleActivity() {
      */
     override fun getIntentToShow(): Intent {
         if (!isLGRom(this))
-        return intent<PhoneActivityNotFloating>()
+            return intent<PhoneActivityNotFloating>()
         else return intent<PhoneActivity>()
     }
 }

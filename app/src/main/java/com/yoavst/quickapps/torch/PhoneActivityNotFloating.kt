@@ -3,7 +3,9 @@ package com.yoavst.quickapps.torch
 import android.app.Activity
 import android.app.NotificationManager
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
+import com.yoavst.kotlin.broadcastReceiver
 import com.yoavst.kotlin.systemService
 import com.yoavst.quickapps.R
 import kotlinx.android.synthetic.torch_activity.offIcon
@@ -18,6 +20,11 @@ import kotlin.properties.Delegates
 public class PhoneActivityNotFloating : Activity() {
     val notificationManager: NotificationManager by systemService()
     val delegation: TorchDelegate by Delegates.lazy { TorchDelegate(this, offIcon, offIconAnimation, offLayout, onLayout) }
+    var isDestroyForQCircle = false
+    val receiver = broadcastReceiver { context, intent ->
+        isDestroyForQCircle = true
+        finish()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +34,9 @@ public class PhoneActivityNotFloating : Activity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        CameraManager.destroy()
+        if (!isDestroyForQCircle)
+            CameraManager.destroy()
+        unregisterReceiver(receiver)
     }
 
     override fun onBackPressed() {
@@ -41,7 +50,7 @@ public class PhoneActivityNotFloating : Activity() {
         super.onPause()
         if (CameraManager.isTorchOn())
             notificationManager.notify(NotificationReceiver.NOTIFICATION_ID, Torch.notification)
-        else
+        else if (!isDestroyForQCircle)
             CameraManager.destroy()
     }
 
@@ -52,5 +61,6 @@ public class PhoneActivityNotFloating : Activity() {
         Torch(this)
         notificationManager.cancel(NotificationReceiver.NOTIFICATION_ID)
         delegation.showCurrentMode()
+        registerReceiver(receiver, IntentFilter(Torch.killAllInstances))
     }
 }

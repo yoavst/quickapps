@@ -12,7 +12,7 @@ import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.BaseAnimationListener
 import com.yoavst.quickapps.tools.autoStartTorch
-import com.yoavst.quickapps.tools.getPressedColorRippleDrawable
+import com.yoavst.quickapps.tools.getBackgroundDrawable
 import kotlin.properties.Delegates
 
 /**
@@ -31,14 +31,10 @@ public class TorchDelegate(private val activity: Activity, private val offIcon: 
      * initialize the views and set the on click callback for them.
      */
     public fun init() {
-        if (lollipopOrNewer()) {
-            offLayout.setBackground(getPressedColorRippleDrawable(activity.colorRes(R.color.torch_background_color_off),
-                    activity.colorRes(R.color.ripple_material_dark)))
-            onLayout.setBackground(getPressedColorRippleDrawable(activity.colorRes(R.color.torch_background_color_on),
-                    activity.colorRes(R.color.ripple_material_light)))
-        } else {
-            //FIXME
-        }
+        offLayout.setBackground(getBackgroundDrawable(activity.colorRes(R.color.torch_background_color_off),
+                activity.colorRes(R.color.ripple_material_dark)))
+        onLayout.setBackground(getBackgroundDrawable(activity.colorRes(R.color.torch_background_color_on),
+                activity.colorRes(R.color.ripple_material_light)))
         offLayout.setOnClickListener { toggleTorch() }
         onLayout.setOnClickListener { toggleTorch() }
     }

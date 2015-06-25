@@ -7,21 +7,34 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.graphics.drawable.RippleDrawable
+import android.graphics.drawable.StateListDrawable
 import android.os.Build
 import android.view.Gravity
 import android.widget.Toast
+import com.yoavst.kotlin.lollipopOrNewer
 
 public fun getPressedColorRippleDrawable(normalColor: Int, pressedColor: Int): RippleDrawable {
-    return RippleDrawable(getPressedColorSelector(pressedColor), getColorDrawableFromColor(normalColor), null)
+    return RippleDrawable(getPressedColorSelector(pressedColor), ColorDrawable(normalColor), null)
 }
 
 public fun getPressedColorSelector(pressedColor: Int): ColorStateList {
     return ColorStateList(arrayOf(intArrayOf()), intArrayOf(pressedColor))
 }
 
-public fun getColorDrawableFromColor(color: Int): ColorDrawable {
-    return ColorDrawable(color)
+
+public fun getRegularPressedDrawable(normalColor: Int, pressedColor: Int): StateListDrawable {
+    val states = StateListDrawable()
+    states.addState(intArrayOf(android.R.attr.state_pressed), ColorDrawable(pressedColor))
+    states.addState(intArrayOf(android.R.attr.state_focused), ColorDrawable(pressedColor))
+    states.addState(intArrayOf(), ColorDrawable(normalColor))
+    return states
+}
+
+public fun getBackgroundDrawable(normalColor: Int, pressedColor: Int): Drawable {
+    if (normalColor.lollipopOrNewer()) return getPressedColorRippleDrawable(normalColor, pressedColor)
+    else return getRegularPressedDrawable(normalColor, pressedColor)
 }
 
 public fun isLGRom(context: Context): Boolean {
@@ -34,7 +47,7 @@ public fun Fragment.qCircleToast(text: Int): Unit = getActivity().qCircleToast(t
 public fun Fragment.qCircleToast(text: String): Unit = getActivity().qCircleToast(text)
 
 public fun Activity.qCircleToast(text: String) {
-    val toast = Toast.makeText(this,"", Toast.LENGTH_SHORT);
+    val toast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
     toast.setText(text)
     toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
     toast.show()

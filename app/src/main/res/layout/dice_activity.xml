@@ -3,13 +3,14 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:background="@color/primary"
+                android:background="@color/primary"
                 tools:layout_height="@dimen/circle_size"
                 tools:layout_width="@dimen/circle_size">
 
     <FrameLayout
         android:id="@+id/diceLayout"
         android:layout_width="match_parent"
+        android:foreground="?selectableItemBackground"
         android:layout_height="match_parent"
         android:layout_above="@+id/controllersLayout">
 
@@ -103,14 +104,14 @@
         android:background="@android:color/white"/>
 
     <FrameLayout
+        android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignTop="@+id/backLayout"
         android:layout_toEndOf="@+id/backLayout"
-        android:background="?selectableItemBackground">
+        android:foreground="?selectableItemBackground">
 
         <ImageView
-            android:id="@+id/add"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="start"
@@ -138,14 +139,14 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/remove"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignTop="@+id/backLayout"
         android:layout_toStartOf="@+id/backLayout"
-        android:background="?selectableItemBackground">
+        android:foreground="?selectableItemBackground">
 
         <ImageView
-            android:id="@+id/remove"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="end"
@@ -153,9 +154,4 @@
             android:layout_marginTop="3dp"
             android:src="@drawable/ic_remove"/>
     </FrameLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/circlebackground"/>
 </RelativeLayout>

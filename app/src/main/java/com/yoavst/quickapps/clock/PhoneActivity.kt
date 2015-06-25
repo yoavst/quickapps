@@ -6,34 +6,40 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.support.design.widget.TabLayout
 import android.text.TextUtils
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.ImageButton
-
 import com.lge.app.floating.FloatableActivity
 import com.lge.app.floating.FloatingWindow
+import com.yoavst.kotlin.hide
+import com.yoavst.kotlin.show
 import com.yoavst.quickapps.R
-import kotlinx.android.synthetic.clock_activity.pager
-import kotlinx.android.synthetic.clock_activity.tabs
+import kotlinx.android.synthetic.clock_qslide_activity.layout1
+import kotlinx.android.synthetic.clock_qslide_activity.layout2
+import kotlinx.android.synthetic.clock_qslide_activity.tabs
+import kotlin.properties.Delegates
+
 
 public class PhoneActivity : FloatableActivity() {
-
-    var DEFAULT_STOPWATCH = "<big>00:00:00</big><small>.00</small>"
-    var DEFAULT_STOPWATCH_NO_MILLIS = "<big>00:00:00</big>"
-    var showMillis = true
-
+    var firstTime = true
+    val showStopwatch by Delegates.lazy { getIntent().getBooleanExtra(EXTRA_SHOW_STOPWATCH, true) }
     var mReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
-            if (TextUtils.equals(ACTION_FLOATING_CLOSE, intent.getAction())) {
                 finishFloatingMode()
-            }
+                finish()
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.clock_activity)
+        setContentView(R.layout.clock_qslide_activity)
+        // It is critically important that the activity should NOT be finished
+        // if it uses fragment. Fragments require the hosting activity not to
+        // be finished. Omitting the following statement or setting it to false
+        // will prevent Fragments from being shown while in the floating mode.
+        setDontFinishOnFloatingMode(true)
         if (isStartedAsFloating()) {
             val filter = IntentFilter()
             filter.addAction(ACTION_FLOATING_CLOSE)
@@ -54,13 +60,53 @@ public class PhoneActivity : FloatableActivity() {
             layoutParams.width = layoutParams.width + 100
             w.updateLayoutParams(layoutParams)
             val fullscreenButton = w.findViewWithTag(FloatingWindow.Tag.FULLSCREEN_BUTTON) as? ImageButton
-            if (fullscreenButton != null) {
-                (fullscreenButton.getParent() as ViewGroup).removeView(fullscreenButton)
+            (fullscreenButton?.getParent() as? ViewGroup)?.removeView(fullscreenButton)
+            if (tabs.getTabCount() == 0) {
+                tabs.addTab(tabs.newTab().setText(R.string.stopwatch))
+                tabs.addTab(tabs.newTab().setText(R.string.timer))
+            }
+            tabs.setOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+                override fun onTabReselected(tab: TabLayout.Tab) {
+
+                }
+
+                override fun onTabUnselected(tab: TabLayout.Tab) {
+
+                }
+
+                override fun onTabSelected(tab: TabLayout.Tab) {
+                    if (tab.getPosition() == 0) {
+                        layout1.show()
+                        layout2.hide()
+                    } else {
+                        layout2.show()
+                        layout1.hide()
+                    }
+                }
+            })
+            if (firstTime) {
+                // Note that commit() cannot be used while running in the floating mode.
+                // This is because the commit() method requires the activity to be in
+                // the RESUMED state. However, the activity stays at the STOPPED state
+                // while the activity is in the floating mode. In order to avoid the
+                // default behavior, commitAllowingStateLoss() should be used instead
+                // of commit(). commitAllowingStateLoss() allows the activity to be
+                // in states other than RESUMED.
+                getFragmentManager().beginTransaction().replace(R.id.layout1, StopwatchFragment()).commitAllowingStateLoss()
+                getFragmentManager().beginTransaction().replace(R.id.layout2, TimerFragment()).commitAllowingStateLoss()
+            } else firstTime = false
+
+            if (showStopwatch) {
+                layout1.show()
+                layout2.hide()
+            } else {
+                layout2.show()
+                layout1.hide()
+                tabs.getTabAt(1).select()
             }
         }
-        pager.setAdapter(ClockAdapter(getFragmentManager(), getString(R.string.stopwatch), getString(R.string.timer)))
-        tabs.setupWithViewPager(pager)
     }
+
 
     override fun onDetachedFromFloatingWindow(w: FloatingWindow, isReturningToFullScreen: Boolean): Boolean {
         if (StopwatchManager.isRunning()) {
@@ -75,13 +121,15 @@ public class PhoneActivity : FloatableActivity() {
                     }.create()
             alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_PHONE)
             alertDialog.show()
+        } else {
+            StopwatchManager.stopTimer()
+            Timer.stop()
         }
         return false
     }
 
     companion object {
         public val ACTION_FLOATING_CLOSE: String = "floating_close"
-        private val TIME_FORMATTING = "<big>{0}:{1}:{2}</big><small>.{3}</small>"
-        private val TIME_FORMATTING_NO_MILLIS = "<big>{0}:{1}:{2}</big>"
+        public val EXTRA_SHOW_STOPWATCH: String = "extra_stopwatch_showing"
     }
 }

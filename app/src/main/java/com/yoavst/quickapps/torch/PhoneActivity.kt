@@ -1,19 +1,15 @@
 package com.yoavst.quickapps.torch
 
-import android.animation.Animator
 import android.app.NotificationManager
+import android.content.IntentFilter
 import android.os.Bundle
-import android.os.Handler
-import android.view.View
-import android.view.ViewAnimationUtils
 import com.lge.app.floating.FloatableActivity
 import com.lge.app.floating.FloatingWindow
-import com.yoavst.kotlin.*
+import com.yoavst.kotlin.broadcastReceiver
+import com.yoavst.kotlin.hide
+import com.yoavst.kotlin.systemService
 import com.yoavst.quickapps.R
-import com.yoavst.quickapps.tools.BaseAnimationListener
-import com.yoavst.quickapps.tools.autoStartTorch
 import com.yoavst.quickapps.tools.torchForceFloating
-import com.yoavst.quickapps.tools.getPressedColorRippleDrawable
 import kotlinx.android.synthetic.torch_activity.offIcon
 import kotlinx.android.synthetic.torch_activity.offIconAnimation
 import kotlinx.android.synthetic.torch_activity.offLayout
@@ -27,6 +23,11 @@ public class PhoneActivity : FloatableActivity() {
     val notificationManager: NotificationManager by systemService()
     val delegation: TorchDelegate by Delegates.lazy { TorchDelegate(this, offIcon, offIconAnimation, offLayout, onLayout) }
     var isDestroyingForFloatingMode = false
+    var isDestroyForQCircle = false
+    val receiver = broadcastReceiver { context, intent ->
+        isDestroyForQCircle = true
+        finish()
+    }
 
     override fun onCreate(savedInstance: Bundle?) {
         super.onCreate(savedInstance)
@@ -68,7 +69,7 @@ public class PhoneActivity : FloatableActivity() {
         super.onPause()
         if (CameraManager.isTorchOn())
             notificationManager.notify(NotificationReceiver.NOTIFICATION_ID, Torch.notification)
-        else if (!isDestroyingForFloatingMode)
+        else if (isDestroyForQCircle || !isDestroyingForFloatingMode)
             CameraManager.destroy()
     }
 
@@ -78,11 +79,13 @@ public class PhoneActivity : FloatableActivity() {
         CameraManager.init()
         Torch(this)
         notificationManager.cancel(NotificationReceiver.NOTIFICATION_ID)
-       delegation.showCurrentMode()
+        delegation.showCurrentMode()
+        registerReceiver(receiver, IntentFilter(Torch.killAllInstances))
     }
 
     override fun onDestroy() {
         super.onDestroy()
         notificationManager.cancel(NotificationReceiver.NOTIFICATION_ID)
+        unregisterReceiver(receiver)
     }
 }

@@ -1,6 +1,10 @@
 package com.yoavst.quickapps.torch;
 
+import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
+import android.os.Build;
+
+import java.io.IOException;
 
 /**
  * Implementation for camera manager using deprecated Kitkat and below APIs.
@@ -45,7 +49,15 @@ public class KitkatCameraManagerImpl extends CameraManager.CameraManagerImpl {
 			if (!mParameters.getFlashMode().equals(Camera.Parameters.FLASH_MODE_TORCH)) {
 				mParameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
 				mCamera.setParameters(mParameters);
-				mCamera.startPreview();
+                if (Build.VERSION.SDK_INT >= 22) {
+                    SurfaceTexture mPreviewTexture = new SurfaceTexture(0);
+                    try {
+                        mCamera.setPreviewTexture(mPreviewTexture); // Fix G4 torch support
+                    } catch (IOException ex) {
+                        // Ignore
+                    }
+                }
+                mCamera.startPreview();
 				setTorchOn(true);
 			}
 		}

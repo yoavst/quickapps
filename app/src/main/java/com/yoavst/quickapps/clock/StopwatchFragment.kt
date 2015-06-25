@@ -7,11 +7,13 @@ import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.TextView
 import com.lge.app.floating.FloatableActivity
 import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.stopwatchShowMillis
-import kotlinx.android.synthetic.clock_stopwatch_fragment.*
 import java.text.MessageFormat
 import java.util.concurrent.TimeUnit
 import kotlin.properties.Delegates
@@ -26,6 +28,11 @@ public open class StopwatchFragment : Fragment() {
     val RESUME by stringResource(R.string.resume)
     val PAUSE by stringResource(R.string.pause)
     val showMillis by Delegates.lazy { getActivity().stopwatchShowMillis }
+    val time: TextView by Delegates.lazy { layout.findViewById(R.id.time) as TextView }
+    val start: Button by Delegates.lazy { layout.findViewById(R.id.start) as Button }
+    val pause: Button by Delegates.lazy { layout.findViewById(R.id.pause) as Button }
+    val stop: Button by Delegates.lazy { layout.findViewById(R.id.stop) as Button }
+    val running: LinearLayout by Delegates.lazy { layout.findViewById(R.id.running) as LinearLayout }
     var callback: () -> Unit = {
         handler.post {
             val millis = StopwatchManager.getMillis()
@@ -46,6 +53,10 @@ public open class StopwatchFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        // For QSlide
+        RESUME.length()
+        PAUSE.length()
+
         this.container = container
         this.layout = inflater.inflate(R.layout.clock_stopwatch_fragment, container, false)
         return layout

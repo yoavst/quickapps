@@ -11,6 +11,7 @@ import com.yoavst.kotlin.hide
 import com.yoavst.kotlin.show
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
+import com.yoavst.quickapps.tools.getBackgroundDrawable
 import com.yoavst.quickapps.tools.viewanimations.ShakeAnimator
 import com.yoavst.quickapps.tools.viewanimations.YoYo
 import kotlinx.android.synthetic.dice_activity.*
@@ -39,7 +40,6 @@ public class CDiceActivity : QCircleActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentViewToMain(R.layout.dice_activity)
-        template.setBackgroundColor(colorRes(R.color.primary))
         setContentView(template.getView())
         back.setOnClickListener {
             finish()
@@ -66,33 +66,32 @@ public class CDiceActivity : QCircleActivity() {
                 dice2.hide()
             }
         }
-    }
 
-    override fun onSingleTapConfirmed(): Boolean {
-        if (!lock) {
-            lock = true
-            YoYo.with(ShakeAnimator.getBigShake()).duration(1000).withListener(object : Animator.AnimatorListener {
-                override fun onAnimationStart(animation: Animator) {
-                    count = 9
-                    handler.post(loop)
-                }
+        diceLayout.setOnClickListener {
+            if (!lock) {
+                lock = true
+                YoYo.with(ShakeAnimator.getBigShake()).duration(1000).withListener(object : Animator.AnimatorListener {
+                    override fun onAnimationStart(animation: Animator) {
+                        count = 9
+                        handler.post(loop)
+                    }
 
-                override fun onAnimationEnd(animation: Animator) {
-                    lock = false
-                }
+                    override fun onAnimationEnd(animation: Animator) {
+                        lock = false
+                    }
 
-                override fun onAnimationCancel(animation: Animator) {
-                }
+                    override fun onAnimationCancel(animation: Animator) {
+                    }
 
-                override fun onAnimationRepeat(animation: Animator) {
-                }
-            }).playOn(diceLayout)
+                    override fun onAnimationRepeat(animation: Animator) {
+                    }
+                }).playOn(diceLayout)
+            }
         }
-        return true
     }
 
     override fun getIntentToShow(): Intent? {
-        return null //FIXME
+        return null
     }
 
 }

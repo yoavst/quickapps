@@ -55,6 +55,7 @@ public class TimerFragment : Fragment() {
                     ringtone = RingtoneManager.getRingtone(getActivity(), alarmUri)
                     ringtone!!.play()
                 }
+                settingLayout.hide()
                 runningLayout.hide()
                 doneLayout.show()
             }
@@ -174,6 +175,9 @@ public class TimerFragment : Fragment() {
                 runningLayout.show()
                 setLookForPauseOrResume()
             }, 100)
+        }
+        if (getActivity().getIntent().getBooleanExtra(CClockActivity.TimerShowFinishing, false)) {
+            callback()
         }
     }
 
