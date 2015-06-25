@@ -24,3 +24,8 @@ Credits
 * Compass icon by [Boyan Kostov](http://boyankostov.com/). The license is "Free for commercial use"
 
 ![icon](https://cdn4.iconfinder.com/data/icons/flatified/128/681129-compass.png)
+
+* Music icon - by [Vecteezy](https://www.iconfinder.com/Vecteezy). The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
+**Note: Background color was changed**
+
+![icon](https://cdn4.iconfinder.com/data/icons/technology-devices-1/500/microphone-128.png)

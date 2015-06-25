@@ -64,6 +64,12 @@
     <string name="timer">Timer</string>
     <string name="timer_finished">Timer has finished.</string>
 
+    <!-- Recorder -->
+    <string name="start_record">Start recording</string>
+    <string name="voice_recorded">Voice recorded</string>
+    <string name="successfully_record_audio">Successfully recorded audio. The file is saved on VoiceRecorder folder on sdcard.</string>
+    <string name="delete_record">Record was deleted</string>
+
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>
