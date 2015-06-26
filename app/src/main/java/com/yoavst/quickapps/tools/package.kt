@@ -13,7 +13,9 @@ import android.graphics.drawable.StateListDrawable
 import android.os.Build
 import android.view.Gravity
 import android.widget.Toast
+import com.google.gson.reflect.TypeToken
 import com.yoavst.kotlin.lollipopOrNewer
+import java.lang.reflect.Type
 
 public fun getPressedColorRippleDrawable(normalColor: Int, pressedColor: Int): RippleDrawable {
     return RippleDrawable(getPressedColorSelector(pressedColor), ColorDrawable(normalColor), null)
@@ -70,3 +72,6 @@ public fun Intent.createExplicit(context: Context): Intent {
     } else
         return this
 }
+
+public inline fun <reified T> typeToken(): Type = object : TypeToken<T>() {}.getType()
+

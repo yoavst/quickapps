@@ -50,10 +50,12 @@ public class SoundFragment : ToggleFragment() {
             AudioManager.RINGER_MODE_NORMAL -> {
                 image.setImageDrawable(soundDrawable)
                 text.setText(Sound)
+                setToggleBackgroundOn()
             }
             AudioManager.RINGER_MODE_VIBRATE, AudioManager.RINGER_MODE_SILENT -> {
                 image.setImageDrawable(vibrateDrawable)
                 text.setText(Vibrate)
+                setToggleBackgroundOff()
             }
         }
     }

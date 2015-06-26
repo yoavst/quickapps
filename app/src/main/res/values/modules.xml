@@ -21,7 +21,6 @@
 
     <string-array name="toggles">
         <item>@string/wifi</item>
-        <item>@string/data_data</item>
         <item>@string/brightness</item>
         <item>@string/sound_sound</item>
         <item>@string/bluetooth</item>

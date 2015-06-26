@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="115" android:drawable="@drawable/ic_brightness_low" />
+    <item android:maxLevel="180" android:drawable="@drawable/ic_brightness_medium" />
+    <item android:maxLevel="1000" android:drawable="@drawable/ic_brightness_high" />
+    <item android:maxLevel="10000" android:drawable="@drawable/ic_brightness_auto" />
+</level-list>

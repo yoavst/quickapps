@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.yoavst.kotlin.putBoolean
 import com.yoavst.kotlin.putInt
+import com.yoavst.kotlin.putString
 import kotlin.properties.ReadWriteProperty
 
 
@@ -31,6 +32,7 @@ public var Context.highScoreInSimon: Int by IntPref("highScoreInSimon", 0)
 public var Context.stopwatchShowMillis: Boolean by BooleanPref("stopwatchShowMillis", true)
 
 public var Context.showBatteryToggle: Boolean by BooleanPref("showBatteryToggle", true)
+public var Context.togglesItems: String by StringPref("togglesItems", "-1")
 
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
@@ -54,6 +56,16 @@ private class IntPref(val key: String, val default: Int) : ReadWriteProperty<Con
 
     override fun set(thisRef: Context, desc: PropertyMetadata, value: Int) {
         thisRef.getPrefs().putInt(key, value)
+    }
+}
+
+private class StringPref(val key: String, val default: String) : ReadWriteProperty<Context, String> {
+    override fun get(thisRef: Context, desc: PropertyMetadata): String {
+        return thisRef.getPrefs().getString(key, default)
+    }
+
+    override fun set(thisRef: Context, desc: PropertyMetadata, value: String) {
+        thisRef.getPrefs().putString(key, value)
     }
 
 }

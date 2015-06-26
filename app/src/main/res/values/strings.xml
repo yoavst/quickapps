@@ -97,6 +97,7 @@
     <string name="brightness_auto">Auto brightness</string>
     <string name="brightness_med">Medium brightness</string>
     <string name="brightness_max">High brightness</string>
+    <string name="brightness_low">Low brightness</string>
     <string name="battery">Battery</string>
     <string name="charging">charging</string>
 

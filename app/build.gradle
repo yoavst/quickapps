@@ -37,6 +37,8 @@ dependencies {
     compile 'com.malinskiy:materialicons:1.0.1'
     compile 'com.github.markushi:circlebutton:1.1'
     compile 'com.googlecode.mp4parser:isoparser:1.0.6'
+    compile 'com.google.code.gson:gson:2.3.1'
+
 
 }
 

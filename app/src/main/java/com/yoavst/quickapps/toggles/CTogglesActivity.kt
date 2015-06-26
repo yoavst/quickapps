@@ -19,6 +19,7 @@ public class CTogglesActivity : QCircleActivity() {
     val pager: ViewPager by Delegates.lazy {
         val localPager = ViewPager(this)
         localPager.setId(R.id.pager)
+        localPager.setOffscreenPageLimit(10)
         localPager.setAdapter(TogglesAdapter(getFragmentManager(), this))
         localPager
     }
