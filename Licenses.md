@@ -34,3 +34,7 @@ Credits
 **Note: Background color was changed**
 
 ![icon](https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/wrench-128.png)
+
+* News icon by [RoundsIcon.com](http://www.roundicons.com/).The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
+
+![icon](https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/134/Social_Media_Socialmedia_network_share_socialnetwork_network-20-128.png)

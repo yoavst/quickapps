@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.yoavst.kotlin.putBoolean
 import com.yoavst.kotlin.putInt
+import com.yoavst.kotlin.putLong
 import com.yoavst.kotlin.putString
 import kotlin.properties.ReadWriteProperty
 
@@ -31,11 +32,26 @@ public var Context.highScoreInSimon: Int by IntPref("highScoreInSimon", 0)
 
 public var Context.stopwatchShowMillis: Boolean by BooleanPref("stopwatchShowMillis", true)
 
+//region Toggles
 public var Context.showBatteryToggle: Boolean by BooleanPref("showBatteryToggle", true)
 public var Context.togglesItems: String by StringPref("togglesItemsNew", "-1")
+//endregion
+
+//region news
+public var Context.userId: String by StringPrefNews("userId", "")
+public var Context.refreshToken: String by StringPrefNews("refreshToken", "")
+public var Context.accessToken: String by StringPrefNews("accessToken", "")
+public var Context.rawResponse: String by StringPrefNews("rawResponse", "")
+public var Context.feed: String by StringPrefNews("feed", "")
+public var Context.lastUpdateTime: Long by LongPrefNews("lastUpdateTime", 0)
+//endregion
 
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
+}
+
+private fun Context.getNewsPrefs(): SharedPreferences {
+    return getSharedPreferences("pref", Context.MODE_PRIVATE)
 }
 
 private class BooleanPref(val key: String, val default: Boolean) : ReadWriteProperty<Context, Boolean> {
@@ -67,5 +83,24 @@ private class StringPref(val key: String, val default: String) : ReadWriteProper
     override fun set(thisRef: Context, desc: PropertyMetadata, value: String) {
         thisRef.getPrefs().putString(key, value)
     }
+}
 
+private class StringPrefNews(val key: String, val default: String) : ReadWriteProperty<Context, String> {
+    override fun get(thisRef: Context, desc: PropertyMetadata): String {
+        return thisRef.getNewsPrefs().getString(key, default)
+    }
+
+    override fun set(thisRef: Context, desc: PropertyMetadata, value: String) {
+        thisRef.getNewsPrefs().putString(key, value)
+    }
+}
+
+private class LongPrefNews(val key: String, val default: Long) : ReadWriteProperty<Context, Long> {
+    override fun get(thisRef: Context, desc: PropertyMetadata): Long {
+        return thisRef.getNewsPrefs().getLong(key, default)
+    }
+
+    override fun set(thisRef: Context, desc: PropertyMetadata, value: Long) {
+        thisRef.getNewsPrefs().putLong(key, value)
+    }
 }
