@@ -1,9 +1,9 @@
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
-                 android:drawable="@drawable/ic_power" >
+                 android:drawable="@drawable/ic_bluetooth" >
     <target
         android:name="circleGroup"
-        android:animation="@anim/circle_expand_torch" />
+        android:animation="@anim/circle_expand_toggle" />
     <target
         android:name="circlePath"
-        android:animation="@anim/circle_path_torch" />
+        android:animation="@anim/circle_path_toggle" />
 </animated-vector>

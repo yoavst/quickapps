@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:height="64dp"
+        android:width="64dp"
+        android:viewportHeight="192"
+        android:viewportWidth="192" >
+    <group>
+        <path
+            android:fillColor="@color/vector_foreground_color"
+            android:pathData="M87.3996,113.161L85.3665,112.191L85.3665,23.517L87.3996,22.5479L143.293,67.8542L87.3996,113.161ZM99.9498,84.2151L120.134,67.8542L99.9498,51.4934L99.9498,84.2151Z" />
+        <path
+            android:fillColor="@color/vector_foreground_color"
+            android:pathData="M87.4147,169.459L85.3665,168.484L85.3665,79.6589L87.4147,78.684L143.277,124.071L87.4147,169.459ZM99.9498,140.484L120.15,124.071L99.9498,107.659L99.9498,140.484Z" />
+        <path
+            android:fillColor="@color/vector_foreground_color"
+            android:pathData="M43.8495,129.345L103.262,81.2217L112.186,92.2392L52.7734,140.362L43.8495,129.345Z" />
+        <path
+            android:fillColor="@color/vector_foreground_color"
+            android:pathData="M43.8495,62.2562L103.262,110.379L112.186,99.3616L52.7734,51.2387L43.8495,62.2562Z" />
+    </group>
+    <group
+        android:name="circleGroup"
+        android:pivotX="96.0"
+        android:pivotY="96.0"
+        android:rotation="0">
+        <path
+            android:name="circlePath"
+            android:strokeColor="@color/vector_foreground_color"
+            android:strokeWidth="16"
+            android:strokeAlpha="0"
+            android:trimPathEnd="0.7"
+            android:pathData="M96,5.56405C145.946,5.56405 186.436,46.0536 186.436,96C186.436,145.946 145.946,186.436 96,186.436C46.0536,186.436 5.56405,145.946 5.56405,96C5.56405,46.0536 46.0536,5.56405 96,5.56405Z" />
+    </group>
+</vector>

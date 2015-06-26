@@ -80,7 +80,6 @@
     <string name="wifi_turning_on">Turning Wi-Fi on</string>
     <string name="sound_sound">Sound</string>
     <string name="sound_vibrate">Vibrate</string>
-    <string name="sound_silent">Silent</string>
     <string name="data_data">Data</string>
     <string name="data_off">Data connection is turned off</string>
     <string name="data_on">Data connection is turned on</string>

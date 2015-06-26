@@ -4,6 +4,9 @@ import android.app.Fragment
 import android.app.FragmentManager
 import android.content.Context
 import android.support.v13.app.FragmentPagerAdapter
+import com.yoavst.quickapps.toggles.toggles.BatteryFragment
+import com.yoavst.quickapps.toggles.toggles.SoundFragment
+import com.yoavst.quickapps.toggles.toggles.WifiFragment
 import com.yoavst.quickapps.tools.showBatteryToggle
 
 
@@ -16,7 +19,7 @@ public class TogglesAdapter(fm: FragmentManager, context: Context) : FragmentPag
     }
 
     fun getFragment(id: Int): Fragment {
-        throw Exception()
+        return SoundFragment()
     }
 
     override fun getCount(): Int = items.size() + if (showBattery) 1 else 0

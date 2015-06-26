@@ -12,4 +12,8 @@
     <color name="torch_background_color_on">@android:color/white</color>
     <color name="vector_foreground_color">@android:color/white</color>
 
+    <!-- Toggles color -->
+    <color name="color_toggle_on">#0BE5D5</color>
+    <color name="battery_saver_color">#F1561E</color>
+
 </resources>
