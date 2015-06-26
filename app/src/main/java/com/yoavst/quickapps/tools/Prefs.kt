@@ -32,7 +32,7 @@ public var Context.highScoreInSimon: Int by IntPref("highScoreInSimon", 0)
 public var Context.stopwatchShowMillis: Boolean by BooleanPref("stopwatchShowMillis", true)
 
 public var Context.showBatteryToggle: Boolean by BooleanPref("showBatteryToggle", true)
-public var Context.togglesItems: String by StringPref("togglesItems", "-1")
+public var Context.togglesItems: String by StringPref("togglesItemsNew", "-1")
 
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
