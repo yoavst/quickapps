@@ -101,6 +101,21 @@
     <string name="battery">Battery</string>
     <string name="charging">charging</string>
 
+    <!-- News -->
+    <string name="news_cant_init">Cannot load the module.</string>
+    <string name="news_cant_init_subtext">please exit the app and try again.</string>
+    <string name="news_network_error">Network error</string>
+    <string name="news_network_error_subtext">Please check your internet connection and try again</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="news_should_login">@string/login_to_feedly</string>
+    <string name="news_should_login_subtext">please open the case to login</string>
+    <string name="login_to_feedly">Login To Feedly</string>
+    <string name="news_no_content">No available content</string>
+    <string name="news_no_content_subtext">Refresh to see new content</string>
+    <string name="no_connection">No connection</string>
+    <string name="start_downloading">Start Downloading</string>
+
+
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>

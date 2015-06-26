@@ -26,4 +26,7 @@
         <item>@string/bluetooth</item>
         <item>@string/hotSpot</item>
     </string-array>
+
+    <string name="client_id" translatable="false">quickcircle</string>
+    <string name="client_secret" translatable="false">FE01Q2TWD53ZCAQ5MQNVX8NOU1XI</string>
 </resources>
