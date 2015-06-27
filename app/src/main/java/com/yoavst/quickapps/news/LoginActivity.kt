@@ -70,20 +70,24 @@ public class LoginActivity : Activity() {
     private fun createWebViewClient(): WebViewClient {
         return object : WebViewClient() {
             override fun onPageStarted(view: WebView, url: String, fav: Bitmap?) {
-                progressDialog!!.show()
+                if (!isDestroyed())
+                    progressDialog!!.show()
             }
 
             override fun onPageFinished(view: WebView, url: String) {
-                progressDialog!!.dismiss()
+                if (!isDestroyed())
+                    progressDialog!!.dismiss()
             }
 
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 if (url.startsWith(REDIRECT_URI_LOCAL) || url.startsWith(REDIRECT_URN)) {
-                    progressDialog!!.show()
+                    if (!isDestroyed())
+                        progressDialog!!.show()
                     handleUrl(url)
                     return true
                 }
-                progressDialog!!.dismiss()
+                if (!isDestroyed())
+                    progressDialog!!.dismiss()
                 return false
             }
         }
@@ -111,7 +115,7 @@ public class LoginActivity : Activity() {
     }
 
     fun handleCode(code: String) {
-        mainThread {
+        async {
             try {
                 val verifier = Verifier(code)
                 val accessToken = manager.getService().getAccessToken(EMPTY_TOKEN, verifier)

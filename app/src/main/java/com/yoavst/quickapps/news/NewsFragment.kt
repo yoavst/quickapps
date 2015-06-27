@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.yoavst.kotlin.e
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
 import kotlinx.android.synthetic.news_fragment.source
@@ -29,12 +28,11 @@ public class NewsFragment : Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         view!!.setOnTouchListener { view, motionEvent -> (getActivity() as QCircleActivity).gestureDetector.onTouchEvent(motionEvent) }
-        val entry = (getActivity() as CNewsActivity).getEntry(entryNumber)
-        if (entry != null) {
-            title.setText(entry.getTitle())
-            source.setText(entry.getOrigin().getTitle())
-            time.setText(dayFormatter.format(Date(entry.getPublished())))
-        }
+        val entry = (getActivity() as CNewsActivity)[entryNumber]
+        title.setText(entry.getTitle())
+        source.setText(entry.getOrigin().getTitle())
+        time.setText(dayFormatter.format(Date(entry.getPublished())))
+
     }
 
     companion object {
