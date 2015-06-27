@@ -119,8 +119,7 @@ public class CNewsActivity : QCircleActivity(), DownloadManager.DownloadingCallb
         else if (entries == null || entries!!.size() == 0)
             return null
         else {
-            val id = ((getFragmentManager().findFragmentByTag("android:switcher:" + R.id.pager + ":" + pager.getCurrentItem())) as NewsFragment).entryNumber
-            return Intent(Intent.ACTION_VIEW, Uri.parse(entries!![id].getAlternate().get(0).getHref()))
+            return Intent(Intent.ACTION_VIEW, Uri.parse(entries!![pager.getCurrentItem()].getAlternate().get(0).getHref()))
         }
     }
 
