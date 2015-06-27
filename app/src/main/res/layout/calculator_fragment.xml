@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_height="174dp"
+            tools:layout_width="@dimen/circle_size">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:clipToPadding="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/plus"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_plus"
+                    android:tag="@string/plus"/>
+
+                <ImageButton
+                    android:id="@+id/digit7"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit7"
+                    android:src="@drawable/calculator_basic_btn_number_7"
+                    android:tag="@string/digit7"/>
+
+                <ImageButton
+                    android:id="@+id/digit8"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit8"
+                    android:src="@drawable/calculator_basic_btn_number_8"
+                    android:tag="@string/digit8"/>
+
+                <ImageButton
+                    android:id="@+id/digit9"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit9"
+                    android:src="@drawable/calculator_basic_btn_number_9"
+                    android:tag="@string/digit9"/>
+
+
+                <ImageButton
+                    android:id="@+id/allClear"
+                    style="@style/basic_all_clear_button_style"
+                    android:src="@drawable/calculator_basic_btn_delete_ac"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/minus"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_subtraction"
+                    android:tag="@string/minus"/>
+
+                <ImageButton
+                    android:id="@+id/digit4"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit4"
+                    android:src="@drawable/calculator_basic_btn_number_4"
+                    android:tag="@string/digit4"/>
+
+                <ImageButton
+                    android:id="@+id/digit5"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit5"
+                    android:src="@drawable/calculator_basic_btn_number_5"
+                    android:tag="@string/digit5"/>
+
+                <ImageButton
+                    android:id="@+id/digit6"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit6"
+                    android:src="@drawable/calculator_basic_btn_number_6"
+                    android:tag="@string/digit6"/>
+
+                <ImageButton
+                    android:id="@+id/del"
+                    style="@style/basic_del_button_style"
+                    android:src="@drawable/calculator_basic_btn_delete"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/mul"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_multiply"
+                    android:tag="@string/mul"/>
+
+                <ImageButton
+                    android:id="@+id/digit1"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit1"
+                    android:src="@drawable/calculator_basic_btn_number_1"
+                    android:tag="@string/digit1"/>
+
+                <ImageButton
+                    android:id="@+id/digit2"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit2"
+                    android:src="@drawable/calculator_basic_btn_number_2"
+                    android:tag="@string/digit2"/>
+
+                <ImageButton
+                    android:id="@+id/digit3"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit3"
+                    android:src="@drawable/calculator_basic_btn_number_3"
+                    android:tag="@string/digit3"/>
+
+                <ImageButton
+                    android:id="@+id/answer"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_operators_ans"
+                    android:tag="@string/ans"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/div"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_division"
+                    android:tag="@string/div"/>
+
+                <ImageButton
+                    android:id="@+id/digit0"
+                    style="@style/basic_digit_button_style"
+                    android:contentDescription="@string/digit0"
+                    android:src="@drawable/calculator_basic_btn_number_0"
+                    android:tag="@string/digit0"/>
+
+                <ImageButton
+                    android:id="@+id/dot"
+                    style="@style/basic_digit_button_style"
+                    android:src="@drawable/calculator_basic_btn_number_dot"
+                    android:tag="@string/dot"/>
+
+                <ImageButton
+                    android:id="@+id/pi"
+                    style="@style/basic_digit_button_style"
+                    android:src="@drawable/calculator_advanced_btn_operators_pi"/>
+
+
+                <ImageButton
+                    android:id="@+id/equal"
+                    style="@style/basic_equal_button_style"
+                    android:src="@drawable/calculator_basic_btn_equal"
+                    android:tag="@string/equal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/sin"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_sin"/>
+
+                <ImageButton
+                    android:id="@+id/asin"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_sin1"/>
+
+                <ImageButton
+                    android:id="@+id/power"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_xy"/>
+
+                <ImageButton
+                    android:id="@+id/log"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_log"/>
+
+                <ImageButton
+                    android:id="@+id/brackets"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_bracket"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clipChildren="false">
+
+                <ImageButton
+                    android:id="@+id/cos"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_cos"/>
+
+                <ImageButton
+                    android:id="@+id/acos"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_cos1"/>
+
+                <ImageButton
+                    android:id="@+id/tan"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_tan"/>
+
+                <ImageButton
+                    android:id="@+id/atan"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_advanced_btn_functions_tan1"/>
+
+                <ImageButton
+                    android:id="@+id/root"
+                    style="@style/basic_operator_button_style"
+                    android:src="@drawable/calculator_basic_btn_operators_root"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

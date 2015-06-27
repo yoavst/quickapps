@@ -32,6 +32,7 @@ public class CCalculatorActivity : QCircleActivity() {
     private val Error by stringResource(R.string.error)
     private val Pow by stringResource(R.string.exponentiation)
     private val Sqrt by stringResource(R.string.sqrt)
+    private val Log by stringResource(R.string.log)
     private val Operators by stringArrayResource(R.array.operators)
     private val Digits = 0..9
     private val tokens: LinkedList<String> = LinkedList()
@@ -180,7 +181,7 @@ public class CCalculatorActivity : QCircleActivity() {
             if (original.startsWith(Minus + OpenBracket))
                 output = original.replaceFirst((Minus + "\\" + OpenBracket).toRegex(), Minus + "1" + Multiple + OpenBracket)
             else output = original
-            output = output.replace(Multiple, "*").replace(Divide, "/").replace(Sqrt, "SQRT").replace(PI, "PI")
+            output = output.replace(Multiple, "*").replace(Divide, "/").replace(Sqrt, "SQRT").replace(PI, "PI").replace(Log, "LOG10")
             return output
         }
     }

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.yoavst.kotlin.stringResource
 import com.yoavst.quickapps.R
-import kotlinx.android.synthetic.calculator_simple_fragment.*
+import kotlinx.android.synthetic.calculator_fragment.*
 
 /**
  * Created by yoavst.
@@ -24,7 +24,7 @@ public class CalculatorFragment : Fragment() {
     val Log by stringResource(R.string.log)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.calculator_simple_fragment, container, false)
+        return inflater.inflate(R.layout.calculator_fragment, container, false)
     }
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
