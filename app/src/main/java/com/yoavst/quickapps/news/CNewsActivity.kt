@@ -72,14 +72,16 @@ public class CNewsActivity : QCircleActivity(), DownloadManager.DownloadingCallb
     }
 
     fun setData() {
-        errorLayout.hide()
-        if (entries!!.size() == 0) {
-            errorLayout.show()
-            pager.setAdapter(null)
-            title.setText(R.string.news_no_content)
-            text.setText(R.string.news_no_content_subtext)
-        } else {
-            pager.setAdapter(NewsAdapter(getFragmentManager(), entries!!.size()))
+        if (!isDestroyed()) {
+            errorLayout.hide()
+            if (entries!!.size() == 0) {
+                errorLayout.show()
+                pager.setAdapter(null)
+                title.setText(R.string.news_no_content)
+                text.setText(R.string.news_no_content_subtext)
+            } else {
+                pager.setAdapter(NewsAdapter(getFragmentManager(), entries!!.size()))
+            }
         }
     }
 
