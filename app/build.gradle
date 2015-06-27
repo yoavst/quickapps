@@ -18,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+
 }
 
 dependencies {
@@ -40,6 +45,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'org.scribe:scribe:1.3.5'
     compile 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar'
+    compile 'com.udojava:EvalEx:1.0'
 
 }
 

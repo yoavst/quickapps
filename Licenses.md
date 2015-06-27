@@ -38,3 +38,7 @@ Credits
 * News icon by [RoundsIcon.com](http://www.roundicons.com/).The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
 
 ![icon](https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/134/Social_Media_Socialmedia_network_share_socialnetwork_network-20-128.png)
+
+* Calculator icon - by [Vecteezy](https://www.iconfinder.com/Vecteezy). The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
+
+![icon](https://cdn4.iconfinder.com/data/icons/banking-and-finance/500/calculator-pencil-128.png)

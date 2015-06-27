@@ -120,4 +120,5 @@
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="error">Error</string>
 </resources>

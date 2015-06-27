@@ -46,6 +46,8 @@ public var Context.feed: String by StringPrefNews("feed", "")
 public var Context.lastUpdateTime: Long by LongPrefNews("lastUpdateTime", 0)
 //endregion
 
+public var Context.calculatorForceFloating: Boolean by BooleanPref("calculatorForceFloating", true)
+
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
 }

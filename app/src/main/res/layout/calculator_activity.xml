@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_height="174dp"
+                tools:layout_width="285.5dp">
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="18.5dp"
+        android:ellipsize="none"
+        android:gravity="left"
+        android:maxLength="15"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:singleLine="true"
+        android:textColor="#ffffa12e"
+        android:textSize="16dp"
+        tools:ignore="RtlHardcoded,SpUsage"
+        tools:text="42"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:ellipsize="none"
+        android:gravity="left"
+        android:maxLength="14"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        tools:ignore="RtlHardcoded,SpUsage"
+        tools:text="6*9"/>
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"/>
+</RelativeLayout>
