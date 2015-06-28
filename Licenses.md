@@ -47,3 +47,8 @@ Credits
 **Note: The icon was modified**
 
 ![icon](https://cdn2.iconfinder.com/data/icons/fletro-long-shadow-google-service/128/Google_Calendar.png)
+
+* Dialer icon by [Xavi Sánchez Mir](http://xavisanchezmir.com/). The license is "Free for commercial use".
+**Note: Background color was changed**
+
+![icon](https://cdn3.iconfinder.com/data/icons/social-media-2034/500/viber-128.png)

@@ -16,8 +16,7 @@
         android:layout_height="90dp"
         android:id="@+id/progress"
         android:indeterminate="true"
-        android:layout_gravity="center"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        android:layout_gravity="center"/>
 
 
     <RelativeLayout

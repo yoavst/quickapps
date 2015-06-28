@@ -145,6 +145,8 @@
     <string name="empty_calendar">Your calendar is empty for the next month</string>
     <string name="at">At</string>
 
+    <!-- Contacts -->
+    <string name="contacts">Contacts</string>
 
     <!-- General -->
     <string name="unknown">Unknown</string>

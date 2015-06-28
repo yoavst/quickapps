@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="SpUsage,RtlHardcoded,ButtonStyle"
+                tools:layout_height="277dp"
+                tools:layout_width="285.5dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/number"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="@dimen/extra_padding_start"
+        android:paddingStart="@dimen/extra_padding_start"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/digit3"
+        android:maxLength="14"
+        android:paddingEnd="@dimen/padding_start"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="@dimen/padding_start"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        tools:text="0522324577" />
+
+    <Button
+        android:id="@+id/digit1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit4"
+        android:layout_alignRight="@+id/dial"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit1"
+        android:text="@string/digit1"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit5"
+        android:layout_alignRight="@+id/digit0"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit2"
+        android:text="@string/digit2"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit6"
+        android:layout_alignRight="@+id/delete"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit3"
+        android:text="@string/digit3"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit7"
+        android:layout_alignRight="@+id/dial"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit4"
+        android:text="@string/digit4"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit8"
+        android:layout_alignRight="@+id/digit0"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit5"
+        android:text="@string/digit5"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit9"
+        android:layout_alignRight="@+id/delete"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit6"
+        android:text="@string/digit6"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/dial"
+        android:layout_alignRight="@+id/dial"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit7"
+        android:text="@string/digit7"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/digit0"
+        android:layout_alignRight="@+id/digit0"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit8"
+        android:text="@string/digit8"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/digit9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/delete"
+        android:layout_alignRight="@+id/delete"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit9"
+        android:text="@string/digit9"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/back"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/back"
+        android:background="@drawable/dialer_btn_delete"
+        android:scaleType="centerInside"
+        android:src="@drawable/calculator_basic_btn_delete" />
+
+    <Button
+        android:id="@+id/digit0"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dialer_btn_digit"
+        android:scaleType="centerInside"
+        android:tag="@string/digit0"
+        android:text="@string/digit0"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/dial"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dialer_spacing"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/back"
+        android:background="@drawable/dialer_btn_call"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_call" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/dialer_btn_back"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backover_dark" />
+</RelativeLayout>

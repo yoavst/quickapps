@@ -361,6 +361,21 @@
             </intent-filter>
         </activity>
 
+        <!-- Dialer -->
+        <activity
+            android:name=".dialer.CDialerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/qcircle_icon_dialer"
+            android:label="@string/dialer_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+
         <!-- Admin -->
         <receiver
             android:name=".AdminListener"
