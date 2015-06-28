@@ -12,6 +12,7 @@ import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.news.types.Entry
 import com.yoavst.quickapps.tools.QCircleActivity
+import com.yoavst.quickapps.tools.lastUpdateTime
 import com.yoavst.quickapps.tools.qCircleToast
 import kotlinx.android.synthetic.news_activity.*
 import java.util.ArrayList
@@ -110,6 +111,7 @@ public class CNewsActivity : QCircleActivity(), DownloadManager.DownloadingCallb
 
     override fun onSuccess(entries: ArrayList<Entry>) {
         this.entries = entries
+        lastUpdateTime = System.currentTimeMillis()
         mainThread {
             refreshFabWrapper.beginFinalAnimation()
         }

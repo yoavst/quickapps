@@ -115,6 +115,36 @@
     <string name="no_connection">No connection</string>
     <string name="start_downloading">Start Downloading</string>
 
+    <!-- Calendar -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="all_day">(all day)</string>
+    <string name="now">Now</string>
+    <string name="in">In</string>
+    <plurals name="minute">
+        <item quantity="one">minute</item>
+        <item quantity="other">minutes</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="one">hour</item>
+        <item quantity="other">hours</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="week">
+        <item quantity="one">week</item>
+        <item quantity="other">weeks</item>
+    </plurals>
+    <plurals name="month">
+        <item quantity="one">month</item>
+        <item quantity="other">months</item>
+    </plurals>
+    <string name="more_then_year">More then a year left</string>
+    <string name="empty_calendar">Your calendar is empty for the next month</string>
+    <string name="at">At</string>
+
 
     <!-- General -->
     <string name="unknown">Unknown</string>

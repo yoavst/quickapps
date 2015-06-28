@@ -48,6 +48,15 @@ public var Context.lastUpdateTime: Long by LongPrefNews("lastUpdateTime", 0)
 
 public var Context.calculatorForceFloating: Boolean by BooleanPref("calculatorForceFloating", true)
 
+// region Calendar
+public var Context.amPmInCalendar: Boolean by BooleanPref("amPmInCalendar", true)
+public var Context.showAllDayEvents: Boolean by BooleanPref("showAllDayEvents", true)
+public var Context.showLocation: Boolean by BooleanPref("showLocation", true)
+public var Context.showRepeating: Boolean by BooleanPref("showRepeating", true)
+
+// endregion
+
+
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
 }

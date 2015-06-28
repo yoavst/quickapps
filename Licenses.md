@@ -42,3 +42,8 @@ Credits
 * Calculator icon - by [Vecteezy](https://www.iconfinder.com/Vecteezy). The license is [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
 
 ![icon](https://cdn4.iconfinder.com/data/icons/banking-and-finance/500/calculator-pencil-128.png)
+
+* Calendar icon by [Muhammad Maki](https://www.iconfinder.com/makiibao). The license is "Free for commercial use (Include link to authors website)".
+**Note: The icon was modified**
+
+![icon](https://cdn2.iconfinder.com/data/icons/fletro-long-shadow-google-service/128/Google_Calendar.png)
