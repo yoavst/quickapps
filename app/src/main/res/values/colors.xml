@@ -12,8 +12,18 @@
     <color name="torch_background_color_on">@android:color/white</color>
     <color name="vector_foreground_color">@android:color/white</color>
 
-    <!-- Toggles color -->
+    <!-- Toggles colors -->
     <color name="color_toggle_on">#0BE5D5</color>
     <color name="battery_saver_color">#F1561E</color>
+
+    <!-- Desktop colors -->
+    <color name="howToAdd">@color/md_deep_purple_500</color>
+    <color name="howToAddDark">@color/md_deep_purple_700</color>
+    <color name="settings">@color/md_blue_grey_500</color>
+    <color name="settingsDark">@color/md_blue_grey_700</color>
+    <color name="source">@color/md_deep_orange_500</color>
+    <color name="sourceDark">@color/md_deep_orange_700</color>
+    <color name="about">@color/md_teal_500</color>
+    <color name="aboutDark">@color/md_teal_700</color>
 
 </resources>

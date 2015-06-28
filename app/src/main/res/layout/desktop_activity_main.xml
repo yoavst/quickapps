@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="?attr/colorPrimary"
+        android:gravity="bottom"
+        android:minHeight="?actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleMarginBottom="16dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:transitionName="@string/transition_name"
+            android:text="@string/branding"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        tools:ignore="NestedWeights">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/howToAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:transitionName="@string/transition_toolbar"
+                tools:background="@color/md_deep_purple_500">
+
+                <TextView
+                    android:id="@+id/howToAddText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/how_to_add"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                    android:textStyle="bold"
+                    android:transitionName="@string/transition_name"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:transitionName="@string/transition_toolbar"
+                tools:background="@color/md_blue_grey_500">
+
+                <TextView
+                    android:id="@+id/settingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                    android:textStyle="bold"
+                    android:transitionName="@string/transition_name"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/source"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:transitionName="@string/transition_toolbar"
+                tools:background="@color/md_deep_orange_500">
+
+                <TextView
+                    android:id="@+id/sourceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/source"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"                    android:textStyle="bold"
+                    android:transitionName="@string/transition_name"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/about"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:transitionName="@string/transition_toolbar"
+                tools:background="@color/md_teal_500">
+
+                <TextView
+                    android:id="@+id/aboutText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/about_title"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"                    android:textStyle="bold"
+                    android:transitionName="@string/transition_name"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3328409722635254/2189974929"/>
+</RelativeLayout>

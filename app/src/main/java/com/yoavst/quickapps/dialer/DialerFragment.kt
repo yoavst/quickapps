@@ -10,12 +10,15 @@ import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.gson.Gson
 import com.google.i18n.phonenumbers.NumberParseException
 import com.google.i18n.phonenumbers.PhoneNumberUtil
 import com.yoavst.kotlin.colorResource
 import com.yoavst.kotlin.mainThread
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
+import com.yoavst.quickapps.tools.quickDials
+import com.yoavst.quickapps.tools.typeToken
 import kotlinx.android.synthetic.dialer_fragment.*
 import java.util.HashMap
 import kotlin.properties.Delegates
@@ -74,7 +77,8 @@ public class DialerFragment : Fragment() {
             v.setOnClickListener { onNumberClicked(it) }
             v.setOnLongClickListener { onNumberLongClicked(it) }
         }
-        //FIXME load quick dial
+        name.setSelected(true)
+        quickNumbers = Gson().fromJson(getActivity().quickDials, typeToken<HashMap<Int, Pair<String, String>>>())
     }
 
     fun onNumberClicked(view: View) {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/howToAdd"
+            android:checked="false"
+            android:title="@string/how_to_add" />
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:title="@string/modules_settings" />
+
+        <item
+            android:id="@+id/source"
+            android:checked="false"
+            android:title="@string/source" />
+
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:title="@string/about_title" />
+
+
+    </group>
+</menu>

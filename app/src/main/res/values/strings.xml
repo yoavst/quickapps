@@ -148,6 +148,28 @@
     <!-- Contacts -->
     <string name="contacts">Contacts</string>
 
+    <!-- Desktop -->
+    <string name="branding">Quick Apps - The best Quick Circle app</string>
+    <string name="how_to_add">How to add</string>
+    <string name="how_to_add_step_1">1. Click the button to open the settings</string>
+    <string name="how_to_add_step_2">2. Choose "Select apps"</string>
+    <string name="how_to_add_step_3">3. Add the modules you want</string>
+    <string name="how_to_add_tip">Tip: The Quick Launcher is a regular module that let you access all the other modules!</string>
+    <string name="about">Quick Circle Apps is a set of modules for Quick Circle Case.</string>
+    <string name="about_2">The app uses QCircle Design Template.</string>
+    <string name="about_3">Author: Yoav Sternberg</string>
+    <string name="about_5">Extra credits: Marco Kirchner (@BigBoot) for compass module and more, Marko Vene (@mark232) for Lollipop base support.</string>
+    <string name="about_mail_chooser">Choose mail client</string>
+    <string name="about_intent_failed">No mail clients installed</string>
+    <string name="source_description">The source for Quick Circle Apps is stored on Github. The app uses Gradle to manage all the dependencies, some are listed below:</string>
+    <string name="modules">Modules</string>
+    <string name="source">Source</string>
+    <string name="about_title">About</string>
+    <string name="settings">Settings</string>
+    <string name="modules_settings">Modules &amp; Settings</string>
+    <string name="activity_not_found">LG Settings activity not found</string>
+
+
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>

@@ -6,11 +6,17 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.graphics.Typeface
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.RippleDrawable
 import android.graphics.drawable.StateListDrawable
 import android.os.Build
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
+import android.text.style.RelativeSizeSpan
+import android.text.style.StyleSpan
 import android.view.Gravity
 import android.widget.Toast
 import com.google.gson.reflect.TypeToken
@@ -75,3 +81,17 @@ public fun Intent.createExplicit(context: Context): Intent {
 
 public inline fun <reified T> typeToken(): Type = object : TypeToken<T>() {}.getType()
 
+public fun SpannableString.colorize(color: Int, start: Int, end: Int): SpannableString {
+    this.setSpan(ForegroundColorSpan(color), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+    return this
+}
+
+public fun SpannableString.setBigger(size: Float, start: Int, end: Int): SpannableString {
+    this.setSpan(RelativeSizeSpan(size), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+    return this
+}
+
+public fun SpannableString.bold(start: Int, end: Int): SpannableString {
+    this.setSpan(StyleSpan(Typeface.BOLD), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+    return this
+}

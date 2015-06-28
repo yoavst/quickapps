@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.yoavst.quickapps"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -32,10 +32,12 @@ dependencies {
     compile 'com.github.yoavst:androidKotlin:1.5.1'
 
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
     compile 'com.android.support:support-v4:22.2.0'
     compile 'com.android.support:support-v13:22.2.0'
     compile 'com.android.support:recyclerview-v7:22.2.0'
     compile 'com.android.support:design:22.2.0'
+    compile 'com.google.android.gms:play-services-ads:7.5.0'
 
     provided files('LGQSlideAPIs.jar')
     compile 'com.github.LGDeveloper:QCircle-Design-Template:0.4'
@@ -48,7 +50,9 @@ dependencies {
     compile 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar'
     compile 'com.udojava:EvalEx:1.0'
     compile 'com.googlecode.libphonenumber:libphonenumber:7.0.6'
-
+    compile('com.mikepenz:aboutlibraries:5.0.5@aar') {
+        transitive = true
+    }
 }
 
 buildscript {
