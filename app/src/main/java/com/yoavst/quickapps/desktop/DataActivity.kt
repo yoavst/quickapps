@@ -1,17 +1,19 @@
 package com.yoavst.quickapps.desktop
 
 import android.app.Fragment
+import android.content.ComponentName
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
-import com.yoavst.kotlin.colorRes
-import com.yoavst.kotlin.hide
-import com.yoavst.kotlin.show
+import com.yoavst.kotlin.*
+import com.yoavst.quickapps.AdminListener
 import com.yoavst.quickapps.R
 import kotlinx.android.synthetic.desktop_activity_data.*
 
@@ -119,6 +121,19 @@ public class DataActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         isVisible = false
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        getMenuInflater().inflate(R.menu.menu_activity, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if (item?.getItemId() ?: -1 == R.id.delete) {
+            devicePolicyManager()!!.removeActiveAdmin(ComponentName(this, javaClass<AdminListener>()))
+            longToast(R.string.no_longer_device_admin)
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     companion object {

@@ -1,20 +1,21 @@
 package com.yoavst.quickapps.desktop
 
+import android.content.ComponentName
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
 import android.support.v4.app.SharedElementCallback
 import android.support.v4.util.Pair
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
-import com.yoavst.kotlin.colorRes
-import com.yoavst.kotlin.hide
-import com.yoavst.kotlin.intent
-import com.yoavst.kotlin.show
+import com.yoavst.kotlin.*
+import com.yoavst.quickapps.AdminListener
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.getBackgroundDrawable
 import com.yoavst.quickapps.tools.hideAds
@@ -115,7 +116,7 @@ public class MainActivity : AppCompatActivity() {
                 super.onAdFailedToLoad(errorCode)
                 adView.hide()
             }
-        });
+        })
         val adRequest = AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addKeyword("Quick Circle, LG G3, LG G4")
@@ -134,6 +135,19 @@ public class MainActivity : AppCompatActivity() {
 
             })
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        getMenuInflater().inflate(R.menu.menu_activity, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        if (item?.getItemId() ?: -1 == R.id.delete) {
+            devicePolicyManager()!!.removeActiveAdmin(ComponentName(this, javaClass<AdminListener>()))
+            longToast(R.string.no_longer_device_admin)
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onResume() {

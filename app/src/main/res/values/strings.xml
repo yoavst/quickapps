@@ -169,6 +169,8 @@
     <string name="modules_settings">Modules &amp; Settings</string>
     <string name="activity_not_found">LG Settings activity not found</string>
     <string name="changed_successfully">Changed successfully</string>
+    <string name="delete_app">Delete app</string>
+    <string name="no_longer_device_admin">The app is no longer device admin. You can uninstall now.</string>
 
     <!-- Desktop - Settings -->
     <string name="torch_launcher_shortcut">Launcher shortcut</string>
