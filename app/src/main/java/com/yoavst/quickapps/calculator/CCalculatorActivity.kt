@@ -104,7 +104,6 @@ public class CCalculatorActivity : QCircleActivity() {
                 tokens.add(Dot)
                 text.append(Dot)
             } else {
-                //FIXME check if there was dot before (like 0.54_)
                 val currentText = text.getText().toString()
                 if (Dot !in currentText) {
                     tokens.add(Dot)

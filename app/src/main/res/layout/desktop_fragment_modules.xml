@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yoavst.quickapps.desktop.modules.GeneralSettingsView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.CalculatorModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.CalendarModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.DialerModuleView
+            android:id="@+id/dialer_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+
+        <com.yoavst.quickapps.desktop.modules.MusicModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.NewsModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.ClockModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.TogglesModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        <com.yoavst.quickapps.desktop.modules.TorchModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</ScrollView>

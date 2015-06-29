@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="10dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/speed_dial_title"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/speed_dial"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/speed_dial_instructions"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#7e57c2"
+            android:gravity="center"
+            android:tag="@string/digit1"
+            android:text="@string/digit1"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#5c6bc0"
+            android:gravity="center"
+            android:tag="@string/digit2"
+            android:text="@string/digit2"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#738ffe"
+            android:gravity="center"
+            android:tag="@string/digit3"
+            android:text="@string/digit3"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#673ab7"
+            android:gravity="center"
+            android:tag="@string/digit4"
+            android:text="@string/digit4"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#3f51b5"
+            android:gravity="center"
+            android:tag="@string/digit5"
+            android:text="@string/digit5"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#5677fc"
+            android:gravity="center"
+            android:tag="@string/digit6"
+            android:text="@string/digit6"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/digit7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#512da8"
+            android:gravity="center"
+            android:tag="@string/digit7"
+            android:text="@string/digit7"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="2dp"
+            android:background="#303f9f"
+            android:gravity="center"
+            android:tag="@string/digit8"
+            android:text="@string/digit8"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/digit9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="2dp"
+            android:background="#455ede"
+            android:gravity="center"
+            android:tag="@string/digit9"
+            android:text="@string/digit9"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+    </LinearLayout>
+</LinearLayout>

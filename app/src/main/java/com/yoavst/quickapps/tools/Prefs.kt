@@ -56,6 +56,8 @@ public var Context.showLocation: Boolean by BooleanPref("showLocation", true)
 
 public var Context.quickDials: String by StringPref("quickDials", "{}")
 
+public var Context.hideAds: Boolean by BooleanPref("hideAds", false)
+
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
 }

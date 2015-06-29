@@ -1,6 +1,7 @@
 package com.yoavst.quickapps.desktop
 
 import android.app.Fragment
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.ActionBarDrawerToggle
@@ -49,6 +50,7 @@ public class DataActivity : AppCompatActivity() {
             drawer.closeDrawer(navigationView)
             true
         }
+
     }
 
     fun initAds() {
@@ -84,6 +86,7 @@ public class DataActivity : AppCompatActivity() {
                 colored.setBackgroundColor(colorRes(R.color.settings))
                 title.setText(R.string.settings)
                 drawer.setStatusBarBackgroundColor(colorRes(R.color.settingsDark))
+                fragment = ModulesFragment()
             }
             FragmentSource -> {
                 colored.setBackgroundColor(colorRes(R.color.source))
@@ -99,7 +102,23 @@ public class DataActivity : AppCompatActivity() {
 
             }
         }
+        currentFragment = id
         getFragmentManager().beginTransaction().replace(R.id.layout, fragment).commit()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        getFragmentManager().findFragmentById(R.id.layout).onActivityResult(requestCode,resultCode,data)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        isVisible = true
+    }
+
+    override fun onPause() {
+        super.onPause()
+        isVisible = false
     }
 
     companion object {
@@ -108,6 +127,9 @@ public class DataActivity : AppCompatActivity() {
         public val FragmentSettings: Int = 1
         public val FragmentSource: Int = 2
         public val FragmentAbout: Int = 3
+
+        public var currentFragment: Int = -1
+        public var isVisible: Boolean = false
 
     }
 }
