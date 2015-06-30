@@ -9,10 +9,11 @@ import java.util.ArrayList
  */
 public object EventRetiever {
     public fun getEvents(context: Context, days: Int): List<Event> {
-        var temp: List<Event> = ArrayList<Event>(days * 2) // Let's hope user has less then 2 events per days for performance.
+        var temp = ArrayList<Event>(days * 2) // Let's hope user has less then 2 events per days for performance.
         val time = Time(Time.getCurrentTimezone());
-        Event.loadEvents(context, temp as ArrayList<Event>, Time.getJulianDay(System.currentTimeMillis(), time.gmtoff), 30)
-        return temp.sortBy(comparator { l, r ->
+        Event.loadEvents(context, temp, Time.getJulianDay(System.currentTimeMillis(), time.gmtoff), 30)
+        val now = System.currentTimeMillis()
+        return temp filter { now < it.endMillis } sortBy(comparator { l, r ->
             val start = (l.startMillis - r.startMillis).toInt()
             if (start != 0) start
             else {

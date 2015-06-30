@@ -32,7 +32,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="com.lge.lockscreensettings.permission.LOCK_SETTINGS_DATA"/>
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -44,14 +44,15 @@
             android:name="com.lge.app.floating"
             android:required="false"/>
 
-        <receiver android:name=".CoverReceiver">
+        <receiver
+            android:name=".CoverReceiver"
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.lge.android.intent.action.ACCESSORY_COVER_EVENT" />
+                <action android:name="com.lge.android.intent.action.ACCESSORY_COVER_EVENT"/>
             </intent-filter>
         </receiver>
 
         <!-- Torch part -->
-
         <activity
             android:name=".torch.PhoneActivity"
             android:icon="@drawable/qcircle_icon_torch"
@@ -150,7 +151,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -188,7 +189,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/DarkTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -203,7 +204,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -218,7 +219,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/DarkTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -233,13 +234,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
         <service
-            android:exported="false"
-            android:name=".clock.TimerIntentService">
+            android:name=".clock.TimerIntentService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.yoavst.timerService"/>
             </intent-filter>
@@ -255,12 +256,12 @@
 
         <activity
             android:name=".clock.PhoneActivity"
+            android:excludeFromRecents="true"
             android:icon="@drawable/qcircle_icon_clock"
             android:label="@string/clock_module_name"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:excludeFromRecents="true"
-            android:theme="@style/LightTheme" />
+            android:theme="@style/LightTheme"/>
 
         <!-- Compass -->
         <activity
@@ -273,7 +274,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/DarkTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -283,7 +284,7 @@
             android:label="@string/compass_module_name"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:theme="@style/DarkTheme" />
+            android:theme="@style/DarkTheme"/>
 
         <!-- Recorder -->
         <activity
@@ -296,7 +297,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/DarkTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -311,12 +312,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
         <!-- News -->
-        <activity android:name=".news.LoginActivity" />
+        <activity android:name=".news.LoginActivity"/>
         <activity
             android:name=".news.CNewsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -327,7 +328,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -342,7 +343,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -357,7 +358,22 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Launcher -->
+        <activity
+            android:name=".launcher.CLauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/qcircle_icon_launcher"
+            android:label="@string/launcher_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
@@ -372,28 +388,35 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
 
         <!-- Desktop -->
         <activity
             android:name=".desktop.MainActivity"
-            android:label="@string/app_name"
             android:excludeFromRecents="false"
+            android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".desktop.DataActivity" />
+        <activity android:name=".desktop.DataActivity"/>
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <receiver android:name="com.yoavst.quickapps.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
 
         <!-- Admin -->
         <receiver

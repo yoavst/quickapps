@@ -1,6 +1,8 @@
 package com.yoavst.quickapps.desktop
 
 import android.content.ComponentName
+import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
@@ -93,7 +95,6 @@ public class MainActivity : AppCompatActivity() {
         }
         about.setOnClickListener {
             startDataFragment(about, aboutText, DataActivity.FragmentAbout)
-
         }
     }
 

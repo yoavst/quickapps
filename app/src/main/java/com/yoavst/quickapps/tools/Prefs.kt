@@ -58,6 +58,11 @@ public var Context.quickDials: String by StringPref("quickDials", "{}")
 
 public var Context.hideAds: Boolean by BooleanPref("hideAds", false)
 
+// region Launcher
+public var Context.launcherIsVertical: Boolean by BooleanPref("launcherIsVertical", true)
+public var Context.launcherItems: String by StringPref("launcherItemsNew", "{}")
+// endregion
+
 private fun Context.getPrefs(): SharedPreferences {
     return getSharedPreferences("preferences", Context.MODE_PRIVATE)
 }

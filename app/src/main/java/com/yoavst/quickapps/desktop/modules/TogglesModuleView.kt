@@ -57,10 +57,10 @@ public class TogglesModuleView : BaseModuleView {
                            getContext().togglesItems = Gson().toJson(items, TogglesType)
                         }.setNegativeButton(android.R.string.no) { dialog, which -> initItems() }
                          .setView(recyclerView).show()
+                addSettingView(R.string.battery_title, R.string.battery_subtitle, getContext().showBatteryToggle) {
+                    getContext().showBatteryToggle = it!!
+                }
             }
-        }
-        addSettingView(R.string.battery_title, R.string.battery_subtitle, getContext().showBatteryToggle) {
-            getContext().showBatteryToggle = it!!
         }
     }
 

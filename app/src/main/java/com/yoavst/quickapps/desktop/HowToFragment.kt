@@ -4,6 +4,7 @@ import android.app.Fragment
 import android.content.ComponentName
 import android.content.Intent
 import android.graphics.Color
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import com.malinskiy.materialicons.Iconify
 import com.yoavst.kotlin.toast
 import com.yoavst.quickapps.R
 import kotlinx.android.synthetic.desktop_fragment_howto.button
+import kotlinx.android.synthetic.desktop_fragment_howto.image
 
 /**
  * Created by yoavst.
@@ -32,5 +34,12 @@ public class HowToFragment : Fragment() {
                 toast(R.string.activity_not_found)
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        val drawable = (image.getDrawable() as BitmapDrawable)
+        image.setImageDrawable(null)
+        drawable.getBitmap().recycle()
     }
 }

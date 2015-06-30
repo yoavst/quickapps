@@ -13,7 +13,6 @@ import com.yoavst.quickapps.tools.QCircleActivity
 import kotlinx.android.synthetic.calendar_activity.errorLayout
 import kotlinx.android.synthetic.calendar_activity.pager
 import kotlinx.android.synthetic.calendar_activity.progress
-import java.util.Calendar
 
 /**
  * Created by yoavst.
@@ -62,22 +61,10 @@ public class CCalendarActivity : QCircleActivity() {
         return getIntentForEvent(events!![pager.getCurrentItem()].id)
     }
 
-    companion object {
-        fun getIntentForEvent(id: Long): Intent {
-            val intent = Intent(Intent.ACTION_VIEW)
-            val builder = CalendarContract.Events.CONTENT_URI.buildUpon().appendPath(id.toString())
-            return intent.setData(builder.build())
+    fun getIntentForEvent(id: Long): Intent {
+        val intent = Intent(Intent.ACTION_VIEW)
+        val builder = CalendarContract.Events.CONTENT_URI.buildUpon().appendPath(id.toString())
+        return intent.setData(builder.build())
 
-        }
-
-        fun Long.getStartOfTheDay(): Long {
-            val cal = Calendar.getInstance()
-            cal.setTimeInMillis(this)
-            cal.set(Calendar.HOUR_OF_DAY, 0)
-            cal.set(Calendar.MINUTE, 0)
-            cal.set(Calendar.SECOND, 0)
-            cal.set(Calendar.MILLISECOND, 0)
-            return cal.getTimeInMillis()
-        }
     }
 }

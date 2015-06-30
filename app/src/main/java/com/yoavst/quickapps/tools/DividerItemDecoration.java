@@ -41,7 +41,7 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         mShowFirstDivider = showFirstDivider;
         mShowLastDivider = showLastDivider;
     }
- 
+
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent,
             RecyclerView.State state) {

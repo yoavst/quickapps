@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.os.IBinder
+import android.provider.Settings
 import android.support.v4.media.session.PlaybackStateCompat
 import com.lge.qcircle.template.QCircleDialog
 import com.yoavst.kotlin.*
@@ -27,57 +28,61 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super<QCircleActivity>.onCreate(savedInstanceState)
-        setContentViewToMain(R.layout.music_activity)
         setContentView(template.getView())
-        template.setBackgroundDrawable(ColorDrawable(colorRes(R.color.md_indigo_A200)))
-        playView.setOnClickListener {
-            if (bound && !lock) {
-                lock = true
-                if (remoteControlService.isPlaying())
-                    remoteControlService.sendPauseKey()
-                else remoteControlService.sendPlayKey()
+        if (isServiceEnabled()) {
+            setContentViewToMain(R.layout.music_activity)
+            template.setBackgroundDrawable(ColorDrawable(colorRes(R.color.md_indigo_A200)))
+            playView.setOnClickListener {
+                if (bound && !lock) {
+                    lock = true
+                    if (remoteControlService.isPlaying())
+                        remoteControlService.sendPauseKey()
+                    else remoteControlService.sendPlayKey()
+                }
             }
-        }
-        back.setOnClickListener { finish() }
-        volume.setOnClickListener { audioManager().adjustStreamVolume(3, 0, 1) }
-        skipNextLayout.setOnClickListener {
-            if (bound) {
-                if (!remoteControlService.isPlaying()) {
-                    remoteControlService.sendPlayKey()
-                    Handler().postDelayed(500) {
-                        remoteControlService.sendNextKey()
-                    }
-                } else remoteControlService.sendNextKey()
+            back.setOnClickListener { finish() }
+            volume.setOnClickListener { audioManager().adjustStreamVolume(3, 0, 1) }
+            skipNextLayout.setOnClickListener {
+                if (bound) {
+                    if (!remoteControlService.isPlaying()) {
+                        remoteControlService.sendPlayKey()
+                        Handler().postDelayed(500) {
+                            remoteControlService.sendNextKey()
+                        }
+                    } else remoteControlService.sendNextKey()
+                }
             }
-        }
 
-        skipPrevLayout.setOnClickListener {
-            if (bound) {
-                if (!remoteControlService.isPlaying()) {
-                    remoteControlService.sendPlayKey()
-                    Handler().postDelayed(500) {
-                        remoteControlService.sendPreviousKey()
-                    }
-                } else remoteControlService.sendPreviousKey()
+            skipPrevLayout.setOnClickListener {
+                if (bound) {
+                    if (!remoteControlService.isPlaying()) {
+                        remoteControlService.sendPlayKey()
+                        Handler().postDelayed(500) {
+                            remoteControlService.sendPreviousKey()
+                        }
+                    } else remoteControlService.sendPreviousKey()
 
+                }
             }
-        }
-        title.setSelected(true)
-        artist.setSelected(true)
+            title.setSelected(true)
+            artist.setSelected(true)
+        } else showUnregistered()
     }
 
     public override fun onStart() {
         super<QCircleActivity>.onStart();
-        val intent =
-                if (beforeLollipop())
-                    Intent("com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE")
-                else
-                    Intent("com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE_LOLLIPOP").createExplicit(this)
-        try {
-            bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
-        } catch (e: RuntimeException) {
-            e.printStackTrace()
-            showUnregistered()
+        if (isServiceEnabled()) {
+            val intent =
+                    if (beforeLollipop())
+                        Intent("com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE")
+                    else
+                        Intent("com.yoavst.quickmusic.BIND_RC_CONTROL_SERVICE_LOLLIPOP").createExplicit(this)
+            try {
+                bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
+            } catch (e: RuntimeException) {
+                e.printStackTrace()
+                showUnregistered()
+            }
         }
     }
 
@@ -87,7 +92,9 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
             remoteControlService setListener null
             remoteControlService.setRemoteControllerDisabled()
         }
-        unbindService(serviceConnection)
+        try {
+            unbindService(serviceConnection)
+        } catch (ignored: IllegalArgumentException) {}
     }
 
     fun showUnregistered() {
@@ -153,5 +160,9 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
             artist.setText(R.string.unknown)
             title.setText(R.string.unknown)
         }
+    }
+
+    fun isServiceEnabled(): Boolean {
+        return getPackageName() in Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners")
     }
 }

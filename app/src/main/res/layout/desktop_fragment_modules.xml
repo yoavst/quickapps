@@ -29,7 +29,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"/>
 
-
+        <com.yoavst.quickapps.desktop.modules.LauncherModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
         <com.yoavst.quickapps.desktop.modules.MusicModuleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

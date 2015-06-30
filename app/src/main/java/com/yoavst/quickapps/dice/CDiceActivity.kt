@@ -5,10 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import com.yoavst.kotlin.colorRes
-import com.yoavst.kotlin.drawableRes
-import com.yoavst.kotlin.hide
-import com.yoavst.kotlin.show
+import com.yoavst.kotlin.*
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
 import com.yoavst.quickapps.tools.getBackgroundDrawable
@@ -21,9 +18,15 @@ import kotlin.properties.Delegates
 public class CDiceActivity : QCircleActivity() {
     var lock = false
     val drawables by Delegates.lazy {
-        arrayOf(drawableRes(R.drawable.d1), drawableRes(R.drawable.d2), drawableRes(R.drawable.d3),
-                drawableRes(R.drawable.d4), drawableRes(R.drawable.d5), drawableRes(R.drawable.d6))
+        arrayOf(drawable1, drawable2, drawable3, drawable4, drawable5, drawable6)
     }
+    val drawable1 by drawableResource(R.drawable.d1)
+    val drawable2 by drawableResource(R.drawable.d2)
+    val drawable3 by drawableResource(R.drawable.d3)
+    val drawable4 by drawableResource(R.drawable.d4)
+    val drawable5 by drawableResource(R.drawable.d5)
+    val drawable6 by drawableResource(R.drawable.d6)
+
     val dices by Delegates.lazy { arrayOf(dice0, dice1, dice2, dice3, dice4) }
     var count = 9
     val handler = Handler()

@@ -5,7 +5,7 @@
              android:layout_height="match_parent"
              tools:layout_width="260dp"
              tools:layout_height="260dp"
-             tools:foreground="@drawable/circlebackground">
+             tools:foreground="@drawable/circle_background">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

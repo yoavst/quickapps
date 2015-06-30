@@ -149,7 +149,7 @@
     <string name="contacts">Contacts</string>
 
     <!-- Desktop -->
-    <string name="branding">Quick Apps - The best Quick Circle app</string>
+    <string name="branding">Quick Circle Apps</string>
     <string name="how_to_add">How to add</string>
     <string name="how_to_add_step_1">1. Click the button to open the settings</string>
     <string name="how_to_add_step_2">2. Choose "Select apps"</string>
@@ -218,6 +218,11 @@
     <string name="g2_mode_explain">Enable it only if you are on the G2 with Quick Window!</string>
     <string name="hide_settings_from_quick_circle">Hide Setting from Quick Circle</string>
     <string name="show_settings_from_quick_circle">Show settings on Quick Circle</string>
+
+    <string name="orientation">Check for vertical launcher</string>
+    <string name="launcher_control_items">Order modules</string>
+    <string name="launcher_control_items_subtitle">Order the modules in the launcher</string>
+
 
     <!-- General -->
     <string name="unknown">Unknown</string>
