@@ -51,6 +51,8 @@ dependencies {
     compile 'com.udojava:EvalEx:1.0'
     compile 'com.googlecode.libphonenumber:libphonenumber:7.0.6'
     compile 'com.makeramen:roundedimageview:2.1.1'
+    compile 'com.google.zxing:core:3.2.0'
+
     compile('com.mikepenz:aboutlibraries:5.0.5@aar') {
         transitive = true
     }

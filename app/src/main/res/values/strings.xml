@@ -223,6 +223,24 @@
     <string name="launcher_control_items">Order modules</string>
     <string name="launcher_control_items_subtitle">Order the modules in the launcher</string>
 
+    <!-- Barcode -->
+    <string name="empty_barcode">Sorry! this barcode is empty</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="open_url">Open URL</string>
+    <string name="dial">Dial</string>
+    <string name="add_to_contacts">Add to contacts</string>
+    <string name="connect_wifi">Connect to Wi-Fi</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_mms">Send MMS</string>
+    <string name="open_in_map">Open in map</string>
+    <string name="get_directions">Get directions</string>
+    <string name="send_mail">Send mail</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="camera_not_found">Camera not found</string>
+    <string name="scanned_successfully">Scan completed</string>
 
     <!-- General -->
     <string name="unknown">Unknown</string>

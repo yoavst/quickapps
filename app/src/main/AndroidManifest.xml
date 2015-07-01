@@ -392,6 +392,26 @@
             </intent-filter>
         </activity>
 
+        <!-- Barcode -->
+        <activity
+            android:name=".barcode.CBarcodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/qcircle_icon_barcode"
+            android:label="@string/barcode_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".barcode.ResultBarcodeActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme.MyDialog"/>
+
         <!-- Desktop -->
         <activity
             android:name=".desktop.MainActivity"
