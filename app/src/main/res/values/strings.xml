@@ -223,6 +223,11 @@
     <string name="launcher_control_items">Order modules</string>
     <string name="launcher_control_items_subtitle">Order the modules in the launcher</string>
 
+    <string name="privacy_title">Show notifications content</string>
+    <string name="privacy_subtitle">The content of your notification may be secret</string>
+    <string name="auto_launch_title">Auto launch on notification</string>
+    <string name="auto_launch_subtitle">The module will be opened automatically if on quick circle case and received notification</string>
+
     <!-- Barcode -->
     <string name="empty_barcode">Sorry! this barcode is empty</string>
     <string name="copied">Copied to clipboard</string>

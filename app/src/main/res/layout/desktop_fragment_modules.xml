@@ -43,6 +43,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"/>
 
+        <com.yoavst.quickapps.desktop.modules.NotificationsModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
         <com.yoavst.quickapps.desktop.modules.ClockModuleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
