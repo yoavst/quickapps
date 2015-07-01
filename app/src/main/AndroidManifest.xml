@@ -438,6 +438,30 @@
             </intent-filter>
         </receiver>
 
+        <!-- Notifications -->
+        <activity
+            android:name=".notifications.CNotificationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/qcircle_icon_notifications"
+            android:label="@string/notification_module_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightTheme">
+            <intent-filter>
+                <action android:name="com.lge.quickcover" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".notifications.NotificationService"
+            android:icon="@drawable/qcircle_icon_notifications"
+            android:label="@string/notification_module_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
         <!-- Admin -->
         <receiver
             android:name=".AdminListener"

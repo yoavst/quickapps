@@ -242,6 +242,11 @@
     <string name="camera_not_found">Camera not found</string>
     <string name="scanned_successfully">Scan completed</string>
 
+    <!-- Notifications -->
+    <string name="notification_empty">No notifications now</string>
+    <string name="notification_removed">Notification removed</string>
+    <string name="yesterday">Yesterday</string>
+
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>

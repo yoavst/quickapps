@@ -26,6 +26,7 @@ public var Context.showDoubleTapDialog: Boolean by BooleanPref("showDoubleTapDia
 //region Notifications
 public var Context.startActivityOnNotification: Boolean by BooleanPref("startActivityOnNotification", false)
 public var Context.notificationShowContent: Boolean by BooleanPref("notificationShowContent", false)
+public var Context.amPmInNotifications: Boolean by BooleanPref("amPmInNotifications", false)
 //endregion
 
 public var Context.highScoreInSimon: Int by IntPref("highScoreInSimon", 0)
