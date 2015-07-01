@@ -61,6 +61,10 @@ public class CBarcodeActivity : QCircleActivity(), QRCodeReaderView.OnQRCodeRead
     override fun onPause() {
         super<QCircleActivity>.onPause()
         scannerView.getCameraManager().stopPreview()
+    }
+
+    override fun onDestroy() {
+        super<QCircleActivity>.onDestroy()
         System.gc()
     }
 

@@ -9,8 +9,8 @@ android {
         applicationId "com.yoavst.quickapps"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 72
+        versionName "5.0 Beta 1"
     }
     buildTypes {
         release {
@@ -40,7 +40,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:7.5.0'
 
     provided files('LGQSlideAPIs.jar')
-    compile 'com.github.LGDeveloper:QCircle-Design-Template:0.4'
+    compile 'com.github.LGDeveloper:QCircle-Design-Template:2.2'
 
     compile 'com.malinskiy:materialicons:1.0.1'
     compile 'com.github.markushi:circlebutton:1.1'
