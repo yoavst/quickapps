@@ -13,6 +13,9 @@ android {
         versionName "5.0"
         resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
         resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
+        lintOptions {
+            abortOnError false
+        }
     }
     buildTypes {
         release {
