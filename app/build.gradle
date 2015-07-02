@@ -10,7 +10,9 @@ android {
         minSdkVersion 21
         targetSdkVersion 22
         versionCode 73
-        versionName "5.0 Beta 2"
+        versionName "5.0"
+        resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
+        resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
     }
     buildTypes {
         release {

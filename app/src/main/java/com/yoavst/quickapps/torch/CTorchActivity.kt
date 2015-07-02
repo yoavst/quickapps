@@ -45,14 +45,6 @@ public class CTorchActivity : QCircleActivity() {
         onLayout.setOnClickListener { delegation.toggleTorch() }
     }
 
-//    /**
-//     * Toggles the torch on tap confirmed.
-//     */
-//    override fun onSingleTapConfirmed(): Boolean {
-//        delegation.toggleTorch()
-//        return true
-//    }
-
     public override fun onResume() {
         super.onResume()
         try {
