@@ -21,7 +21,8 @@ public class ContactsFragment : Fragment() {
         recycler.setPadding(32.toPx(getActivity()), 0, 32.toPx(getActivity()), 0)
         recycler.setLayoutManager(LinearLayoutManager(getActivity()))
         recycler.setAdapter(ContactsAdapter(getActivity() as CDialerActivity) {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:" + it)))
+            if (it.isNotEmpty())
+                startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:" + it)))
         })
         recycler.addItemDecoration(DividerItemDecoration(getActivity(), null))
         return recycler

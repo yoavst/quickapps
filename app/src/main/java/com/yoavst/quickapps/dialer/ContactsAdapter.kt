@@ -30,7 +30,7 @@ public class ContactsAdapter(activity: CDialerActivity, val callback: (number: S
         holder!!.itemView.setTag(number)
         holder.title.setText(item.name)
         holder.number.setText(number)
-        holder.itemView.setOnClickListener { callback(it.getTag() as String) }
+        holder.itemView.setOnClickListener { callback((it.getTag() as? String).orEmpty()) }
     }
 
     override fun getItemCount(): Int = items.size()
