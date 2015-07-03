@@ -51,9 +51,9 @@ public class TorchDelegate(private val activity: Activity, private val offIcon: 
                     showTorchOff()
                 else showTorchOffAnimation()
             } else {
+                CameraManager.torch()
                 if (beforeLollipop()) {
                     showTorchOn()
-                    CameraManager.torch()
                 } else showTorchOnAnimation()
             }
         }
@@ -110,7 +110,6 @@ public class TorchDelegate(private val activity: Activity, private val offIcon: 
                 override fun onAnimationEnd(animation: Animator) {
                     offIconAnimation.hide()
                     offIcon.show()
-                    CameraManager.torch()
                     lock = false
                 }
             })

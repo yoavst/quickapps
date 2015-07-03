@@ -67,22 +67,24 @@ public class CDialerActivity : QCircleActivity() {
                 arrayOf(ContactsContract.CommonDataKinds.Phone.NUMBER, "display_name"), null, null, null)
         cursor.moveToFirst()
         val size = cursor.getCount()
-        val countryCode = telephonyManager().getSimCountryIso().toUpperCase().trim()
-        val util = PhoneNumberUtil.getInstance()
-        val temp: Array<PhoneNumberWrapper?> = arrayOfNulls(size)
-        var i = 0
-        do {
-            val raw = cursor.getString(0)
-            try {
-                val number = util.parse(raw, countryCode)
-                temp[i] = PhoneNumberWrapper(cursor.getString(1), parsed = number)
-            } catch (e: Exception) {
-                temp[i] = PhoneNumberWrapper(cursor.getString(1), raw.replace("[-\\(\\)]".toRegex(), ""))
-            }
-            i++
-        } while (cursor.moveToNext())
-        phones = temp as Array<PhoneNumberWrapper>
-        phones = phones.sortBy(comparator { l, r -> l.name compareTo r.name }).toTypedArray()
+        if (size != 0) {
+            val countryCode = telephonyManager().getSimCountryIso().toUpperCase().trim()
+            val util = PhoneNumberUtil.getInstance()
+            val temp: Array<PhoneNumberWrapper?> = arrayOfNulls(size)
+            var i = 0
+            do {
+                val raw = cursor.getString(0)
+                try {
+                    val number = util.parse(raw, countryCode)
+                    temp[i] = PhoneNumberWrapper(cursor.getString(1), parsed = number)
+                } catch (e: Exception) {
+                    temp[i] = PhoneNumberWrapper(cursor.getString(1), raw.replace("[-\\(\\)]".toRegex(), ""))
+                }
+                i++
+            } while (cursor.moveToNext())
+            phones = temp as Array<PhoneNumberWrapper>
+            phones = phones.sortBy(comparator { l, r -> l.name compareTo r.name }).toTypedArray()
+        } else phones = arrayOf()
         cursor.close()
         mainThread {
             progress.hide()
