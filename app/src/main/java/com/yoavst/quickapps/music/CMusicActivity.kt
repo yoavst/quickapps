@@ -163,6 +163,6 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
     }
 
     fun isServiceEnabled(): Boolean {
-        return getPackageName() in Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners")
+        return getPackageName().orEmpty() in Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners")
     }
 }
