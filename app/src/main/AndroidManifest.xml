@@ -481,8 +481,8 @@
         <!-- Old icons -->
         <activity-alias
             android:name=".torch.CTorchActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_torch"
+            android:label="@string/torch_module_name_old"
             android:targetActivity=".torch.CTorchActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
@@ -490,35 +490,26 @@
         </activity-alias>
         <activity-alias
             android:name=".music.CMusicActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_music"
+            android:label="@string/music_module_name_old"
             android:targetActivity=".music.CMusicActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity-alias>
         <activity-alias
-            android:name=".ball.CMagic8BallActivityOld"
-            android:enabled="false"
-            android:icon="@drawable/old_qcircle_icon_ball"
-            android:targetActivity=".ball.CMagic8BallActivity">
-            <intent-filter>
-                <action android:name="com.lge.quickcover"/>
-            </intent-filter>
-        </activity-alias>
-        <activity-alias
             android:name=".calculator.CCalculatorActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_calculator"
-            android:targetActivity="calculator.CCalculatorActivity">
+            android:label="@string/calculator_module_name_old"
+            android:targetActivity=".calculator.CCalculatorActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity-alias>
         <activity-alias
             android:name=".calendar.CCalendarActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_calendar"
+            android:label="@string/calendar_module_name_old"
             android:targetActivity=".calendar.CCalendarActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
@@ -526,36 +517,36 @@
         </activity-alias>
         <activity-alias
             android:name=".clock.CClockActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_clock"
-            android:targetActivity="clock.CClockActivity">
-            <intent-filter>
-                <action android:name="com.lge.quickcover"/>
-            </intent-filter>
-        </activity-alias>
-        <activity-alias
-            android:name=".compass.CCompassActivityOld"
-            android:enabled="false"
-            android:icon="@drawable/old_qcircle_icon_compass"
-            android:targetActivity="compass.CCompassActivity">
-            <intent-filter>
-                <action android:name="com.lge.quickcover"/>
-            </intent-filter>
-        </activity-alias>
-        <activity-alias
-            android:name=".dialer.CDialerActivityOld"
-            android:enabled="false"
-            android:icon="@drawable/old_qcircle_icon_dialer"
-            android:targetActivity=".dialer.CDialerActivity">
+            android:label="@string/clock_module_name_old"
+            android:targetActivity=".clock.CClockActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity-alias>
 
         <activity-alias
+            android:name=".recorder.CRecorderActivityOld"
+            android:icon="@drawable/old_qcircle_icon_recorder"
+            android:label="@string/recorder_module_name_old"
+            android:targetActivity=".recorder.CRecorderActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".compass.CCompassActivityOld"
+            android:icon="@drawable/old_qcircle_icon_compass"
+            android:label="@string/compass_module_name_old"
+            android:targetActivity=".compass.CCompassActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
             android:name=".toggles.CTogglesActivityOld"
-            android:enabled="false"
             android:icon="@drawable/old_qcircle_icon_toggles"
+            android:label="@string/toggles_module_name_old"
             android:targetActivity=".toggles.CTogglesActivity">
             <intent-filter>
                 <action android:name="com.lge.quickcover"/>
