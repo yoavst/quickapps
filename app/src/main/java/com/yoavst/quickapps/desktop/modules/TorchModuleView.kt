@@ -8,6 +8,7 @@ import com.yoavst.quickapps.R
 import com.yoavst.quickapps.desktop.BaseModuleView
 import com.yoavst.quickapps.tools.autoStartTorch
 import com.yoavst.quickapps.tools.torchForceFloating
+import com.yoavst.quickapps.tools.torchShowOldIcon
 
 public class TorchModuleView : BaseModuleView {
     public constructor(context: Context) : super(context) {
@@ -41,6 +42,11 @@ public class TorchModuleView : BaseModuleView {
                     getContext().autoStartTorch) {
                 getContext().autoStartTorch = it!!
                 toastSuccess()
+            }
+            addSettingView(R.string.torch_old_widget_icon, R.string.torch_old_widget_icon_subtitle,
+                    getContext().torchShowOldIcon) {
+                getContext().torchShowOldIcon = it!!
+                toastRestartLauncher()
             }
         }
     }

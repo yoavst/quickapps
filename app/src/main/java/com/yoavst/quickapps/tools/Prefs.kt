@@ -11,10 +11,8 @@ import kotlin.properties.ReadWriteProperty
 
 //region Torch
 public var Context.autoStartTorch: Boolean by BooleanPref("autoStartTorch", false)
-
 public var Context.torchForceFloating: Boolean by BooleanPref("torchForceFloating", true)
-
-public var Context.torchShowInLauncher: Boolean by BooleanPref("torchShowInLauncher", true)
+public var Context.torchShowOldIcon: Boolean by BooleanPref("torchShowOldIcon", false)
 //endregion
 
 //region General

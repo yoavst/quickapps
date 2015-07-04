@@ -183,6 +183,8 @@
     <string name="torch_force_floating_subtext">Force QSlide floating mode for the torch module</string>
     <string name="torch_auto_start">Auto enable torch</string>
     <string name="torch_auto_start_subtext">Torch will start when you enter the app</string>
+    <string name="torch_old_widget_icon">Show old widget icon</string>
+    <string name="torch_old_widget_icon_subtitle">If you liked the old icon, you can use it as Widget Icon.</string>
 
     <string name="music_listener_title">Open Notification Listener Settings</string>
     <string name="music_listener_subtitle">The module need access to notifications to work</string>
@@ -229,7 +231,6 @@
     <string name="privacy_subtitle">The content of your notification may be secret</string>
     <string name="auto_launch_title">Auto launch on notification</string>
     <string name="auto_launch_subtitle">The module will be opened automatically if on quick circle case and received notification</string>
-
     <!-- Barcode -->
     <string name="empty_barcode">Sorry! this barcode is empty</string>
     <string name="copied">Copied to clipboard</string>
