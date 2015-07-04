@@ -5,6 +5,7 @@ import android.content.Intent
 import android.util.AttributeSet
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.desktop.BaseModuleView
+import com.yoavst.quickapps.tools.musicOldStyle
 
 
 public class MusicModuleView : BaseModuleView {
@@ -22,6 +23,10 @@ public class MusicModuleView : BaseModuleView {
         if (!isInEditMode()) {
             addSettingView(R.string.music_listener_title, R.string.music_listener_subtitle) {
                 getContext().startActivity(Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"))
+            }
+            addSettingView(R.string.music_show_old_title, R.string.music_show_old_subtitle, getContext().musicOldStyle) {
+                getContext().musicOldStyle = it!!
+                toastSuccess()
             }
         }
     }

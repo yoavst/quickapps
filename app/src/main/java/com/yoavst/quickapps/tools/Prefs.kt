@@ -59,6 +59,8 @@ public var Context.quickDials: String by StringPref("quickDials", "{}")
 
 public var Context.hideAds: Boolean by BooleanPref("hideAds", false)
 
+public var Context.musicOldStyle: Boolean by BooleanPref("musicShowOld", false)
+
 // region Launcher
 public var Context.launcherIsVertical: Boolean by BooleanPref("launcherIsVertical", true)
 public var Context.launcherItems: String by StringPref("launcherItemsNew", "{}")

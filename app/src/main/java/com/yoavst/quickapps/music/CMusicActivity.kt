@@ -12,11 +12,22 @@ import android.os.Handler
 import android.os.IBinder
 import android.provider.Settings
 import android.support.v4.media.session.PlaybackStateCompat
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import android.widget.TextView
+import com.lge.qcircle.template.ButtonTheme
+import com.lge.qcircle.template.QCircleBackButton
 import com.lge.qcircle.template.QCircleDialog
-import com.yoavst.kotlin.*
+import com.lge.qcircle.template.TemplateTag
+import com.yoavst.kotlin.audioManager
+import com.yoavst.kotlin.beforeLollipop
+import com.yoavst.kotlin.colorRes
+import com.yoavst.kotlin.postDelayed
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
 import com.yoavst.quickapps.tools.createExplicit
+import com.yoavst.quickapps.tools.musicOldStyle
 import kotlinx.android.synthetic.music_activity.*
 import kotlin.properties.Delegates
 
@@ -25,14 +36,29 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
     private var bound = false
     private var shouldShowRegister = false
     private var lock = false
+    private val isOld by Delegates.lazy { musicOldStyle }
+    private val playTextView by Delegates.lazy { findViewById(R.id.playView) as TextView }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super<QCircleActivity>.onCreate(savedInstanceState)
         setContentView(template.getView())
         if (isServiceEnabled()) {
-            setContentViewToMain(R.layout.music_activity)
+            if (!isOld) {
+                setContentViewToMain(R.layout.music_activity)
+                back.setOnClickListener { finish() }
+            } else {
+                template.addElement(QCircleBackButton(this, ButtonTheme.DARK, true))
+                val contentParent = template.getLayoutById(TemplateTag.CONTENT).getParent() as RelativeLayout
+                val layoutForButtons = getLayoutInflater().inflate(R.layout.music_old_buttons, contentParent, false) as LinearLayout
+                val params = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                        getResources().getDimensionPixelSize(R.dimen.control_buttons_height))
+                params.addRule(RelativeLayout.ABOVE, R.id.backButton)
+                layoutForButtons.setLayoutParams(params)
+                contentParent.addView(layoutForButtons)
+                getLayoutInflater().inflate(R.layout.music_old_header, getMainLayout(), true)
+            }
             template.setBackgroundDrawable(ColorDrawable(colorRes(R.color.md_indigo_A200)))
-            playView.setOnClickListener {
+            findViewById(R.id.playView).setOnClickListener {
                 if (bound && !lock) {
                     lock = true
                     if (remoteControlService.isPlaying())
@@ -40,9 +66,8 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
                     else remoteControlService.sendPlayKey()
                 }
             }
-            back.setOnClickListener { finish() }
-            volume.setOnClickListener { audioManager().adjustStreamVolume(3, 0, 1) }
-            skipNextLayout.setOnClickListener {
+            findViewById(R.id.volume).setOnClickListener { audioManager().adjustStreamVolume(3, 0, 1) }
+            findViewById(R.id.skipNextLayout).setOnClickListener {
                 if (bound) {
                     if (!remoteControlService.isPlaying()) {
                         remoteControlService.sendPlayKey()
@@ -53,7 +78,7 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
                 }
             }
 
-            skipPrevLayout.setOnClickListener {
+            findViewById(R.id.skipPrevLayout).setOnClickListener {
                 if (bound) {
                     if (!remoteControlService.isPlaying()) {
                         remoteControlService.sendPlayKey()
@@ -94,7 +119,8 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
         }
         try {
             unbindService(serviceConnection)
-        } catch (ignored: IllegalArgumentException) {}
+        } catch (ignored: IllegalArgumentException) {
+        }
     }
 
     fun showUnregistered() {
@@ -146,10 +172,17 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
     }
 
     override fun onPlaybackStateChanged(state: Int) {
-        if (state == PlaybackStateCompat.STATE_PLAYING) {
-            playView.setPlaying()
+        if (isOld) {
+            if (state == PlaybackStateCompat.STATE_PLAYING)
+                playTextView.setText("{md-pause}")
+            else
+                playTextView.setText("{md-play-arrow}")
         } else {
-           playView.setPausing()
+            if (state == PlaybackStateCompat.STATE_PLAYING)
+                playView.setPlaying()
+            else
+                playView.setPausing()
+
         }
         lock = false
     }

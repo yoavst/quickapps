@@ -107,9 +107,6 @@ public class LauncherModuleView : BaseModuleView {
             } else if (r.enabled) 1
             else l.name compareTo r.name
         })
-//        available.forEach {
-//            it.icon = getContext().getPackageManager().getActivityIcon(ComponentName.unflattenFromString(it.activity))
-//        }
         return ArrayList(available)
     }
 

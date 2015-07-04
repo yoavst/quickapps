@@ -3,7 +3,7 @@
     <string name="app_name" translatable="false">Quick Apps</string>
     <string name="torch_module_name" translatable="false">Quick Torch</string>
     <string name="music_module_name" translatable="false">Quick Music</string>
-    <string name="calendar_module_name" translatable="false">Quick calendar</string>
+    <string name="calendar_module_name" translatable="false">Quick Calendar</string>
     <string name="calendar_events" translatable="false">Quick Agenda</string>
     <string name="notification_module_name" translatable="false">Quick Notifications</string>
     <string name="launcher_module_name" translatable="false">Quick Launcher</string>

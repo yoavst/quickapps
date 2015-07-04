@@ -32,6 +32,7 @@ public class PhoneActivity : FloatableActivity() {
     override fun onCreate(savedInstance: Bundle?) {
         super.onCreate(savedInstance)
         setContentView(R.layout.torch_activity)
+        setDontFinishOnFloatingMode(true)
         Torch(this)
         if (torchForceFloating && !isInFloatingMode())
             switchToFloatingMode()

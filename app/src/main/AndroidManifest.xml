@@ -432,9 +432,10 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
 
-        <receiver android:name="com.yoavst.quickapps.BootReceiver">
+        <receiver android:name="com.yoavst.quickapps.UninstallReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
             </intent-filter>
         </receiver>
 
@@ -449,7 +450,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/LightTheme">
             <intent-filter>
-                <action android:name="com.lge.quickcover" />
+                <action android:name="com.lge.quickcover"/>
             </intent-filter>
         </activity>
         <service
@@ -458,7 +459,7 @@
             android:label="@string/notification_module_name"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
-                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="android.service.notification.NotificationListenerService"/>
             </intent-filter>
         </service>
 
@@ -476,6 +477,90 @@
         <activity
             android:name=".desktop.LaunchAdminActivity"
             android:excludeFromRecents="true"/>
+
+        <!-- Old icons -->
+        <activity-alias
+            android:name=".torch.CTorchActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_torch"
+            android:targetActivity=".torch.CTorchActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".music.CMusicActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_music"
+            android:targetActivity=".music.CMusicActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".ball.CMagic8BallActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_ball"
+            android:targetActivity=".ball.CMagic8BallActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".calculator.CCalculatorActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_calculator"
+            android:targetActivity="calculator.CCalculatorActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".calendar.CCalendarActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_calendar"
+            android:targetActivity=".calendar.CCalendarActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".clock.CClockActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_clock"
+            android:targetActivity="clock.CClockActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".compass.CCompassActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_compass"
+            android:targetActivity="compass.CCompassActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".dialer.CDialerActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_dialer"
+            android:targetActivity=".dialer.CDialerActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".toggles.CTogglesActivityOld"
+            android:enabled="false"
+            android:icon="@drawable/old_qcircle_icon_toggles"
+            android:targetActivity=".toggles.CTogglesActivity">
+            <intent-filter>
+                <action android:name="com.lge.quickcover"/>
+            </intent-filter>
+        </activity-alias>
     </application>
 
 </manifest>

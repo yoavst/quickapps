@@ -190,17 +190,19 @@ public class RemoteControlServiceLollipop : AbstractRemoteControlService(), Medi
         }
     }
 
-    fun notifyCallbackMetadata(metadata: MediaMetadata) {
-        var artist = metadata.getString(MediaMetadata.METADATA_KEY_ARTIST)
-        if (artist == null)
-            artist = metadata.getString(MediaMetadata.METADATA_KEY_ALBUM_ARTIST)
-        if (artist == null) artist = getString(R.string.unknown)
-        val title = metadata.getString(MediaMetadata.METADATA_KEY_TITLE)
-        var bitmap = metadata.getBitmap(MediaMetadata.METADATA_KEY_ART)
-        if (bitmap == null)
-            bitmap = metadata.getBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART)
-        val duration = metadata.getLong(MediaMetadata.METADATA_KEY_DURATION)
-        callback?.onMediaMetadataChanged(artist, title, millisToSeconds(duration), bitmap)
+    fun notifyCallbackMetadata(metadata: MediaMetadata?) {
+        if (metadata != null) {
+            var artist = metadata.getString(MediaMetadata.METADATA_KEY_ARTIST)
+            if (artist == null)
+                artist = metadata.getString(MediaMetadata.METADATA_KEY_ALBUM_ARTIST)
+            if (artist == null) artist = getString(R.string.unknown)
+            val title = metadata.getString(MediaMetadata.METADATA_KEY_TITLE)
+            var bitmap = metadata.getBitmap(MediaMetadata.METADATA_KEY_ART)
+            if (bitmap == null)
+                bitmap = metadata.getBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART)
+            val duration = metadata.getLong(MediaMetadata.METADATA_KEY_DURATION)
+            callback?.onMediaMetadataChanged(artist, title, millisToSeconds(duration), bitmap)
+        } else callback?.onClientChange(true)
     }
 
     var mediaControllerCallback: MediaController.Callback = object : MediaController.Callback() {

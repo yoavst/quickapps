@@ -186,6 +186,8 @@
 
     <string name="music_listener_title">Open Notification Listener Settings</string>
     <string name="music_listener_subtitle">The module need access to notifications to work</string>
+    <string name="music_show_old_title">Old look for music</string>
+    <string name="music_show_old_subtitle">Enables the old look for music</string>
 
     <string name="location_title">Show event location</string>
     <string name="location_subtitle">Everyone that access your phone will be able to see the event\'s location</string>
