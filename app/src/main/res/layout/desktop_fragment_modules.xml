@@ -13,6 +13,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"/>
 
+        <com.yoavst.quickapps.desktop.modules.WatchfaceModuleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
         <com.yoavst.quickapps.desktop.modules.CalculatorModuleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

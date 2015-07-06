@@ -193,8 +193,6 @@
 
     <string name="location_title">Show event location</string>
     <string name="location_subtitle">Everyone that access your phone will be able to see the event\'s location</string>
-    <string name="am_pm_title">12 hours clock</string>
-    <string name="am_pm_subtitle">Use AM/PM instead of 24 hours</string>
 
     <string name="show_millis_title">Show milliseconds</string>
     <string name="show_millis_subtitle">Show milliseconds in the timer</string>
@@ -255,9 +253,22 @@
     <string name="notification_removed">Notification removed</string>
     <string name="yesterday">Yesterday</string>
 
+    <!-- Widget -->
+    <string name="watchface_name">Digital watchface</string>
+    <string name="main_background_text">Background color</string>
+    <string name="main_background_subtext">The background color of the inner circle</string>
+    <string name="secondary_background_text">Secondary Background color</string>
+    <string name="secondary_background_subtext">The background color of the border</string>
+    <string name="hour_color_text">Hours color</string>
+    <string name="minute_color_text">Minutes color</string>
+    <string name="date_color_text">Date color</string>
+    <string name="am_pm_color_text">AM/PM color</string>
+    <string name="choose_color">Choose color</string>
     <!-- General -->
     <string name="unknown">Unknown</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="error">Error</string>
+    <string name="am_pm_title">12 hours clock</string>
+    <string name="am_pm_subtitle">Use AM/PM instead of 24 hours</string>
 </resources>

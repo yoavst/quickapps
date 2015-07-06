@@ -1,7 +1,7 @@
 package com.yoavst.quickapps.tools
 
 import android.content.Context
-import android.content.SharedPreferences
+import android.graphics.Color
 import com.yoavst.kotlin.putBoolean
 import com.yoavst.kotlin.putInt
 import com.yoavst.kotlin.putLong
@@ -37,12 +37,12 @@ public var Context.togglesItems: String by StringPref("togglesItemsNew", "-1")
 //endregion
 
 //region news
-public var Context.userId: String by StringPrefNews("userId", "")
-public var Context.refreshToken: String by StringPrefNews("refreshToken", "")
-public var Context.accessToken: String by StringPrefNews("accessToken", "")
-public var Context.rawResponse: String by StringPrefNews("rawResponse", "")
-public var Context.feed: String by StringPrefNews("feed", "")
-public var Context.lastUpdateTime: Long by LongPrefNews("lastUpdateTime", 0)
+public var Context.userId: String by StringPref("userId", "", "pref")
+public var Context.refreshToken: String by StringPref("refreshToken", "", "pref")
+public var Context.accessToken: String by StringPref("accessToken", "", "pref")
+public var Context.rawResponse: String by StringPref("rawResponse", "", "pref")
+public var Context.feed: String by StringPref("feed", "", "pref")
+public var Context.lastUpdateTime: Long by LongPref("lastUpdateTime", 0, "pref")
 //endregion
 
 public var Context.calculatorForceFloating: Boolean by BooleanPref("calculatorForceFloating", true)
@@ -64,61 +64,55 @@ public var Context.launcherIsVertical: Boolean by BooleanPref("launcherIsVertica
 public var Context.launcherItems: String by StringPref("launcherItemsNew", "{}")
 // endregion
 
-private fun Context.getPrefs(): SharedPreferences {
-    return getSharedPreferences("preferences", Context.MODE_PRIVATE)
-}
+// region Watchface
+public var Context.digitalWatchfaceMainBackgroundColor: Int by IntPref("digitalWatchfaceMainBackgroundColor", Color.parseColor("#3F51B5"), "watchface")
+public var Context.digitalWatchfaceSecondaryBackgroundColor: Int by IntPref("digitalWatchfaceSecondaryBackgroundColor", Color.parseColor("#303F9F"), "watchface")
+public var Context.digitalWatchfaceHoursColor: Int by IntPref("digitalWatchfaceHoursColor", Color.parseColor("#009688"), "watchface")
+public var Context.digitalWatchfaceMinutesColor: Int by IntPref("digitalWatchfaceMinutesColor", Color.WHITE, "watchface")
+public var Context.digitalWatchfaceDateColor: Int by IntPref("digitalWatchfaceDateColor", Color.WHITE, "watchface")
+public var Context.digitalWatchfaceDateFormat: String by StringPref("digitalWatchfaceDateFormat", "MMM d", "watchface")
+public var Context.digitalWatchfaceAmPm: Boolean by BooleanPref("digitalWatchfaceAmPm", false, "watchface")
+public var Context.digitalWatchfaceAmPmColor: Int by IntPref("digitalWatchfaceAmPmColor", Color.WHITE, "watchface")
 
-private fun Context.getNewsPrefs(): SharedPreferences {
-    return getSharedPreferences("pref", Context.MODE_PRIVATE)
-}
+// endregion
 
-private class BooleanPref(val key: String, val default: Boolean) : ReadWriteProperty<Context, Boolean> {
+private class BooleanPref(val key: String, val default: Boolean, val preferenceName: String = "preferences") : ReadWriteProperty<Context, Boolean> {
     override fun get(thisRef: Context, desc: PropertyMetadata): Boolean {
-        return thisRef.getPrefs().getBoolean(key, default)
+        return thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).getBoolean(key, default)
     }
 
     override fun set(thisRef: Context, desc: PropertyMetadata, value: Boolean) {
-        return thisRef.getPrefs().putBoolean(key, value)
+        return thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).putBoolean(key, value)
     }
 
 }
 
-private class IntPref(val key: String, val default: Int) : ReadWriteProperty<Context, Int> {
+private class IntPref(val key: String, val default: Int, val preferenceName: String = "preferences") : ReadWriteProperty<Context, Int> {
     override fun get(thisRef: Context, desc: PropertyMetadata): Int {
-        return thisRef.getPrefs().getInt(key, default)
+        return thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).getInt(key, default)
     }
 
     override fun set(thisRef: Context, desc: PropertyMetadata, value: Int) {
-        thisRef.getPrefs().putInt(key, value)
+        thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).putInt(key, value)
     }
 }
 
-private class StringPref(val key: String, val default: String) : ReadWriteProperty<Context, String> {
+private class StringPref(val key: String, val default: String, val preferenceName: String = "preferences") : ReadWriteProperty<Context, String> {
     override fun get(thisRef: Context, desc: PropertyMetadata): String {
-        return thisRef.getPrefs().getString(key, default)
+        return thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).getString(key, default)
     }
 
     override fun set(thisRef: Context, desc: PropertyMetadata, value: String) {
-        thisRef.getPrefs().putString(key, value)
+        thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).putString(key, value)
     }
 }
 
-private class StringPrefNews(val key: String, val default: String) : ReadWriteProperty<Context, String> {
-    override fun get(thisRef: Context, desc: PropertyMetadata): String {
-        return thisRef.getNewsPrefs().getString(key, default)
-    }
-
-    override fun set(thisRef: Context, desc: PropertyMetadata, value: String) {
-        thisRef.getNewsPrefs().putString(key, value)
-    }
-}
-
-private class LongPrefNews(val key: String, val default: Long) : ReadWriteProperty<Context, Long> {
+private class LongPref(val key: String, val default: Long, val  preferenceName: String = "preferences") : ReadWriteProperty<Context, Long> {
     override fun get(thisRef: Context, desc: PropertyMetadata): Long {
-        return thisRef.getNewsPrefs().getLong(key, default)
+        return thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).getLong(key, default)
     }
 
     override fun set(thisRef: Context, desc: PropertyMetadata, value: Long) {
-        thisRef.getNewsPrefs().putLong(key, value)
+        thisRef.getSharedPreferences(preferenceName, Context.MODE_PRIVATE).putLong(key, value)
     }
 }

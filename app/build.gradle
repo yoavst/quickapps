@@ -9,8 +9,8 @@ android {
         applicationId "com.yoavst.quickapps"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 75
-        versionName "5.0.2"
+        versionCode 76
+        versionName "5.1"
         resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
         resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
         lintOptions {
@@ -57,6 +57,8 @@ dependencies {
     compile 'com.googlecode.libphonenumber:libphonenumber:7.0.6'
     compile 'com.google.zxing:core:3.2.0'
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.github.lawloretienne:trestle:0.0.2'
+    compile 'com.github.QuadFlask:colorpicker:0.0.9'
     compile('com.mikepenz:aboutlibraries:5.0.5@aar') {
         transitive = true
     }

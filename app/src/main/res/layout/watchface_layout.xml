@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_height="260dp"
+                tools:layout_width="260dp">
+
+    <ImageView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shape_oval"
+        tools:src="?colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:src="@drawable/shape_oval"
+        tools:src="?colorPrimary"/>
+
+    <TextView
+        android:id="@+id/amPm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        tools:ignore="SpUsage"
+        tools:text="PM"/>
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="80dp"
+        tools:ignore="SpUsage"
+        tools:text="18:52"/>
+
+
+    <TextClock
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        tools:format12Hour="MMM d"
+        tools:ignore="SpUsage"
+        tools:text="24 Feb"/>
+
+</RelativeLayout>

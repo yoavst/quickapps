@@ -478,6 +478,19 @@
             android:name=".desktop.LaunchAdminActivity"
             android:excludeFromRecents="true"/>
 
+        <!-- Watchfaces -->
+        <receiver
+            android:name=".watchfaces.DigitalWatchfaceProvider"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="ACTION_UPDATE_WATCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/digital_clock_watchface"/>
+        </receiver>
+
         <!-- Old icons -->
         <activity-alias
             android:name=".torch.CTorchActivityOld"
