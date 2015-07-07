@@ -1,5 +1,6 @@
 package com.yoavst.quickapps.notifications
 
+import android.app.Notification
 import android.content.Intent
 import android.os.Binder
 import android.os.IBinder
@@ -23,6 +24,7 @@ public class NotificationService : NotificationListenerService() {
         if (callback != null)
             callback!!.onNotificationPosted(sbn)
         else if (CoverReceiver.isCoverInUse && !CNotificationActivity.isOpenNow && startActivityOnNotification) {
+            if (sbn.getNotification().getGroup() == Notification.CATEGORY_TRANSPORT) return
             for (ignoredPopPackage in IGNORED_POP_PACKAGES) {
                 if (ignoredPopPackage == sbn.getPackageName()) return
             }
@@ -92,6 +94,6 @@ public class NotificationService : NotificationListenerService() {
 
     companion object {
         public val NOTIFICATION_ACTION: String = "notification_action"
-        private val IGNORED_POP_PACKAGES = array("com.android.incallui")
+        private val IGNORED_POP_PACKAGES = arrayOf("com.android.incallui")
     }
 }

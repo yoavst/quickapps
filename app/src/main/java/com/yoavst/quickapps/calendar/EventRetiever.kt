@@ -19,7 +19,7 @@ public object EventRetiever {
             else {
                 val end = (l.endMillis - r.endMillis).toInt()
                 if (end != 0) end
-                else l.title.toString() compareTo r.title.toString()
+                else l.title.toString().compareTo(r.title.toString(), ignoreCase = true)
             }
         })
     }
