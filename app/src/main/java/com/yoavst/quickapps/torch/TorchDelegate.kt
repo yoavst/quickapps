@@ -103,18 +103,19 @@ public class TorchDelegate(private val activity: Activity, private val offIcon: 
         offIconAnimation!!.show()
         offIcon.hide()
         Handler().postDelayed(500) {
-            val anim = ViewAnimationUtils.createCircularReveal(onLayout, cx, cy, 0F, finalRadius.toFloat())
-            showTorchOn()
-            anim.start()
-            anim.addListener(object : BaseAnimationListener() {
-                override fun onAnimationEnd(animation: Animator) {
-                    offIconAnimation.hide()
-                    offIcon.show()
-                    lock = false
-                }
-            })
+            if (onLayout.isAttachedToWindow()) {
+                val anim = ViewAnimationUtils.createCircularReveal(onLayout, cx, cy, 0F, finalRadius.toFloat())
+                showTorchOn()
+                anim.start()
+                anim.addListener(object : BaseAnimationListener() {
+                    override fun onAnimationEnd(animation: Animator) {
+                        offIconAnimation.hide()
+                        offIcon.show()
+                        lock = false
+                    }
+                })
+            }
         }
-
     }
 
     /**

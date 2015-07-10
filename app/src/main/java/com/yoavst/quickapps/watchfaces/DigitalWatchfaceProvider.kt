@@ -12,7 +12,6 @@ import android.widget.RemoteViews
 import com.etiennelawlor.trestle.library.Span
 import com.etiennelawlor.trestle.library.Trestle
 import com.yoavst.kotlin.alarmManager
-import com.yoavst.kotlin.e
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.*
 import java.text.SimpleDateFormat
@@ -66,11 +65,18 @@ public class DigitalWatchfaceProvider : AppWidgetProvider() {
         val spans = ArrayList<Span>(2)
         val calendar = Calendar.getInstance()
         if (context.digitalWatchfaceAmPm)
-            spans.add(Span.Builder(toString(calendar.get(Calendar.HOUR))).foregroundColor(context.digitalWatchfaceHoursColor).build())
+            spans.add(Span.Builder(toString(getHourAmPm())).foregroundColor(context.digitalWatchfaceHoursColor).build())
         else
             spans.add(Span.Builder(toString(calendar.get(Calendar.HOUR_OF_DAY))).foregroundColor(context.digitalWatchfaceHoursColor).build())
         spans.add(Span.Builder(toString(calendar.get(Calendar.MINUTE))).foregroundColor(context.digitalWatchfaceMinutesColor).build())
         return Trestle.getFormattedText(spans)
+    }
+
+    fun getHourAmPm(): Int {
+        val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+        if (hour == 0 || hour == 12) return 12
+        else if (hour > 12) return hour - 12
+        else return hour
     }
 
     public fun toString(number: Int): String {

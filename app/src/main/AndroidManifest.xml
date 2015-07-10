@@ -484,7 +484,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-                <action android:name="ACTION_UPDATE_WATCH" />
+                <action android:name="ACTION_UPDATE_WATCH"/>
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"

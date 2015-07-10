@@ -28,7 +28,10 @@ import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
 import com.yoavst.quickapps.tools.createExplicit
 import com.yoavst.quickapps.tools.musicOldStyle
-import kotlinx.android.synthetic.music_activity.*
+import kotlinx.android.synthetic.music_activity.artist
+import kotlinx.android.synthetic.music_activity.back
+import kotlinx.android.synthetic.music_activity.playView
+import kotlinx.android.synthetic.music_activity.title
 import kotlin.properties.Delegates
 
 public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Callback {
@@ -196,6 +199,6 @@ public class CMusicActivity : QCircleActivity(), AbstractRemoteControlService.Ca
     }
 
     fun isServiceEnabled(): Boolean {
-        return getPackageName().orEmpty() in Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners")
+        return getPackageName().orEmpty() in Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners").orEmpty()
     }
 }

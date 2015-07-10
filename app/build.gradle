@@ -9,8 +9,8 @@ android {
         applicationId "com.yoavst.quickapps"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 77
-        versionName "5.1.1"
+        versionCode 78
+        versionName "5.1.2"
         resConfigs "ar", "ca", "de", "es", "fi", "fr", "he", "hu", "it", "iw", "ko", "nl", "pl", "pt", "ru", "tr"
         resConfigs "xhdpi", "xxhdpi", "xxxhdpi"
         lintOptions {
@@ -45,7 +45,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:7.5.0'
 
     provided files('LGQSlideAPIs.jar')
-    compile 'com.github.LGDeveloper:QCircle-Design-Template:2.2'
+    compile 'com.github.LGDeveloper:QCircle-Design-Template:2.3'
 
     compile 'com.malinskiy:materialicons:1.0.1'
     compile 'com.github.markushi:circlebutton:1.1'

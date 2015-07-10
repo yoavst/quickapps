@@ -218,7 +218,7 @@ public class CLauncherActivity : QCircleActivity(), View.OnClickListener {
             for (info in resInfoList) {
                 val name = info.loadLabel(packageManager).toString()
                 val packageName = info.activityInfo.applicationInfo.packageName
-                if ((packageName != myPackageName) || info.activityInfo.name in blacklist)
+                if ((packageName != myPackageName) || info.activityInfo.name.orEmpty().endsWith("Old") || info.activityInfo.name in blacklist)
                     continue
                 val activity = ComponentName(packageName, info.activityInfo.name).flattenToString()
                 val item = ListItem(name, activity, false, info.getIconResource())

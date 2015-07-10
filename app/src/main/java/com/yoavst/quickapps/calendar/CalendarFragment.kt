@@ -9,6 +9,7 @@ import com.yoavst.kotlin.hide
 import com.yoavst.kotlin.show
 import com.yoavst.quickapps.R
 import com.yoavst.quickapps.tools.QCircleActivity
+import com.yoavst.quickapps.tools.amPmInCalendar
 import com.yoavst.quickapps.tools.showLocation
 import kotlinx.android.synthetic.calendar_fragment.*
 
@@ -33,7 +34,7 @@ public class CalendarFragment: Fragment() {
         else {
             location.setText(At + " " + event.location)
         }
-        date.setText(CalendarUtil.getDateFromEvent(event))
+        date.setText(CalendarUtil.getDateFromEvent(event, getActivity().amPmInCalendar))
         timeLeft.setText(CalendarUtil.getTimeToEvent(event))
 
     }

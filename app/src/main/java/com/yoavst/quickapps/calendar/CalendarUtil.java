@@ -38,10 +38,8 @@ public class CalendarUtil {
     private static final SimpleDateFormat fullDateFormat = new SimpleDateFormat("EEE, MMM d");
     private static final SimpleDateFormat otherDayFormatter = new SimpleDateFormat("MMM d, HH:mm");
     private static final SimpleDateFormat otherDayFormatterAmPm = new SimpleDateFormat("MMM d, hh:mm a");
-    private static boolean useAmPm = false;
 
-
-    public static String getDateFromEvent(Event event) {
+    public static String getDateFromEvent(Event event, boolean useAmPm) {
         if (event.allDay) {
             Calendar startPlusOneDay = calendarByMillis(event.getStartMillis());
             startPlusOneDay.add(Calendar.DAY_OF_YEAR, 1);
@@ -103,7 +101,7 @@ public class CalendarUtil {
                 } else
                     text = CalendarResources.today + hourFormatter.format(first) + " - " + otherDayFormatter.format(end);
             } else
-                text = getOtherDayFormatter().format(first) + " - " + getOtherDayFormatter().format(end);
+                text = getOtherDayFormatter(useAmPm).format(first) + " - " + getOtherDayFormatter(useAmPm).format(end);
             return text;
         }
     }
@@ -120,7 +118,7 @@ public class CalendarUtil {
         return calendar;
     }
 
-    private static SimpleDateFormat getOtherDayFormatter() {
+    private static SimpleDateFormat getOtherDayFormatter(boolean useAmPm) {
         return useAmPm ? otherDayFormatterAmPm : otherDayFormatter;
     }
 
