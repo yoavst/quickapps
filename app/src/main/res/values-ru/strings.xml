@@ -194,8 +194,6 @@
 
     <string name="location_title">Показать место события</string>
     <string name="location_subtitle">Все, кто имеют доступ к Вашему телефону, будут видеть место события</string>
-    <string name="am_pm_title">12-часовой формат</string>
-    <string name="am_pm_subtitle">Использовать AM/PM вместо 24 часов</string>
 
     <string name="show_millis_title">Показывать миллисекунды</string>
     <string name="show_millis_subtitle">Показывать миллисекунды в таймере</string>
@@ -256,9 +254,22 @@
     <string name="notification_removed">Уведомления очищены</string>
     <string name="yesterday">Вчера</string>
 
+    <!-- Widget -->
+    <string name="watchface_name">Цифровые часы</string>
+    <string name="main_background_text">Цвет фона</string>
+    <string name="main_background_subtext">Цвет фона внутреннего круга</string>
+    <string name="secondary_background_text">Дополнительный цвет фона</string>
+    <string name="secondary_background_subtext">Цвет фона границы</string>
+    <string name="hour_color_text">Цвет часов</string>
+    <string name="minute_color_text">Цвет минут</string>
+    <string name="date_color_text">Цвет даты</string>
+    <string name="am_pm_color_text">Цвет AM/PM</string>
+    <string name="choose_color">Выбрать цвет</string>
     <!-- General -->
     <string name="unknown">Неизвестно</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="error">Ошибка</string>
+    <string name="am_pm_title">12-часовой формат</string>
+    <string name="am_pm_subtitle">Использовать AM/PM вместо 24 ч</string>
 </resources>
