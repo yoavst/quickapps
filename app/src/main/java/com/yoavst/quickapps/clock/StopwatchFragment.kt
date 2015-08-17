@@ -85,6 +85,10 @@ public open class StopwatchFragment : Fragment() {
         }
         if (time.getText().toString().isEmpty()) setText(Html.fromHtml(if (showMillis) DEFAULT_STOPWATCH else DEFAULT_STOPWATCH_NO_MILLIS))
         handler = Handler()
+        update()
+    }
+
+    fun update() {
         if (StopwatchManager.hasOldData()) {
             Handler().postDelayed({
                 callback()
@@ -94,6 +98,12 @@ public open class StopwatchFragment : Fragment() {
             }, 100)
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        update()
+    }
+
 
     fun setLookRunning() {
         start.hide()

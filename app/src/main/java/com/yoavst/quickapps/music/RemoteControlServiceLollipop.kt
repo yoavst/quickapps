@@ -211,7 +211,7 @@ public class RemoteControlServiceLollipop : AbstractRemoteControlService(), Medi
             callback?.onClientChange(true)
         }
 
-        override fun onSessionEvent(event: String, extras: Bundle) {
+        override fun onSessionEvent(event: String?, extras: Bundle?) {
             super.onSessionEvent(event, extras)
         }
 
@@ -226,19 +226,19 @@ public class RemoteControlServiceLollipop : AbstractRemoteControlService(), Medi
                 notifyCallbackMetadata(metadata)
         }
 
-        override fun onQueueChanged(queue: List<MediaSession.QueueItem>) {
+        override fun onQueueChanged(queue: List<MediaSession.QueueItem>?) {
             super.onQueueChanged(queue)
         }
 
-        override fun onQueueTitleChanged(title: CharSequence) {
+        override fun onQueueTitleChanged(title: CharSequence?) {
             super.onQueueTitleChanged(title)
         }
 
-        override fun onExtrasChanged(extras: Bundle) {
+        override fun onExtrasChanged(extras: Bundle?) {
             super.onExtrasChanged(extras)
         }
 
-        override fun onAudioInfoChanged(info: MediaController.PlaybackInfo) {
+        override fun onAudioInfoChanged(info: MediaController.PlaybackInfo?) {
             super.onAudioInfoChanged(info)
         }
     }

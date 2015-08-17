@@ -125,7 +125,6 @@ public class CCalculatorActivity : QCircleActivity() {
 
     public fun calculate() {
         if (text.length() > 0) {
-
             val math = fixFormat(removeLastOperator(addMissingBrackets(text.getText().toString())))
             var expression = Expression(math).setPrecision(16)
             if (lastAnswer.isNotEmpty()) expression.with(AnswerText, lastAnswer)

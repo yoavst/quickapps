@@ -167,6 +167,13 @@ public class TimerFragment : Fragment() {
             doneLayout.hide()
             settingLayout.show()
         }
+        update()
+        if (getActivity().getIntent().getBooleanExtra(CClockActivity.TimerShowFinishing, false)) {
+            callback()
+        }
+    }
+
+    fun update() {
         if (Timer.hasOldData()) {
             Handler().postDelayed({
                 callback()
@@ -176,9 +183,11 @@ public class TimerFragment : Fragment() {
                 setLookForPauseOrResume()
             }, 100)
         }
-        if (getActivity().getIntent().getBooleanExtra(CClockActivity.TimerShowFinishing, false)) {
-            callback()
-        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        update()
     }
 
     fun startTimer() {

@@ -1,6 +1,7 @@
 package com.yoavst.quickapps.desktop
 
 import android.content.Context
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.support.v7.widget.CardView
@@ -35,7 +36,9 @@ public abstract class BaseModuleView : CardView {
         LayoutInflater.from(getContext()).inflate(R.layout.desktop_view_module, this, true)
         val icon = getIcon()
         if (icon != null) {
-            findViewById(R.id.icon) as ImageView setImageBitmap BitmapFactory.decodeResource(getResources(), icon)
+            val bmOptions = BitmapFactory.Options()
+            bmOptions.inPreferredConfig = Bitmap.Config.RGB_565
+            findViewById(R.id.icon) as ImageView setImageBitmap BitmapFactory.decodeResource(getResources(), icon, bmOptions)
         }
         findViewById(R.id.title) as TextView setText getName()
 

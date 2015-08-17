@@ -5,6 +5,7 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
@@ -187,6 +188,7 @@ public class CLauncherActivity : QCircleActivity(), View.OnClickListener {
         // Decode the image file into a Bitmap sized to fill the View
         bmOptions.inJustDecodeBounds = false
         bmOptions.inSampleSize = scaleFactor
+        bmOptions.inPreferredConfig = Bitmap.Config.RGB_565
         bmOptions.inPurgeable = true
 
         val bitmap = BitmapFactory.decodeResource(resources, id, bmOptions)

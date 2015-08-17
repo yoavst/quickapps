@@ -35,7 +35,7 @@ public class WatchfaceModuleView : BaseModuleView {
 
     override fun init() {
         super.init()
-        if (beforeVersion(22)) {
+        if (beforeVersion(21)) {
             hide()
         } else {
             addSettingView(R.string.am_pm_title, R.string.am_pm_subtitle, getContext().digitalWatchfaceAmPm) {

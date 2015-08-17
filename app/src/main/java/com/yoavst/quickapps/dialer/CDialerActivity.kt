@@ -78,7 +78,7 @@ public class CDialerActivity : QCircleActivity() {
                     val number = util.parse(raw, countryCode)
                     temp[i] = PhoneNumberWrapper(cursor.getString(1), parsed = number)
                 } catch (e: Exception) {
-                    temp[i] = PhoneNumberWrapper(cursor.getString(1), raw.replace("[-\\(\\)]".toRegex(), ""))
+                    temp[i] = PhoneNumberWrapper(cursor.getString(1), raw.orEmpty().replace("[-\\(\\)]".toRegex(), ""))
                 }
                 i++
             } while (cursor.moveToNext())

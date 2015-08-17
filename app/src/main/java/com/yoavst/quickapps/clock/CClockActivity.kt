@@ -30,7 +30,6 @@ public class CClockActivity : QCircleActivity() {
         if (getIntent().getBooleanExtra(TimerShowFinishing, false)) pager.setCurrentItem(1)
     }
 
-
     public override fun onPause() {
         super.onPause()
         StopwatchManager.runOnBackground()
