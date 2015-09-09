@@ -148,7 +148,7 @@ public open class StopwatchFragment : Fragment() {
                 TimeUnit.MINUTES -> // Number of minutes % 60
                     return (millis / 60000).toInt() % 60
                 TimeUnit.HOURS -> // Number of hours (can be more then 24)
-                    return (millis / 360000).toInt()
+                    return (millis / 3600000).toInt()
             }
             return 0
         }
