@@ -17,3 +17,13 @@ The application uses Google ads for Android. Check their privacy policy [here](h
 
 ## What rights users have, in terms of withdrawal of consent and deletion of data
 No data is being collected by us.
+
+## Permission usage
+The app uses many permissions in order to provide its functionality. Including:
+* DEVICE_ADMIN: optional; provides double-tap to sleep functionality.
+* CAMERA: For Quick torch (flashlight) functionality.
+* RECORD_AUDIO: For Quick recorder functionality.
+* READ_CONTACTS: For quick dialer functionality.
+* READ_PHONE_STATE: Used by google ads.
+
+Those permissions can be disabled if you don't use the specific component (e.g. disable RECORD_AUDIO if not using Quick Recorder)
